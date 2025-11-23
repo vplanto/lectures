@@ -1,0 +1,1173 @@
+Generic node info per pod:
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:argo-events-controller-manager-7dd45798b7-smtqh | Container:controller-manager
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:argo-events-controller-manager-7dd45798b7-smtqh | Container:controller-manager
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:argo-workflows-server-5748f45bc7-tl8jx | Container:argo-server
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:argo-workflows-server-5748f45bc7-tl8jx | Container:argo-server
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:argo-workflows-workflow-controller-6b996f7c4b-8dsd5 | Container:controller
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:argo-workflows-workflow-controller-6b996f7c4b-8dsd5 | Container:controller
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:argocd-applicationset-controller-7f87d6c64f-f7qjl | Container:applicationset-controller
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:argocd-applicationset-controller-7f87d6c64f-f7qjl | Container:applicationset-controller
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:argocd-dex-server-bbb9588d5-4rrkb | Container:dex-server
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:argocd-dex-server-bbb9588d5-4rrkb | Container:dex-server
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:argocd-notifications-controller-576cbbf696-8wq4t | Container:notifications-controller
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:argocd-notifications-controller-576cbbf696-8wq4t | Container:notifications-controller
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:argocd-redis-6bdb46bd6-fjqvx | Container:redis
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:argocd-redis-6bdb46bd6-fjqvx | Container:redis
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:argocd-server-5dcc5b6d8-s4mpx | Container:server
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:argocd-server-5dcc5b6d8-s4mpx | Container:server
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:calico-kube-controllers-586477cbb8-gnkbm | Container:calico-kube-controllers
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:calico-kube-controllers-586477cbb8-gnkbm | Container:calico-kube-controllers
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:calico-node-4mpw7 | Container:calico-node
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:calico-node-4mpw7 | Container:calico-node
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:calico-node-4qpd8 | Container:calico-node
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:calico-node-4qpd8 | Container:calico-node
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:calico-node-547r2 | Container:calico-node
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:calico-node-547r2 | Container:calico-node
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:calico-node-559vw | Container:calico-node
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:calico-node-559vw | Container:calico-node
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:calico-node-5pw8k | Container:calico-node
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:calico-node-5pw8k | Container:calico-node
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:calico-node-5s5nd | Container:calico-node
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:calico-node-5s5nd | Container:calico-node
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:calico-node-8l7zv | Container:calico-node
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:calico-node-8l7zv | Container:calico-node
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:calico-node-mvp8j | Container:calico-node
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:calico-node-mvp8j | Container:calico-node
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:calico-node-v87d9 | Container:calico-node
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:calico-node-v87d9 | Container:calico-node
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:calico-node-vwff6 | Container:calico-node
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:calico-node-vwff6 | Container:calico-node
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:calico-typha-95cbc4fc9-5lbv2 | Container:calico-typha
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:calico-typha-95cbc4fc9-5lbv2 | Container:calico-typha
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:calico-typha-95cbc4fc9-hjldq | Container:calico-typha
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:calico-typha-95cbc4fc9-hjldq | Container:calico-typha
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:calico-typha-95cbc4fc9-zqf9m | Container:calico-typha
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:calico-typha-95cbc4fc9-zqf9m | Container:calico-typha
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:csi-node-driver-4rphk | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:csi-node-driver-4rphk | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:csi-node-driver-4rphk | Container:csi-node-driver-registrar
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:csi-node-driver-4rphk | Container:csi-node-driver-registrar
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:csi-node-driver-9d7hz | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:csi-node-driver-9d7hz | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:csi-node-driver-9d7hz | Container:csi-node-driver-registrar
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:csi-node-driver-9d7hz | Container:csi-node-driver-registrar
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:csi-node-driver-hbbtk | Container:calico-csi
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:csi-node-driver-hbbtk | Container:calico-csi
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:csi-node-driver-hbbtk | Container:csi-node-driver-registrar
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:csi-node-driver-hbbtk | Container:csi-node-driver-registrar
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:csi-node-driver-hnltx | Container:calico-csi
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:csi-node-driver-hnltx | Container:calico-csi
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:csi-node-driver-hnltx | Container:csi-node-driver-registrar
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:csi-node-driver-hnltx | Container:csi-node-driver-registrar
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:csi-node-driver-hxhcn | Container:calico-csi
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:csi-node-driver-hxhcn | Container:calico-csi
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:csi-node-driver-hxhcn | Container:csi-node-driver-registrar
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:csi-node-driver-hxhcn | Container:csi-node-driver-registrar
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:csi-node-driver-lzksk | Container:calico-csi
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:csi-node-driver-lzksk | Container:calico-csi
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:csi-node-driver-lzksk | Container:csi-node-driver-registrar
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:csi-node-driver-lzksk | Container:csi-node-driver-registrar
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:csi-node-driver-mxw7x | Container:calico-csi
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:csi-node-driver-mxw7x | Container:calico-csi
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:csi-node-driver-mxw7x | Container:csi-node-driver-registrar
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:csi-node-driver-mxw7x | Container:csi-node-driver-registrar
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:csi-node-driver-vcztn | Container:calico-csi
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:csi-node-driver-vcztn | Container:calico-csi
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:csi-node-driver-vcztn | Container:csi-node-driver-registrar
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:csi-node-driver-vcztn | Container:csi-node-driver-registrar
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:csi-node-driver-vk7vh | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:csi-node-driver-vk7vh | Container:calico-csi
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:csi-node-driver-vk7vh | Container:csi-node-driver-registrar
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:csi-node-driver-vk7vh | Container:csi-node-driver-registrar
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:csi-node-driver-wmtvx | Container:calico-csi
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:csi-node-driver-wmtvx | Container:calico-csi
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:csi-node-driver-wmtvx | Container:csi-node-driver-registrar
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:csi-node-driver-wmtvx | Container:csi-node-driver-registrar
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:fleet-agent-f7dc57db7-sqpff | Container:fleet-agent
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:fleet-agent-f7dc57db7-sqpff | Container:fleet-agent
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:cattle-cluster-agent-56dc7749f4-lqjgc | Container:cluster-register
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:cattle-cluster-agent-56dc7749f4-lqjgc | Container:cluster-register
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:cattle-cluster-agent-56dc7749f4-n4nv9 | Container:cluster-register
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:cattle-cluster-agent-56dc7749f4-n4nv9 | Container:cluster-register
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:rancher-webhook-fd7599678-v8z6k | Container:rancher-webhook
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:rancher-webhook-fd7599678-v8z6k | Container:rancher-webhook
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:system-upgrade-controller-6f86d6d4df-h4bh4 | Container:system-upgrade-controller
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:system-upgrade-controller-6f86d6d4df-h4bh4 | Container:system-upgrade-controller
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:cert-manager-5b97689c67-5pt9q | Container:cert-manager
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:cert-manager-5b97689c67-5pt9q | Container:cert-manager
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:cert-manager-cainjector-d9cdd94b5-bdd6d | Container:cert-manager
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:cert-manager-cainjector-d9cdd94b5-bdd6d | Container:cert-manager
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:cert-manager-webhook-5f46799497-qnvxw | Container:cert-manager
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:cert-manager-webhook-5f46799497-qnvxw | Container:cert-manager
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:couchbase-operator-couchbase-admission-controller-5f8bd5f5cdtgg | Container:couchbase-operator
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:couchbase-operator-couchbase-admission-controller-5f8bd5f5cdtgg | Container:couchbase-operator
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:couchbase-operator-couchbase-operator-dc9f8984b-rf4k7 | Container:couchbase-operator
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:couchbase-operator-couchbase-operator-dc9f8984b-rf4k7 | Container:couchbase-operator
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:karavi-metrics-powerstore-7c8f4775b7-qj7js | Container:karavi-metrics-powerstore
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:karavi-metrics-powerstore-7c8f4775b7-qj7js | Container:karavi-metrics-powerstore
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:karavi-topology-6f44864d99-285sh | Container:karavi-topology
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:karavi-topology-6f44864d99-285sh | Container:karavi-topology
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:otel-collector-5d7f4db8f7-j6dq8 | Container:nginx-proxy
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:otel-collector-5d7f4db8f7-j6dq8 | Container:nginx-proxy
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:otel-collector-5d7f4db8f7-j6dq8 | Container:otel-collector
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:otel-collector-5d7f4db8f7-j6dq8 | Container:otel-collector
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:pod-demo | Container:nginx
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:pod-demo | Container:nginx
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:attacher
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:attacher
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:resizer
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:resizer
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:provisioner
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:provisioner
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:snapshotter
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:snapshotter
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:csi-metadata-retriever
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:csi-metadata-retriever
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:driver
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-controller-648dbb59dc-d49bz | Container:driver
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:powerstore-node-25gln | Container:driver
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:powerstore-node-25gln | Container:driver
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:powerstore-node-25gln | Container:registrar
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:powerstore-node-25gln | Container:registrar
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:powerstore-node-h9ll6 | Container:driver
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:powerstore-node-h9ll6 | Container:driver
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:powerstore-node-h9ll6 | Container:registrar
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:powerstore-node-h9ll6 | Container:registrar
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:powerstore-node-nbgpb | Container:driver
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:powerstore-node-nbgpb | Container:driver
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:powerstore-node-nbgpb | Container:registrar
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:powerstore-node-nbgpb | Container:registrar
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:powerstore-node-njq4f | Container:driver
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:powerstore-node-njq4f | Container:driver
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:powerstore-node-njq4f | Container:registrar
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:powerstore-node-njq4f | Container:registrar
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:powerstore-node-sk5nb | Container:driver
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:powerstore-node-sk5nb | Container:driver
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:powerstore-node-sk5nb | Container:registrar
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:powerstore-node-sk5nb | Container:registrar
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:powerstore-node-v2wnl | Container:driver
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:powerstore-node-v2wnl | Container:driver
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:powerstore-node-v2wnl | Container:registrar
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:powerstore-node-v2wnl | Container:registrar
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-node-xl4f8 | Container:driver
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-node-xl4f8 | Container:driver
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:powerstore-node-xl4f8 | Container:registrar
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:powerstore-node-xl4f8 | Container:registrar
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:falcon-image-analyzer-5564bf9768-8n5r2 | Container:falcon-image-analyzer
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:falcon-image-analyzer-5564bf9768-8n5r2 | Container:falcon-image-analyzer
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-admin-5cc8765c97-ztwr5 | Container:core-logrotate
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-admin-5cc8765c97-ztwr5 | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-back-6684885596-8d4xm | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-back-6684885596-8d4xm | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-back-6684885596-8fj5x | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-back-6684885596-8fj5x | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-back-6684885596-vdtk7 | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-back-6684885596-vdtk7 | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-0 | Container:sync-sidecar
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-0 | Container:sync-sidecar
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-0 | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-0 | Container:core-logrotate
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-1 | Container:sync-sidecar
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-1 | Container:sync-sidecar
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-1 | Container:core-logrotate
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-1 | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-2 | Container:sync-sidecar
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-2 | Container:sync-sidecar
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-2 | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-2 | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-3 | Container:sync-sidecar
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-3 | Container:sync-sidecar
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-3 | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-3 | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-4 | Container:sync-sidecar
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-4 | Container:sync-sidecar
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-4 | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-4 | Container:core-logrotate
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-5 | Container:sync-sidecar
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-5 | Container:sync-sidecar
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-container-blue-zone-a-5 | Container:core-logrotate
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-container-blue-zone-a-5 | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-5hxr7 | Container:git-checkout
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-5hxr7 | Container:git-checkout
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-5hxr7 | Container:core-logrotate
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-5hxr7 | Container:core-logrotate
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-ddk8w | Container:git-checkout
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-ddk8w | Container:git-checkout
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-ddk8w | Container:core-logrotate
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-ddk8w | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-fsc76 | Container:git-checkout
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-fsc76 | Container:git-checkout
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-fsc76 | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-fsc76 | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-fznmt | Container:git-checkout
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-fznmt | Container:git-checkout
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-fznmt | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-fznmt | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-s52qd | Container:git-checkout
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-s52qd | Container:git-checkout
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-s52qd | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-s52qd | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-txs49 | Container:git-checkout
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-txs49 | Container:git-checkout
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-txs49 | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-txs49 | Container:core-logrotate
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-xdj6j | Container:git-checkout
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-xdj6j | Container:git-checkout
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-core-blue-777884f8b4-xdj6j | Container:core-logrotate
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-core-blue-777884f8b4-xdj6j | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0000 | Container:metrics
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0000 | Container:metrics
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0001 | Container:metrics
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0001 | Container:metrics
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0004 | Container:metrics
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0004 | Container:metrics
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0007 | Container:metrics
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0007 | Container:metrics
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0008 | Container:metrics
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0008 | Container:metrics
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0009 | Container:metrics
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0009 | Container:metrics
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:gpas-couchbase-0010 | Container:metrics
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:gpas-couchbase-0010 | Container:metrics
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:gpas-couchlabs-exporter-574965f98d-twzmd | Container:prometheus-couchlabs-exporter
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:gpas-couchlabs-exporter-574965f98d-twzmd | Container:prometheus-couchlabs-exporter
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:gpas-forfun-76d5548d44-dqzjx | Container:core-logrotate
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:gpas-forfun-76d5548d44-dqzjx | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-forfun-76d5548d44-zwmtq | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-forfun-76d5548d44-zwmtq | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-front-64dfb9689d-lxkgp | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-front-64dfb9689d-lxkgp | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-front-64dfb9689d-svgd5 | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-front-64dfb9689d-svgd5 | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-maintenance-856d5966cc-pnl4d | Container:git-checkout
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-maintenance-856d5966cc-pnl4d | Container:git-checkout
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:gpas-maintenance-856d5966cc-pnl4d | Container:core-logrotate
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:gpas-maintenance-856d5966cc-pnl4d | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:gpas-mp-687df9444b-rxhfr | Container:core-logrotate
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:gpas-mp-687df9444b-rxhfr | Container:core-logrotate
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:popgpas-redis-cluster-node-0 | Container:metrics
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:popgpas-redis-cluster-node-0 | Container:metrics
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:popgpas-redis-cluster-node-1 | Container:metrics
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:popgpas-redis-cluster-node-1 | Container:metrics
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:popgpas-redis-cluster-node-2 | Container:metrics
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:popgpas-redis-cluster-node-2 | Container:metrics
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:get-facts
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:get-facts
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:expose-json
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:expose-json
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:x509-exporter
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:cert-facts-istio-brands-5784ddf788-4wtpz | Container:x509-exporter
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:docker-registry-6d7b9cfbd6-gpqrb | Container:nginx
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:docker-registry-6d7b9cfbd6-gpqrb | Container:nginx
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:kubernetes-dashboard-5f478c6b46-x4dkp | Container:dashboard-metrics-scraper
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:kubernetes-dashboard-5f478c6b46-x4dkp | Container:dashboard-metrics-scraper
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:kubernetes-dashboard-metrics-server-84ff44ffdb-h84nr | Container:metrics-server
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:rke2-snapshot-controller-5c9df4d7d6-rjhb9 | Container:rke2-snapshot-controller
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:rke2-snapshot-controller-5c9df4d7d6-rjhb9 | Container:rke2-snapshot-controller
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:rke2-snapshot-validation-webhook-54f487ff94-4jmv5 | Container:rke2-snapshot-validation-webhook
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:rke2-snapshot-validation-webhook-54f487ff94-4jmv5 | Container:rke2-snapshot-validation-webhook
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:kubernetes-events-67cb567d55-6745s | Container:fluent-bit
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:alertmanager-monitoring-kube-prometheus-alertmanager-0 | Container:alertmanager
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:elastalert2-54c5c6dd44-5dccd | Container:elastalert
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:elastalert2-54c5c6dd44-5dccd | Container:elastalert
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:monitoring-grafana-0 | Container:dashboards-downloader
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:monitoring-grafana-0 | Container:dashboards-downloader
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:monitoring-kube-state-metrics-7d4ddc7dcc-txtt9 | Container:kube-state-metrics
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-4khcx | Container:node-exporter
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-4khcx | Container:node-exporter
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-7szb6 | Container:node-exporter
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-7szb6 | Container:node-exporter
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-7z2ld | Container:node-exporter
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-7z2ld | Container:node-exporter
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-86kzp | Container:node-exporter
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-86kzp | Container:node-exporter
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-8zktk | Container:node-exporter
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-8zktk | Container:node-exporter
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-bldz6 | Container:node-exporter
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-bldz6 | Container:node-exporter
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-d2wrn | Container:node-exporter
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-d2wrn | Container:node-exporter
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-qd72h | Container:node-exporter
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-qd72h | Container:node-exporter
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-shqb9 | Container:node-exporter
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-shqb9 | Container:node-exporter
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:monitoring-prometheus-node-exporter-xgj7p | Container:node-exporter
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:monitoring-prometheus-node-exporter-xgj7p | Container:node-exporter
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:prometheus-pushgateway-58c8577b88-vnb7l | Container:pushgateway
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:prometheus-pushgateway-58c8577b88-vnb7l | Container:pushgateway
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:nfs-provisioner-6cf78f7b-6mnwf | Container:nfs-subdir-external-provisioner
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:nfs-provisioner-6cf78f7b-6mnwf | Container:nfs-subdir-external-provisioner
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:rapid7-monitor-5884b4585c-p762b | Container:kubernetes-agent
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:fluentd-node-454g5 | Container:fluentd
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:fluentd-node-454g5 | Container:fluentd
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no CPU requests for Pod:fluentd-node-8ff9d | Container:fluentd
+	Node:site-alpha-pop-k8s-master-01.internal.domain - Has no Memory requests for Pod:fluentd-node-8ff9d | Container:fluentd
+	Node:bramega350.internal.domain - Has no CPU requests for Pod:fluentd-node-hpwjs | Container:fluentd
+	Node:bramega350.internal.domain - Has no Memory requests for Pod:fluentd-node-hpwjs | Container:fluentd
+	Node:bramega370.internal.domain - Has no CPU requests for Pod:fluentd-node-hrn8g | Container:fluentd
+	Node:bramega370.internal.domain - Has no Memory requests for Pod:fluentd-node-hrn8g | Container:fluentd
+	Node:bramega340.internal.domain - Has no CPU requests for Pod:fluentd-node-kmrxg | Container:fluentd
+	Node:bramega340.internal.domain - Has no Memory requests for Pod:fluentd-node-kmrxg | Container:fluentd
+	Node:bramega360.internal.domain - Has no CPU requests for Pod:fluentd-node-lvjsh | Container:fluentd
+	Node:bramega360.internal.domain - Has no Memory requests for Pod:fluentd-node-lvjsh | Container:fluentd
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no CPU requests for Pod:fluentd-node-pmxqm | Container:fluentd
+	Node:site-alpha-pop-k8s-master-03.internal.domain - Has no Memory requests for Pod:fluentd-node-pmxqm | Container:fluentd
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:fluentd-node-prxrl | Container:fluentd
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:fluentd-node-prxrl | Container:fluentd
+	Node:bramega380.internal.domain - Has no CPU requests for Pod:fluentd-node-sjr76 | Container:fluentd
+	Node:bramega380.internal.domain - Has no Memory requests for Pod:fluentd-node-sjr76 | Container:fluentd
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:fluentd-node-wgj76 | Container:fluentd
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:fluentd-node-wgj76 | Container:fluentd
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:tigera-guardian-564fb4d4cd-pzwn2 | Container:tigera-guardian
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:tigera-guardian-564fb4d4cd-pzwn2 | Container:tigera-guardian
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:intrusion-detection-controller-865df858f5-gqzwj | Container:controller
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:intrusion-detection-controller-865df858f5-gqzwj | Container:controller
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:intrusion-detection-controller-865df858f5-gqzwj | Container:webhooks-processor
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:intrusion-detection-controller-865df858f5-gqzwj | Container:webhooks-processor
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no CPU requests for Pod:tigera-operator-767b668b49-jqws5 | Container:tigera-operator
+	Node:site-alpha-pop-k8s-master-02.internal.domain - Has no Memory requests for Pod:tigera-operator-767b668b49-jqws5 | Container:tigera-operator
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:alertmanager-calico-node-alertmanager-0 | Container:alertmanager
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:alertmanager-calico-node-alertmanager-1 | Container:alertmanager
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:prometheus-calico-node-prometheus-0 | Container:prometheus
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:prometheus-calico-node-prometheus-0 | Container:authn-proxy
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:prometheus-calico-node-prometheus-0 | Container:authn-proxy
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:tigera-apiserver-6f7b6767b-7n75g | Container:calico-apiserver
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:tigera-apiserver-6f7b6767b-7n75g | Container:calico-apiserver
+	Node:bramega330.internal.domain - Has no CPU requests for Pod:tigera-apiserver-6f7b6767b-7n75g | Container:tigera-queryserver
+	Node:bramega330.internal.domain - Has no Memory requests for Pod:tigera-apiserver-6f7b6767b-7n75g | Container:tigera-queryserver
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:tigera-apiserver-6f7b6767b-tddw5 | Container:calico-apiserver
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:tigera-apiserver-6f7b6767b-tddw5 | Container:calico-apiserver
+	Node:bramega390.internal.domain - Has no CPU requests for Pod:tigera-apiserver-6f7b6767b-tddw5 | Container:tigera-queryserver
+	Node:bramega390.internal.domain - Has no Memory requests for Pod:tigera-apiserver-6f7b6767b-tddw5 | Container:tigera-queryserver
+
+Generic node info:
+	bramega340.internal.domain : CPU: 98520.0 / 111900.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['dex-server', 'server', 'calico-node', 'calico-csi', 'csi-node-driver-registrar', 'driver', 'registrar', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'metrics', 'metrics', 'metrics', 'get-facts', 'expose-json', 'x509-exporter', 'node-exporter', 'fluentd']
+	bramega370.internal.domain : CPU: 97900.0 / 110300.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['calico-node', 'calico-csi', 'csi-node-driver-registrar', 'cert-manager', 'driver', 'registrar', 'falcon-image-analyzer', 'core-logrotate', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'metrics', 'metrics', 'metrics', 'node-exporter', 'kubernetes-agent', 'fluentd']
+	bramega380.internal.domain : CPU: 86820.0 / 108350.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['controller-manager', 'controller', 'calico-node', 'calico-csi', 'csi-node-driver-registrar', 'cert-manager', 'couchbase-operator', 'driver', 'registrar', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'metrics', 'prometheus-couchlabs-exporter', 'nginx', 'dashboard-metrics-scraper', 'node-exporter', 'pushgateway', 'fluentd']
+	bramega330.internal.domain : CPU: 79650.0 / 97650.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['calico-kube-controllers', 'calico-node', 'calico-csi', 'csi-node-driver-registrar', 'fleet-agent', 'cluster-register', 'rancher-webhook', 'attacher', 'resizer', 'provisioner', 'snapshotter', 'csi-metadata-retriever', 'driver', 'driver', 'registrar', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'core-logrotate', 'core-logrotate', 'core-logrotate', 'rke2-snapshot-controller', 'rke2-snapshot-validation-webhook', 'elastalert', 'node-exporter', 'nfs-subdir-external-provisioner', 'fluentd', 'tigera-guardian', 'controller', 'webhooks-processor', 'alertmanager', 'prometheus', 'authn-proxy', 'calico-apiserver', 'tigera-queryserver']
+	bramega350.internal.domain : CPU: 79230.0 / 101200.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['argo-server', 'applicationset-controller', 'notifications-controller', 'redis', 'calico-node', 'calico-csi', 'csi-node-driver-registrar', 'nginx', 'driver', 'registrar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'core-logrotate', 'git-checkout', 'core-logrotate', 'alertmanager', 'node-exporter', 'fluentd']
+	bramega360.internal.domain : CPU: 79160.0 / 100150.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['calico-node', 'calico-csi', 'csi-node-driver-registrar', 'cert-manager', 'driver', 'registrar', 'core-logrotate', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'metrics', 'metrics', 'node-exporter', 'fluentd']
+	bramega390.internal.domain : CPU: 76980.0 / 89900.0 [Node capacity: cpu: 128; mem: 754.56Gi] | No CPU for : ['calico-node', 'calico-typha', 'calico-csi', 'csi-node-driver-registrar', 'couchbase-operator', 'karavi-metrics-powerstore', 'karavi-topology', 'nginx-proxy', 'otel-collector', 'driver', 'registrar', 'core-logrotate', 'sync-sidecar', 'core-logrotate', 'git-checkout', 'core-logrotate', 'metrics', 'core-logrotate', 'dashboards-downloader', 'node-exporter', 'fluentd', 'alertmanager', 'calico-apiserver', 'tigera-queryserver']
+	site-alpha-pop-k8s-master-01.internal.domain : CPU: 1235.0 / 2200.0 [Node capacity: cpu: 4; mem: 15.34Gi] | No CPU for : ['calico-node', 'calico-csi', 'csi-node-driver-registrar', 'system-upgrade-controller', 'node-exporter', 'fluentd']
+	site-alpha-pop-k8s-master-02.internal.domain : CPU: 1110.0 / 2000.0 [Node capacity: cpu: 4; mem: 15.34Gi] | No CPU for : ['calico-node', 'calico-typha', 'calico-csi', 'csi-node-driver-registrar', 'node-exporter', 'fluentd', 'tigera-operator']
+	site-alpha-pop-k8s-master-03.internal.domain : CPU: 1110.0 / 2000.0 [Node capacity: cpu: 4; mem: 15.34Gi] | No CPU for : ['calico-node', 'calico-typha', 'calico-csi', 'csi-node-driver-registrar', 'cluster-register', 'node-exporter', 'fluentd']
+
+
+bramega330.internal.domain (rke2):
+	*****PODS******
+	calico-cloud-649b5fdb7d-rs4d5 
+		calico-cloud [cc-operator:v1.20.0] | CPU:200m/250m | MEM:200Mi/300Mi
+	cc-core-operator-567945d476-cxgvz 
+		cc-core [cc-core:v0.2.18] | CPU:10m/500m | MEM:64Mi/128Mi
+	calico-kube-controllers-586477cbb8-gnkbm 
+		calico-kube-controllers [kube-controllers:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	calico-node-4mpw7 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-wmtvx 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	fleet-agent-f7dc57db7-sqpff 
+		fleet-agent [fleet-agent:v0.9.5] | CPU:None/None | MEM:None/None
+	cattle-cluster-agent-56dc7749f4-lqjgc 
+		cluster-register [rancher-agent:v2.8.5] | CPU:None/None | MEM:None/None
+	rancher-webhook-fd7599678-v8z6k 
+		rancher-webhook [rancher-webhook:v0.4.7] | CPU:None/None | MEM:None/None
+	consul-consul-rlhw9 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	powerstore-controller-648dbb59dc-d49bz 
+		attacher [csi-attacher:v4.8.1] | CPU:None/None | MEM:None/None
+		resizer [csi-resizer:v1.13.2] | CPU:None/None | MEM:None/None
+		provisioner [csi-provisioner:v5.2.0] | CPU:None/None | MEM:None/None
+		snapshotter [csi-snapshotter:v8.2.1] | CPU:None/None | MEM:None/None
+		csi-metadata-retriever [csi-metadata-retriever:v1.11.0] | CPU:None/None | MEM:None/None
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+	powerstore-node-xl4f8 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-container-blue-zone-a-0 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-fznmt 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-forfun-76d5548d44-zwmtq 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-forfun [forfun:10.X.X.X] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1508m -Xmx1508m
+	gpas-front-64dfb9689d-svgd5 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-front [gpas-front:10.X.X.X] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8G -Xmx8G
+	gpas-mp-687df9444b-rxhfr 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-mp [gpasmp:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms20G -Xmx20G
+	istio-ingressgateway-private-sj8rn 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-gdbx9 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-9nfrc 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	kube-proxy-bramega330.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	rke2-coredns-rke2-coredns-76f6bd7996-wg66s 
+		coredns [hardened-coredns:v1.11.3-build20241018] | CPU:100m/100m | MEM:128Mi/128Mi
+	rke2-metrics-server-7694cf7d77-r6pbr 
+		metrics-server [hardened-k8s-metrics-server:v0.7.1-build20241008] | CPU:100m/None | MEM:200Mi/None
+	rke2-snapshot-controller-5c9df4d7d6-rjhb9 
+		rke2-snapshot-controller [mirrored-sig-storage-snapshot-controller:v8.1.0] | CPU:None/None | MEM:None/None
+	rke2-snapshot-validation-webhook-54f487ff94-4jmv5 
+		rke2-snapshot-validation-webhook [mirrored-sig-storage-snapshot-validation-webhook:v8.1.0] | CPU:None/None | MEM:None/None
+	elasticsearch-master-0 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-10 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-19 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-23 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-37 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-7 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-b8pkp 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	kibana-aio-kibana-877f8fdd4-pgg7c 
+		kibana [kibana:7.16.2] | CPU:500m/1 | MEM:2Gi/2Gi
+	logstash-aio-logstash-4 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	logstash-aio-logstash-7 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	logstash-aio-logstash-9 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	elastalert2-54c5c6dd44-5dccd 
+		elastalert [elastalert2:2.12.0] | CPU:None/None | MEM:None/None
+	monitoring-prometheus-node-exporter-7z2ld 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	prometheus-exporters-prometheus-elasticsearch-exporter-7ddkvwbw 
+		exporter [elasticsearch-exporter:v1.3.0] | CPU:500m/1 | MEM:1Gi/1Gi
+	vmcluster-victoria-metrics-cluster-vminsert-6664c8f7fd-k5d5r 
+		victoria-metrics-cluster-vminsert [vminsert:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/2Gi
+	nfs-provisioner-6cf78f7b-6mnwf 
+		nfs-subdir-external-provisioner [nfs-subdir-external-provisioner:v4.0.2] | CPU:None/None | MEM:None/None
+	nginx-be-579d85775c-fvcpk 
+		nginx [nginx:1.21.6-debian-10-r69] | CPU:500m/2 | MEM:500Mi/1Gi
+		metrics [nginx-exporter:0.10.0-debian-10-r8] | CPU:500m/2 | MEM:500Mi/1Gi
+		consul-template [consul-template:0.27.2] | CPU:100m/200m | MEM:128Mi/128Mi
+	ms-wallet-25-5-0-22-84c844cf48-bbcpz 
+		ms-wallet [ms-wallet:10.X.X.X] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1400m -Xmx1400m
+	pop-push-25-6-0-15-585fbcbf69-5wnzm 
+		pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-system-6c759f7c7b-h9wxk 
+		pop-system [pop-mvc-system:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-pvf78 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-vq9zr 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-wgj76 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	tigera-guardian-564fb4d4cd-pzwn2 
+		tigera-guardian [guardian:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	intrusion-detection-controller-865df858f5-gqzwj 
+		controller [intrusion-detection-controller:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		webhooks-processor [webhooks-processor:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	alertmanager-calico-node-alertmanager-0 
+		alertmanager [alertmanager:v3.21.0-1.0] | CPU:None/None | MEM:200Mi/None
+		config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+	prometheus-calico-node-prometheus-0 
+		prometheus [prometheus:v3.21.0-1.0] | CPU:None/None | MEM:400Mi/None
+		config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+		authn-proxy [prometheus-service:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	tigera-apiserver-6f7b6767b-7n75g 
+		calico-apiserver [cnx-apiserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		tigera-queryserver [cnx-queryserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega340.internal.domain (rke2):
+	*****PODS******
+	argocd-dex-server-bbb9588d5-4rrkb 
+		dex-server [dex:v2.38.0] | CPU:None/None | MEM:None/None
+	argocd-server-5dcc5b6d8-s4mpx 
+		server [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+	calico-node-8l7zv 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-hxhcn 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	consul-consul-g8dkk 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	consul-consul-server-2 
+		consul [consul:1.10.0] | CPU:100m/1 | MEM:128Mi/1Gi
+	powerstore-node-h9ll6 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-container-blue-zone-a-3 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-txs49 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-couchbase-0000 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	gpas-couchbase-0007 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	gpas-chat-6567c69d74-d7fvg 
+		gpas-chat [ms-chat-service:10.X.X.X] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+	popgpas-redis-cluster-node-0 
+		redis [redis:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/1Gi
+		sentinel [redis-sentinel:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/512Mi
+		metrics [redis-exporter:1.62.0-debian-12-r3] | CPU:None/None | MEM:None/None
+	cert-facts-istio-brands-5784ddf788-4wtpz 
+		get-facts [openssl] | CPU:None/None | MEM:None/None
+		expose-json [busybox] | CPU:None/None | MEM:None/None
+		x509-exporter [x509-certificate-exporter:3.17.0] | CPU:None/None | MEM:None/None
+	istio-ingressgateway-private-mt5tg 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-6pkb5 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-c9fmx 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	kube-proxy-bramega340.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	kubernetes-dashboard-metrics-server-84ff44ffdb-h84nr 
+		metrics-server [metrics-server:v0.6.2] | CPU:100m/1 | MEM:None/None
+	rke2-coredns-rke2-coredns-76f6bd7996-hn95n 
+		coredns [hardened-coredns:v1.11.3-build20241018] | CPU:100m/100m | MEM:128Mi/128Mi
+	elasticsearch-master-20 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-28 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-29 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-3 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-32 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-9 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-wp2xx 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	logstash-aio-logstash-1 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	logstash-aio-logstash-8 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	monitoring-prometheus-node-exporter-7szb6 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	prometheus-exporters-prometheus-consul-exporter-XXXXXXXXXXXXtnt 
+		prometheus-consul-exporter [consul-exporter:v0.4.0] | CPU:100m/100m | MEM:128Mi/128Mi
+	telegraf-cbd65b598-zxnc6 
+		telegraf [telegraf:1.21-alpine] | CPU:2/2 | MEM:4Gi/4Gi
+	pop-push-25-6-0-15-585fbcbf69-67jg9 
+		pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-router-8cc55d58d-5247w 
+		pop-router [pop-mvc-router:10.X.X.X] | CPU:8/8 | MEM:11Gi/11Gi | JAVA_OPTS:-Xms8g -Xmx8g
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-9bbvg 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-kmrxg 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega350.internal.domain (rke2):
+	*****PODS******
+	argo-workflows-server-5748f45bc7-tl8jx 
+		argo-server [argocli:v3.5.8] | CPU:None/None | MEM:None/None
+	argocd-application-controller-0 
+		application-controller [argocd-sops:v2.10.7] | CPU:100m/1 | MEM:1Gi/3Gi
+	argocd-applicationset-controller-7f87d6c64f-f7qjl 
+		applicationset-controller [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+	argocd-notifications-controller-576cbbf696-8wq4t 
+		notifications-controller [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+	argocd-redis-6bdb46bd6-fjqvx 
+		redis [redis:7.2.4-alpine] | CPU:None/None | MEM:None/None
+	calico-node-547r2 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-lzksk 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	consul-consul-gtr2c 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	consul-consul-server-0 
+		consul [consul:1.10.0] | CPU:100m/1 | MEM:128Mi/1Gi
+	pod-demo 
+		nginx [nginx] | CPU:None/None | MEM:None/None
+	powerstore-node-25gln 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-back-6684885596-vdtk7 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-back [gpas-back:10.X.X.X] | CPU:2/2 | MEM:8Gi/8Gi | JAVA_OPTS:-Xms4G -Xmx4G
+	gpas-core-blue-777884f8b4-s52qd 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-front-64dfb9689d-lxkgp 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-front [gpas-front:10.X.X.X] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8G -Xmx8G
+	gpas-maintenance-856d5966cc-pnl4d 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-maintenance [gpas-core:10.X.X.X] | CPU:8/8 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms7G -Xmx7G
+	istio-ingressgateway-private-78bcr 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-42cg2 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-tddd9 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	ldap-auth-proxy-bb899cb7d-rqbjs 
+		ldap-auth-proxy [nginx-ldap-auth:0.0.7] | CPU:10m/50m | MEM:64Mi/120Mi
+	kube-proxy-bramega350.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	rke2-coredns-rke2-coredns-76f6bd7996-hgdc7 
+		coredns [hardened-coredns:v1.11.3-build20241018] | CPU:100m/100m | MEM:128Mi/128Mi
+	elasticsearch-master-12 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-16 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-21 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-34 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-5 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-pkvx5 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	mongodb-0 
+		mongodb [mongodb:8.0.10-debian-12-r0] | CPU:4/4 | MEM:8Gi/8Gi
+		metrics [mongodb-exporter:0.45.0-debian-12-r1] | CPU:100m/150m | MEM:128Mi/192Mi
+	alertmanager-monitoring-kube-prometheus-alertmanager-0 
+		alertmanager [alertmanager:v0.24.0] | CPU:None/None | MEM:200Mi/None
+		config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+	monitoring-prometheus-node-exporter-xgj7p 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	prometheus-exporters-prometheus-es-exporter-78dd6c4579-57g2f 
+		prometheus-es-exporter [prometheus-es-exporter:0.14.0] | CPU:100m/1 | MEM:128Mi/128Mi
+	prometheus-monitoring-kube-prometheus-prometheus-0 
+		prometheus [prometheus:v2.54.1] | CPU:4/4 | MEM:30Gi/30Gi
+		config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+	vm-single-victoria-metrics-single-server-0 
+		victoria-metrics-single-server [victoria-metrics:v1.96.0] | CPU:1/2 | MEM:4Gi/8Gi
+	vmcluster-victoria-metrics-cluster-vminsert-6664c8f7fd-pbrwd 
+		victoria-metrics-cluster-vminsert [vminsert:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/2Gi
+	vmcluster-victoria-metrics-cluster-vmselect-7569b99b94-ssnjb 
+		victoria-metrics-cluster-vmselect [vmselect:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/256Mi
+	pop-admin-6bd95b49fb-b9zwf 
+		pop-admin [pop-mvc-admin:10.X.X.X] | CPU:2/2 | MEM:5Gi/5Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-cms-5c9c4cf74d-vwvqs 
+		pop-cms [ms-cms:10.X.X.X] | CPU:1/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+	pop-config-server-5c66f5b857-pwcnl 
+		pop-config-server [pop-config-server:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms750m -Xmx750m
+	pop-dgh-adapter-bb7875fb5-dq5xc 
+		pop-dgh-adapter [pop-dgh-adapter:2.1.8] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+	pop-gcs-7774f47985-htwf5 
+		pop-gcs [ms-gcs:10.X.X.X] | CPU:500m/500m | MEM:1536Mi/1536Mi | JAVA_OPTS:-Xms3072Mi -Xmx3072Mi
+	pop-greentube-25-6-0-7-dbb9765dc-5r928 
+		pop-greentube [pop-mvc-greentube:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-mp-67684b6688-m5qvf 
+		pop-mp [pop-mp:23.9.6] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3512m -Xmx3512m
+	pop-png-25-6-0-7-7fd7d66699-t56d6 
+		pop-png [pop-mvc-png:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-push-25-6-0-15-585fbcbf69-ds7nm 
+		pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-router-8cc55d58d-g45z4 
+		pop-router [pop-mvc-router:10.X.X.X] | CPU:8/8 | MEM:11Gi/11Gi | JAVA_OPTS:-Xms8g -Xmx8g
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-sg-25-6-0-7-76df546486-cmd8f 
+		pop-sg [pop-mvc-sg:10.X.X.X] | CPU:500m/1 | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-7f62x 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-ctbxw 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-hpwjs 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega360.internal.domain (rke2):
+	*****PODS******
+	calico-node-559vw 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-hnltx 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	cert-manager-5b97689c67-5pt9q 
+		cert-manager [cert-manager-controller:v1.8.2] | CPU:None/None | MEM:None/None
+	consul-consul-n96xl 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	nginx-upstream-resolver-7c459cd797-tmlkx 
+		nginx-upstream-resolver [pg_tools:0.0.3] | CPU:100m/200m | MEM:128Mi/128Mi
+	powerstore-node-sk5nb 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-admin-5cc8765c97-ztwr5 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-admin [gpas-admin:25.2.0] | CPU:500m/500m | MEM:1Gi/1Gi
+	gpas-container-blue-zone-a-1 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-ddk8w 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-couchbase-0008 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	popgpas-redis-cluster-node-2 
+		redis [redis:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/1Gi
+		sentinel [redis-sentinel:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/512Mi
+		metrics [redis-exporter:1.62.0-debian-12-r3] | CPU:None/None | MEM:None/None
+	istio-ingressgateway-private-vf75g 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-4l6rw 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-28bgf 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	kube-proxy-bramega360.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	elasticsearch-master-2 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-24 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-30 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-31 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-35 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-8 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-vq454 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	logstash-aio-logstash-5 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	mongodb-2 
+		mongodb [mongodb:8.0.10-debian-12-r0] | CPU:4/4 | MEM:8Gi/8Gi
+		metrics [mongodb-exporter:0.45.0-debian-12-r1] | CPU:100m/150m | MEM:128Mi/192Mi
+	monitoring-kube-prometheus-operator-677757d4c6-ncctb 
+		kube-prometheus-stack [prometheus-operator:v0.53.0] | CPU:100m/1 | MEM:256Mi/256Mi
+	monitoring-kube-state-metrics-7d4ddc7dcc-txtt9 
+		kube-state-metrics [kube-state-metrics:v2.13.0] | CPU:100m/1 | MEM:None/None
+	monitoring-prometheus-node-exporter-qd72h 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	nginx-be-579d85775c-297mm 
+		nginx [nginx:1.21.6-debian-10-r69] | CPU:500m/2 | MEM:500Mi/1Gi
+		metrics [nginx-exporter:0.10.0-debian-10-r8] | CPU:500m/2 | MEM:500Mi/1Gi
+		consul-template [consul-template:0.27.2] | CPU:100m/200m | MEM:128Mi/128Mi
+	pop-config-server-5c66f5b857-mg6dm 
+		pop-config-server [pop-config-server:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms750m -Xmx750m
+	pop-dgh-adapter-bb7875fb5-xb4vl 
+		pop-dgh-adapter [pop-dgh-adapter:2.1.8] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+	pop-gcs-7774f47985-t9cdt 
+		pop-gcs [ms-gcs:10.X.X.X] | CPU:500m/500m | MEM:1536Mi/1536Mi | JAVA_OPTS:-Xms3072Mi -Xmx3072Mi
+	pop-launcher-25-6-0-20-57d9f48549-nbvjd 
+		pop-launcher [pop-mvc-launcher:10.X.X.X] | CPU:1/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-png-25-6-0-7-7fd7d66699-l7mln 
+		pop-png [pop-mvc-png:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-push-25-6-0-15-585fbcbf69-f29nv 
+		pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-gnxwn 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-vhkqh 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-lvjsh 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega370.internal.domain (rke2):
+	*****PODS******
+	argocd-repo-server-644dbbf754-lgtpn 
+		repo-server [argocd-sops:v2.10.7] | CPU:100m/None | MEM:1Gi/1Gi
+	calico-node-vwff6 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-hbbtk 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	cert-manager-webhook-5f46799497-qnvxw 
+		cert-manager [cert-manager-webhook:v1.8.2] | CPU:None/None | MEM:None/None
+	consul-consul-xd2fw 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	powerstore-node-nbgpb 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	falcon-image-analyzer-5564bf9768-8n5r2 
+		falcon-image-analyzer [falcon-imageanalyzer:1.0.15] | CPU:None/None | MEM:None/None
+	falcon-kac-7fb56dd795-z85f5 
+		falcon-client [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:500m/750m | MEM:384Mi/384Mi
+		falcon-watcher [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:500m/750m | MEM:384Mi/384Mi
+		falcon-ac [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:300m/300m | MEM:256Mi/256Mi
+	gpas-back-6684885596-8fj5x 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-back [gpas-back:10.X.X.X] | CPU:2/2 | MEM:8Gi/8Gi | JAVA_OPTS:-Xms4G -Xmx4G
+	gpas-container-blue-zone-a-2 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-5hxr7 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-couchbase-0001 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	gpas-couchbase-0010 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	popgpas-redis-cluster-node-1 
+		redis [redis:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/1Gi
+		sentinel [redis-sentinel:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/512Mi
+		metrics [redis-exporter:1.62.0-debian-12-r3] | CPU:None/None | MEM:None/None
+	istio-ingressgateway-private-k9lzp 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-mhb92 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-5fxwf 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	kube-proxy-bramega370.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	elasticsearch-master-11 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-17 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-27 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-39 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-40 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-6 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-zsknp 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	logstash-aio-logstash-3 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	logstash-aio-logstash-6 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	monitoring-prometheus-node-exporter-shqb9 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	prometheus-exporters-prometheus-blackbox-exporter-6c86c589m98m6 
+		blackbox-exporter [blackbox-exporter:v0.19.0] | CPU:300m/1 | MEM:128Mi/128Mi
+	vmcluster-victoria-metrics-cluster-vmselect-7569b99b94-nbv6s 
+		victoria-metrics-cluster-vmselect [vmselect:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/256Mi
+	vmcluster-victoria-metrics-cluster-vmstorage-1 
+		victoria-metrics-cluster-vmstorage [vmstorage:v1.96.0-cluster] | CPU:100m/1 | MEM:8Gi/12Gi
+	pop-router-8cc55d58d-n6vfg 
+		pop-router [pop-mvc-router:10.X.X.X] | CPU:8/8 | MEM:11Gi/11Gi | JAVA_OPTS:-Xms8g -Xmx8g
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-mkjst 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	rapid7-monitor-5884b4585c-p762b 
+		kubernetes-agent [kubernetes-monitor:2.0.1] | CPU:None/None | MEM:1Gi/2Gi
+	fluentd-node-hrn8g 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega380.internal.domain (rke2):
+	*****PODS******
+	argo-events-controller-manager-7dd45798b7-smtqh 
+		controller-manager [argo-events:v1.9.1] | CPU:None/None | MEM:None/None
+	argo-workflows-workflow-controller-6b996f7c4b-8dsd5 
+		controller [workflow-controller:v3.5.8] | CPU:None/None | MEM:None/None
+	calico-node-v87d9 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-mxw7x 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	cert-manager-cainjector-d9cdd94b5-bdd6d 
+		cert-manager [cert-manager-cainjector:v1.8.2] | CPU:None/None | MEM:None/None
+	consul-consul-s9w48 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	consul-consul-server-1 
+		consul [consul:1.10.0] | CPU:100m/1 | MEM:128Mi/1Gi
+	couchbase-operator-couchbase-operator-dc9f8984b-rf4k7 
+		couchbase-operator [operator:2.7.0] | CPU:None/None | MEM:None/None
+	powerstore-node-njq4f 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-container-blue-zone-a-5 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-xdj6j 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-couchbase-0004 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	gpas-couchlabs-exporter-574965f98d-twzmd 
+		prometheus-couchlabs-exporter [couchlabs_exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	popgpas-sentinel-exporter-8688799f4c-zn4vd 
+		popgpas-sentinel-exporter [redis-exporter:1.62.0-debian-12-r3] | CPU:10m/100m | MEM:64Mi/256Mi | JAVA_OPTS:-Xms512m -Xmx512m
+	istio-ingressgateway-private-6bjht 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-4sc8b 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-gtt94 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istiod-645f694fd-6rxgx 
+		discovery [pilot:1.24.0-distroless] | CPU:500m/None | MEM:2Gi/None
+	docker-registry-6d7b9cfbd6-gpqrb 
+		nginx [nginx:1.21.5-debian-10-r3] | CPU:None/None | MEM:None/None
+		docker-registry [registry:2] | CPU:300m/2 | MEM:5Gi/5Gi
+	kube-proxy-bramega380.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	kubernetes-dashboard-5f478c6b46-x4dkp 
+		kubernetes-dashboard [dashboard:v2.7.0] | CPU:100m/2 | MEM:200Mi/512Mi
+		dashboard-metrics-scraper [metrics-scraper:v1.0.9] | CPU:None/None | MEM:None/None
+	elasticsearch-master-13 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-15 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-25 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-33 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-36 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-4 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-5bh7n 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	logstash-aio-logstash-2 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	mongodb-1 
+		mongodb [mongodb:8.0.10-debian-12-r0] | CPU:4/4 | MEM:8Gi/8Gi
+		metrics [mongodb-exporter:0.45.0-debian-12-r1] | CPU:100m/150m | MEM:128Mi/192Mi
+	monitoring-grafana-image-renderer-5db5c9c7c4-gzq26 
+		grafana-image-renderer [grafana-image-renderer:3.11.0] | CPU:50m/2 | MEM:2Gi/2Gi
+	monitoring-prometheus-node-exporter-86kzp 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	prometheus-adapter-797dbcfcb5-twqxz 
+		prometheus-adapter [k8s-prometheus-adapter-amd64:v0.8.4] | CPU:100m/1 | MEM:1Gi/2Gi
+	prometheus-pushgateway-58c8577b88-vnb7l 
+		pushgateway [pushgateway:v1.5.1] | CPU:None/None | MEM:None/None
+	vm-single-gpas-server-0 
+		vm-single-gpas-server [victoria-metrics:v1.96.0] | CPU:500m/2 | MEM:2Gi/8Gi
+	vmcluster-victoria-metrics-cluster-vmstorage-0 
+		victoria-metrics-cluster-vmstorage [vmstorage:v1.96.0-cluster] | CPU:100m/1 | MEM:8Gi/12Gi
+	ms-wallet-25-5-0-22-84c844cf48-z65s6 
+		ms-wallet [ms-wallet:10.X.X.X] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1400m -Xmx1400m
+	pop-greentube-25-6-0-7-dbb9765dc-lch9g 
+		pop-greentube [pop-mvc-greentube:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-launcher-25-6-0-20-57d9f48549-74t4h 
+		pop-launcher [pop-mvc-launcher:10.X.X.X] | CPU:1/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-mp-67684b6688-mwdnz 
+		pop-mp [pop-mp:23.9.6] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3512m -Xmx3512m
+	pop-perfmock-5797dc7bff-ptbhc 
+		pop-perfmock [perfmock:b2f40ae] | CPU:1/1 | MEM:256Mi/1Gi
+	pop-router-8cc55d58d-k9q4p 
+		pop-router [pop-mvc-router:10.X.X.X] | CPU:8/8 | MEM:11Gi/11Gi | JAVA_OPTS:-Xms8g -Xmx8g
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-6mj6r 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-rhhjv 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-sjr76 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+bramega390.internal.domain (rke2):
+	*****PODS******
+	argocd-repo-server-644dbbf754-cw7l2 
+		repo-server [argocd-sops:v2.10.7] | CPU:100m/None | MEM:1Gi/1Gi
+	calico-node-5s5nd 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	calico-typha-95cbc4fc9-5lbv2 
+		calico-typha [typha:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-vcztn 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	consul-consul-b6qhd 
+		consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+	couchbase-operator-couchbase-admission-controller-5f8bd5f5cdtgg 
+		couchbase-operator [admission-controller:2.7.0] | CPU:None/None | MEM:None/None
+	karavi-metrics-powerstore-7c8f4775b7-qj7js 
+		karavi-metrics-powerstore [csm-metrics-powerstore:v1.12.0] | CPU:None/None | MEM:None/None
+	karavi-topology-6f44864d99-285sh 
+		karavi-topology [csm-topology:v1.12.0] | CPU:None/None | MEM:None/None
+	otel-collector-5d7f4db8f7-j6dq8 
+		nginx-proxy [nginx-unprivileged:1.27] | CPU:None/None | MEM:None/None
+		otel-collector [opentelemetry-collector:0.125.0] | CPU:None/None | MEM:None/None
+	powerstore-node-v2wnl 
+		driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+		registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+	gpas-back-6684885596-8d4xm 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-back [gpas-back:10.X.X.X] | CPU:2/2 | MEM:8Gi/8Gi | JAVA_OPTS:-Xms4G -Xmx4G
+	gpas-container-blue-zone-a-4 
+		sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+	gpas-core-blue-777884f8b4-fsc76 
+		git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+	gpas-couchbase-0009 
+		couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+		metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+	gpas-forfun-76d5548d44-dqzjx 
+		core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+		gpas-forfun [forfun:10.X.X.X] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1508m -Xmx1508m
+	istio-ingressgateway-private-ph2cs 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-privil-8cn78 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	istio-ingressgateway-public-v6tr5 
+		istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+	kiali-74989dbf4f-qft65 
+		kiali [kiali:v2.7.1] | CPU:10m/None | MEM:64Mi/1Gi
+	kube-proxy-bramega390.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	elasticsearch-master-1 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-14 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-18 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-22 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-26 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	elasticsearch-master-38 
+		elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+	fluent-bit-wsdpl 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	kubernetes-events-67cb567d55-6745s 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/200m | MEM:None/None
+	logstash-aio-logstash-0 
+		logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+	monitoring-grafana-0 
+		grafana [grafana_original:10.4.4] | CPU:300m/1 | MEM:1Gi/4Gi
+		dashboards-downloader [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+	monitoring-prometheus-node-exporter-8zktk 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	pop-release-status-29183675-hwfvj 
+		main [pg_tools:0.0.3] | CPU:1/1 | MEM:512Mi/512Mi
+	pop-perfmock-5797dc7bff-txxld 
+		pop-perfmock [perfmock:b2f40ae] | CPU:1/1 | MEM:256Mi/1Gi
+	pop-push-25-6-0-15-585fbcbf69-hmbsz 
+		pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-sg-25-6-0-7-76df546486-fqrzd 
+		pop-sg [pop-mvc-sg:10.X.X.X] | CPU:500m/1 | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-system-6c759f7c7b-rnrb6 
+		pop-system [pop-mvc-system:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-cmxqs 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	pop-wallet-25-6-0-16-7566b9db59-rqv9g 
+		pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+		pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+	fluentd-node-454g5 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	alertmanager-calico-node-alertmanager-1 
+		alertmanager [alertmanager:v3.21.0-1.0] | CPU:None/None | MEM:200Mi/None
+		config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+	tigera-apiserver-6f7b6767b-tddw5 
+		calico-apiserver [cnx-apiserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		tigera-queryserver [cnx-queryserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+site-alpha-pop-k8s-master-01.internal.domain (rke2):
+	*****PODS******
+	calico-node-5pw8k 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-4rphk 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	system-upgrade-controller-6f86d6d4df-h4bh4 
+		system-upgrade-controller [system-upgrade-controller:v0.13.1] | CPU:None/None | MEM:None/None
+	cloud-controller-manager-site-alpha-pop-k8s-master-01.internal.domain 
+		cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+	etcd-site-alpha-pop-k8s-master-01.internal.domain 
+		etcd [hardened-etcd:v3.5.13-k3s1-build20240910] | CPU:200m/None | MEM:512Mi/None
+	kube-apiserver-site-alpha-pop-k8s-master-01.internal.domain 
+		kube-apiserver [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:1Gi/None
+	kube-controller-manager-site-alpha-pop-k8s-master-01.internal.domain 
+		kube-controller-manager [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:200m/None | MEM:256Mi/None
+	kube-proxy-site-alpha-pop-k8s-master-01.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	kube-scheduler-site-alpha-pop-k8s-master-01.internal.domain 
+		kube-scheduler [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:100m/None | MEM:128Mi/None
+	rke2-coredns-rke2-coredns-76f6bd7996-5qxps 
+		coredns [hardened-coredns:v1.11.3-build20241018] | CPU:100m/100m | MEM:128Mi/128Mi
+	rke2-coredns-rke2-coredns-autoscaler-55669b94d6-nzwbg 
+		autoscaler [hardened-cluster-autoscaler:v1.8.11-build20241014] | CPU:25m/100m | MEM:16Mi/64Mi
+	fluent-bit-929g5 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	monitoring-prometheus-node-exporter-bldz6 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	fluentd-node-8ff9d 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+site-alpha-pop-k8s-master-02.internal.domain (rke2):
+	*****PODS******
+	calico-node-4qpd8 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	calico-typha-95cbc4fc9-zqf9m 
+		calico-typha [typha:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-9d7hz 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	cloud-controller-manager-site-alpha-pop-k8s-master-02.internal.domain 
+		cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+	etcd-site-alpha-pop-k8s-master-02.internal.domain 
+		etcd [hardened-etcd:v3.5.13-k3s1-build20240910] | CPU:200m/None | MEM:512Mi/None
+	kube-apiserver-site-alpha-pop-k8s-master-02.internal.domain 
+		kube-apiserver [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:1Gi/None
+	kube-controller-manager-site-alpha-pop-k8s-master-02.internal.domain 
+		kube-controller-manager [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:200m/None | MEM:256Mi/None
+	kube-proxy-site-alpha-pop-k8s-master-02.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	kube-scheduler-site-alpha-pop-k8s-master-02.internal.domain 
+		kube-scheduler [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:100m/None | MEM:128Mi/None
+	fluent-bit-52d9k 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	monitoring-prometheus-node-exporter-4khcx 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	fluentd-node-prxrl 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	tigera-operator-767b668b49-jqws5 
+		tigera-operator [operator:v1.37.1] | CPU:None/None | MEM:None/None
+site-alpha-pop-k8s-master-03.internal.domain (rke2):
+	*****PODS******
+	calico-node-mvp8j 
+		calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	calico-typha-95cbc4fc9-hjldq 
+		calico-typha [typha:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	csi-node-driver-vk7vh 
+		calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+		csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+	cattle-cluster-agent-56dc7749f4-n4nv9 
+		cluster-register [rancher-agent:v2.8.5] | CPU:None/None | MEM:None/None
+	cloud-controller-manager-site-alpha-pop-k8s-master-03.internal.domain 
+		cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+	etcd-site-alpha-pop-k8s-master-03.internal.domain 
+		etcd [hardened-etcd:v3.5.13-k3s1-build20240910] | CPU:200m/None | MEM:512Mi/None
+	kube-apiserver-site-alpha-pop-k8s-master-03.internal.domain 
+		kube-apiserver [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:1Gi/None
+	kube-controller-manager-site-alpha-pop-k8s-master-03.internal.domain 
+		kube-controller-manager [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:200m/None | MEM:256Mi/None
+	kube-proxy-site-alpha-pop-k8s-master-03.internal.domain 
+		kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+	kube-scheduler-site-alpha-pop-k8s-master-03.internal.domain 
+		kube-scheduler [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:100m/None | MEM:128Mi/None
+	fluent-bit-2rm5f 
+		fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+	monitoring-prometheus-node-exporter-d2wrn 
+		node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+	fluentd-node-pmxqm 
+		fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None

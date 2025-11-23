@@ -1,0 +1,10 @@
+Service name, Count, Version, CPU request, CPU limit, Memory request, Memory limit, JVM heap
+gpas-admin,1,25.2.0,500m,500m,1Gi,1Gi," "
+gpas-back,3,10.X.X.X,2,2,8Gi,8Gi," -Xms4G -Xmx4G"
+gpas-container,6,10.X.X.X,8,8,28Gi,28Gi," -Xms6G -Xmx6G"
+gpas-core,7,10.X.X.X,8,8,24Gi,24Gi," -Xms12G -Xmx12G"
+gpas-forfun,2,10.X.X.X,2,2,4Gi,4Gi," -Xms1508m -Xmx1508m"
+gpas-front,2,10.X.X.X,4,4,16Gi,16Gi," -Xms8G -Xmx8G"
+gpas-maintenance,1,10.X.X.X,8,8,16Gi,16Gi," -Xms7G -Xmx7G"
+gpas-mp,1,10.X.X.X,8,8,24Gi,24Gi," -Xms20G -Xmx20G"
+gpas-chat,1,10.X.X.X,500m,1,2Gi,2Gi," -Xms1536m -Xmx1536m"

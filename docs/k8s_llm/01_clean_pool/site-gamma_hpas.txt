@@ -1,0 +1,388 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "autoscaling/v2",
+            "kind": "HorizontalPodAutoscaler",
+            "metadata": {
+                "annotations": {
+                    "meta.helm.sh/release-name": "argocd",
+                    "meta.helm.sh/release-namespace": "argocd"
+                },
+                "creationTimestamp": "2025-09-30T12:42:16Z",
+                "labels": {
+                    "app.kubernetes.io/component": "repo-server",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "argocd-repo-server",
+                    "app.kubernetes.io/part-of": "argocd",
+                    "app.kubernetes.io/version": "v3.1.5",
+                    "helm.sh/chart": "argo-cd-8.3.7"
+                },
+                "name": "argocd-repo-server",
+                "namespace": "argocd",
+                "resourceVersion": "15452908",
+                "uid": "cd2dced5-7e3a-413b-a3bc-XXXXXXXXXXXX"
+            },
+            "spec": {
+                "maxReplicas": 5,
+                "metrics": [
+                    {
+                        "resource": {
+                            "name": "memory",
+                            "target": {
+                                "averageUtilization": 50,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    },
+                    {
+                        "resource": {
+                            "name": "cpu",
+                            "target": {
+                                "averageUtilization": 50,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "minReplicas": 1,
+                "scaleTargetRef": {
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "name": "argocd-repo-server"
+                }
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2025-09-30T12:42:31Z",
+                        "message": "recent recommendations were higher than current one, applying the highest recent recommendation",
+                        "reason": "ScaleDownStabilized",
+                        "status": "True",
+                        "type": "AbleToScale"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-16T10:20:10Z",
+                        "message": "the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)",
+                        "reason": "ValidMetricFound",
+                        "status": "True",
+                        "type": "ScalingActive"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-17T10:07:57Z",
+                        "message": "the desired replica count is more than the maximum replica count",
+                        "reason": "TooManyReplicas",
+                        "status": "True",
+                        "type": "ScalingLigamma-coreed"
+                    }
+                ],
+                "currentMetrics": [
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 12,
+                                "averageValue": "129048576"
+                            },
+                            "name": "memory"
+                        },
+                        "type": "Resource"
+                    },
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 1,
+                                "averageValue": "1m"
+                            },
+                            "name": "cpu"
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "currentReplicas": 5,
+                "desiredReplicas": 5,
+                "lastScaleTime": "2025-10-17T10:07:57Z"
+            }
+        },
+        {
+            "apiVersion": "autoscaling/v2",
+            "kind": "HorizontalPodAutoscaler",
+            "metadata": {
+                "annotations": {
+                    "meta.helm.sh/release-name": "argocd",
+                    "meta.helm.sh/release-namespace": "argocd"
+                },
+                "creationTimestamp": "2025-09-30T12:42:16Z",
+                "labels": {
+                    "app.kubernetes.io/component": "server",
+                    "app.kubernetes.io/instance": "argocd",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "argocd-server",
+                    "app.kubernetes.io/part-of": "argocd",
+                    "app.kubernetes.io/version": "v3.1.5",
+                    "helm.sh/chart": "argo-cd-8.3.7"
+                },
+                "name": "argocd-server",
+                "namespace": "argocd",
+                "resourceVersion": "15452909",
+                "uid": "9615b6b5-e576-4009-91e9-XXXXXXXXXXXX"
+            },
+            "spec": {
+                "maxReplicas": 5,
+                "metrics": [
+                    {
+                        "resource": {
+                            "name": "memory",
+                            "target": {
+                                "averageUtilization": 50,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    },
+                    {
+                        "resource": {
+                            "name": "cpu",
+                            "target": {
+                                "averageUtilization": 50,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "minReplicas": 1,
+                "scaleTargetRef": {
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "name": "argocd-server"
+                }
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2025-09-30T12:42:31Z",
+                        "message": "recommended size matches current size",
+                        "reason": "ReadyForNewScale",
+                        "status": "True",
+                        "type": "AbleToScale"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-17T09:53:53Z",
+                        "message": "the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)",
+                        "reason": "ValidMetricFound",
+                        "status": "True",
+                        "type": "ScalingActive"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-16T10:26:58Z",
+                        "message": "the desired replica count is more than the maximum replica count",
+                        "reason": "TooManyReplicas",
+                        "status": "True",
+                        "type": "ScalingLigamma-coreed"
+                    }
+                ],
+                "currentMetrics": [
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 92,
+                                "averageValue": "96888422400m"
+                            },
+                            "name": "memory"
+                        },
+                        "type": "Resource"
+                    },
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 1,
+                                "averageValue": "1m"
+                            },
+                            "name": "cpu"
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "currentReplicas": 5,
+                "desiredReplicas": 5,
+                "lastScaleTime": "2025-09-30T12:43:46Z"
+            }
+        },
+        {
+            "apiVersion": "autoscaling/v2",
+            "kind": "HorizontalPodAutoscaler",
+            "metadata": {
+                "annotations": {
+                    "argocd.argoproj.io/tracking-id": "istio:autoscaling/HorizontalPodAutoscaler:istio-system/istiod",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{\"argocd.argoproj.io/tracking-id\":\"istio:autoscaling/HorizontalPodAutoscaler:istio-system/istiod\"},\"labels\":{\"app\":\"istiod\",\"app.kubernetes.io/instance\":\"istio\",\"app.kubernetes.io/managed-by\":\"Helm\",\"app.kubernetes.io/name\":\"istiod\",\"app.kubernetes.io/part-of\":\"istio\",\"app.kubernetes.io/version\":\"1.26.1\",\"helm.sh/chart\":\"istiod-1.26.1\",\"install.operator.istio.io/owning-resource\":\"unknown\",\"istio.io/rev\":\"default\",\"operator.istio.io/component\":\"Pilot\",\"release\":\"istio\"},\"name\":\"istiod\",\"namespace\":\"istio-system\"},\"spec\":{\"maxReplicas\":5,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":80,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":1,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"istiod\"}}}\n"
+                },
+                "creationTimestamp": "2025-09-30T12:45:50Z",
+                "labels": {
+                    "app": "istiod",
+                    "app.kubernetes.io/instance": "istio",
+                    "app.kubernetes.io/managed-by": "Helm",
+                    "app.kubernetes.io/name": "istiod",
+                    "app.kubernetes.io/part-of": "istio",
+                    "app.kubernetes.io/version": "1.26.1",
+                    "helm.sh/chart": "istiod-1.26.1",
+                    "install.operator.istio.io/owning-resource": "unknown",
+                    "istio.io/rev": "default",
+                    "operator.istio.io/component": "Pilot",
+                    "release": "istio"
+                },
+                "name": "istiod",
+                "namespace": "istio-system",
+                "resourceVersion": "15452907",
+                "uid": "f107b6f6-b339-4872-87e6-XXXXXXXXXXXX"
+            },
+            "spec": {
+                "maxReplicas": 5,
+                "metrics": [
+                    {
+                        "resource": {
+                            "name": "cpu",
+                            "target": {
+                                "averageUtilization": 80,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "minReplicas": 1,
+                "scaleTargetRef": {
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "name": "istiod"
+                }
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2025-09-30T12:46:05Z",
+                        "message": "recommended size matches current size",
+                        "reason": "ReadyForNewScale",
+                        "status": "True",
+                        "type": "AbleToScale"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-17T09:53:53Z",
+                        "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                        "reason": "ValidMetricFound",
+                        "status": "True",
+                        "type": "ScalingActive"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-12T06:00:30Z",
+                        "message": "the desired count is within the acceptable range",
+                        "reason": "DesiredWithinRange",
+                        "status": "False",
+                        "type": "ScalingLigamma-coreed"
+                    }
+                ],
+                "currentMetrics": [
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 4,
+                                "averageValue": "22m"
+                            },
+                            "name": "cpu"
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "currentReplicas": 1,
+                "desiredReplicas": 1,
+                "lastScaleTime": "2025-10-01T17:15:57Z"
+            }
+        },
+        {
+            "apiVersion": "autoscaling/v2",
+            "kind": "HorizontalPodAutoscaler",
+            "metadata": {
+                "annotations": {
+                    "argocd.argoproj.io/tracking-id": "pop-dgh-adapter:autoscaling/HorizontalPodAutoscaler:pop-site-gamma/pop-dgh-adapter",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"autoscaling/v2\",\"kind\":\"HorizontalPodAutoscaler\",\"metadata\":{\"annotations\":{\"argocd.argoproj.io/tracking-id\":\"pop-dgh-adapter:autoscaling/HorizontalPodAutoscaler:pop-site-gamma/pop-dgh-adapter\"},\"labels\":{\"app\":\"pop-dgh-adapter\",\"release\":\"pop-dgh-adapter\"},\"name\":\"pop-dgh-adapter\",\"namespace\":\"pop-site-gamma\"},\"spec\":{\"maxReplicas\":5,\"metrics\":[{\"resource\":{\"name\":\"cpu\",\"target\":{\"averageUtilization\":80,\"type\":\"Utilization\"}},\"type\":\"Resource\"}],\"minReplicas\":2,\"scaleTargetRef\":{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"name\":\"pop-dgh-adapter\"}}}\n"
+                },
+                "creationTimestamp": "2025-10-01T16:20:50Z",
+                "labels": {
+                    "app": "pop-dgh-adapter",
+                    "release": "pop-dgh-adapter"
+                },
+                "name": "pop-dgh-adapter",
+                "namespace": "pop-site-gamma",
+                "resourceVersion": "15440300",
+                "uid": "aa2f76d2-a2d9-48ea-a14b-XXXXXXXXXXXX"
+            },
+            "spec": {
+                "maxReplicas": 5,
+                "metrics": [
+                    {
+                        "resource": {
+                            "name": "cpu",
+                            "target": {
+                                "averageUtilization": 80,
+                                "type": "Utilization"
+                            }
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "minReplicas": 2,
+                "scaleTargetRef": {
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "name": "pop-dgh-adapter"
+                }
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2025-10-01T16:21:06Z",
+                        "message": "recommended size matches current size",
+                        "reason": "ReadyForNewScale",
+                        "status": "True",
+                        "type": "AbleToScale"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-17T09:53:53Z",
+                        "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+                        "reason": "ValidMetricFound",
+                        "status": "True",
+                        "type": "ScalingActive"
+                    },
+                    {
+                        "lastTransitionTime": "2025-10-16T10:31:42Z",
+                        "message": "the desired replica count is less than the minimum replica count",
+                        "reason": "TooFewReplicas",
+                        "status": "True",
+                        "type": "ScalingLigamma-coreed"
+                    }
+                ],
+                "currentMetrics": [
+                    {
+                        "resource": {
+                            "current": {
+                                "averageUtilization": 0,
+                                "averageValue": "1m"
+                            },
+                            "name": "cpu"
+                        },
+                        "type": "Resource"
+                    }
+                ],
+                "currentReplicas": 2,
+                "desiredReplicas": 2,
+                "lastScaleTime": "2025-10-01T16:21:06Z"
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

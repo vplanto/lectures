@@ -1,0 +1,19 @@
+Scale target	Min replicas	Max replicas	metrics
+
+Namespace: argocd 
+argocd-repo-server [Deployment]	min: 1	max: 5
+					memory [Resource]: {'averageUtilization': 50, 'type': 'Utilization'}
+					cpu [Resource]: {'averageUtilization': 50, 'type': 'Utilization'}
+argocd-server [Deployment]	min: 1	max: 5
+					memory [Resource]: {'averageUtilization': 50, 'type': 'Utilization'}
+					cpu [Resource]: {'averageUtilization': 50, 'type': 'Utilization'}
+
+Namespace: istio-system 
+istiod [Deployment]	min: 1	max: 5
+					cpu [Resource]: {'averageUtilization': 80, 'type': 'Utilization'}
+
+Namespace: pop-site-alpha 
+pop-dgh-adapter [Deployment]	min: 2	max: 5
+					cpu [Resource]: {'averageUtilization': 80, 'type': 'Utilization'}
+pop-perfmock [Deployment]	min: 2	max: 2
+					cpu [Resource]: {'averageUtilization': 90, 'type': 'Utilization'}

@@ -1,0 +1,175 @@
+argo-events,argo-events-controller-manager-7dd45798b7-smtqh,argo-events-controller-manager-7dd45798b7 [ReplicaSet],1,controller-manager [argo-events:v1.9.1] | CPU:None/None | MEM:None/None
+argo-workflows,argo-workflows-server-5748f45bc7-tl8jx,argo-workflows-server-5748f45bc7 [ReplicaSet],1,argo-server [argocli:v3.5.8] | CPU:None/None | MEM:None/None
+,argo-workflows-workflow-controller-6b996f7c4b-8dsd5,argo-workflows-workflow-controller-6b996f7c4b [ReplicaSet],1,controller [workflow-controller:v3.5.8] | CPU:None/None | MEM:None/None
+argocd,argocd-application-controller-0,argocd-application-controller [StatefulSet],1,application-controller [argocd-sops:v2.10.7] | CPU:100m/1 | MEM:1Gi/3Gi
+,argocd-applicationset-controller-7f87d6c64f-f7qjl,argocd-applicationset-controller-7f87d6c64f [ReplicaSet],1,applicationset-controller [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+,argocd-dex-server-bbb9588d5-4rrkb,argocd-dex-server-bbb9588d5 [ReplicaSet],1,dex-server [dex:v2.38.0] | CPU:None/None | MEM:None/None
+,argocd-notifications-controller-576cbbf696-8wq4t,argocd-notifications-controller-576cbbf696 [ReplicaSet],1,notifications-controller [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+,argocd-redis-6bdb46bd6-fjqvx,argocd-redis-6bdb46bd6 [ReplicaSet],1,redis [redis:7.2.4-alpine] | CPU:None/None | MEM:None/None
+,argocd-repo-server-644dbbf754-cw7l2,argocd-repo-server-644dbbf754 [ReplicaSet],2,repo-server [argocd-sops:v2.10.7] | CPU:100m/None | MEM:1Gi/1Gi
+,argocd-server-5dcc5b6d8-s4mpx,argocd-server-5dcc5b6d8 [ReplicaSet],1,server [argocd-sops:v2.10.7] | CPU:None/None | MEM:None/None
+calico-cloud,calico-cloud-649b5fdb7d-rs4d5,calico-cloud-649b5fdb7d [ReplicaSet],1,calico-cloud [cc-operator:v1.20.0] | CPU:200m/250m | MEM:200Mi/300Mi
+,cc-core-operator-567945d476-cxgvz,cc-core-operator-567945d476 [ReplicaSet],1,cc-core [cc-core:v0.2.18] | CPU:10m/500m | MEM:64Mi/128Mi
+calico-system,calico-kube-controllers-586477cbb8-gnkbm,calico-kube-controllers-586477cbb8 [ReplicaSet],1,calico-kube-controllers [kube-controllers:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,calico-node-4mpw7,calico-node [DaemonSet],10,calico-node [cnx-node:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,calico-typha-95cbc4fc9-5lbv2,calico-typha-95cbc4fc9 [ReplicaSet],3,calico-typha [typha:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,csi-node-driver-4rphk,csi-node-driver [DaemonSet],10,calico-csi [csi:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,,,,csi-node-driver-registrar [node-driver-registrar:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+cattle-fleet-system,fleet-agent-f7dc57db7-sqpff,fleet-agent-f7dc57db7 [ReplicaSet],1,fleet-agent [fleet-agent:v0.9.5] | CPU:None/None | MEM:None/None
+cattle-system,cattle-cluster-agent-56dc7749f4-lqjgc,cattle-cluster-agent-56dc7749f4 [ReplicaSet],2,cluster-register [rancher-agent:v2.8.5] | CPU:None/None | MEM:None/None
+,rancher-webhook-fd7599678-v8z6k,rancher-webhook-fd7599678 [ReplicaSet],1,rancher-webhook [rancher-webhook:v0.4.7] | CPU:None/None | MEM:None/None
+,system-upgrade-controller-6f86d6d4df-h4bh4,system-upgrade-controller-6f86d6d4df [ReplicaSet],1,system-upgrade-controller [system-upgrade-controller:v0.13.1] | CPU:None/None | MEM:None/None
+cert-manager,cert-manager-5b97689c67-5pt9q,cert-manager-5b97689c67 [ReplicaSet],1,cert-manager [cert-manager-controller:v1.8.2] | CPU:None/None | MEM:None/None
+,cert-manager-cainjector-d9cdd94b5-bdd6d,cert-manager-cainjector-d9cdd94b5 [ReplicaSet],1,cert-manager [cert-manager-cainjector:v1.8.2] | CPU:None/None | MEM:None/None
+,cert-manager-webhook-5f46799497-qnvxw,cert-manager-webhook-5f46799497 [ReplicaSet],1,cert-manager [cert-manager-webhook:v1.8.2] | CPU:None/None | MEM:None/None
+consul,consul-consul-b6qhd,consul-consul [DaemonSet],7,consul [consul:1.10.0] | CPU:100m/100m | MEM:100Mi/100Mi
+,consul-consul-server-0,consul-consul-server [StatefulSet],3,consul [consul:1.10.0] | CPU:100m/1 | MEM:128Mi/1Gi
+,nginx-upstream-resolver-7c459cd797-tmlkx,nginx-upstream-resolver-7c459cd797 [ReplicaSet],1,nginx-upstream-resolver [pg_tools:0.0.3] | CPU:100m/200m | MEM:128Mi/128Mi
+couchbase-operator,couchbase-operator-couchbase-admission-controller-5f8bd5f5cdtgg,couchbase-operator-couchbase-admission-controller-5f8bd5f554 [ReplicaSet],1,couchbase-operator [admission-controller:2.7.0] | CPU:None/None | MEM:None/None
+,couchbase-operator-couchbase-operator-dc9f8984b-rf4k7,couchbase-operator-couchbase-operator-dc9f8984b [ReplicaSet],1,couchbase-operator [operator:2.7.0] | CPU:None/None | MEM:None/None
+csi-powerstore,karavi-metrics-powerstore-7c8f4775b7-qj7js,karavi-metrics-powerstore-7c8f4775b7 [ReplicaSet],1,karavi-metrics-powerstore [csm-metrics-powerstore:v1.12.0] | CPU:None/None | MEM:None/None
+,karavi-topology-6f44864d99-285sh,karavi-topology-6f44864d99 [ReplicaSet],1,karavi-topology [csm-topology:v1.12.0] | CPU:None/None | MEM:None/None
+,otel-collector-5d7f4db8f7-j6dq8,otel-collector-5d7f4db8f7 [ReplicaSet],1,nginx-proxy [nginx-unprivileged:1.27] | CPU:None/None | MEM:None/None
+,,,,otel-collector [opentelemetry-collector:0.125.0] | CPU:None/None | MEM:None/None
+,pod-demo,N/A [N/A],1,nginx [nginx] | CPU:None/None | MEM:None/None
+,powerstore-controller-648dbb59dc-d49bz,powerstore-controller-648dbb59dc [ReplicaSet],1,attacher [csi-attacher:v4.8.1] | CPU:None/None | MEM:None/None
+,,,,resizer [csi-resizer:v1.13.2] | CPU:None/None | MEM:None/None
+,,,,provisioner [csi-provisioner:v5.2.0] | CPU:None/None | MEM:None/None
+,,,,snapshotter [csi-snapshotter:v8.2.1] | CPU:None/None | MEM:None/None
+,,,,csi-metadata-retriever [csi-metadata-retriever:v1.11.0] | CPU:None/None | MEM:None/None
+,,,,driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+,powerstore-node-25gln,powerstore-node [DaemonSet],7,driver [csi-powerstore:v2.14.0] | CPU:None/None | MEM:None/None
+,,,,registrar [csi-node-driver-registrar:v2.13.0] | CPU:None/None | MEM:None/None
+falcon-image-analyzer,falcon-image-analyzer-5564bf9768-8n5r2,falcon-image-analyzer-5564bf9768 [ReplicaSet],1,falcon-image-analyzer [falcon-imageanalyzer:1.0.15] | CPU:None/None | MEM:None/None
+falcon-kac,falcon-kac-7fb56dd795-z85f5,falcon-kac-7fb56dd795 [ReplicaSet],1,falcon-client [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:500m/750m | MEM:384Mi/384Mi
+,,,,falcon-watcher [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:500m/750m | MEM:384Mi/384Mi
+,,,,falcon-ac [falcon-kac:7.20.0-1807.container.x86_64.Release.EU-1] | CPU:300m/300m | MEM:256Mi/256Mi
+gpas-site-alpha,gpas-admin-5cc8765c97-ztwr5,gpas-admin-5cc8765c97 [ReplicaSet],1,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-admin [gpas-admin:25.2.0] | CPU:500m/500m | MEM:1Gi/1Gi
+,gpas-back-6684885596-8d4xm,gpas-back-6684885596 [ReplicaSet],3,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-back [gpas-back:10.X.X.X] | CPU:2/2 | MEM:8Gi/8Gi | JAVA_OPTS:-Xms4G -Xmx4G
+,gpas-container-blue-zone-a-0,gpas-container-blue-zone-a [StatefulSet],6,sync-sidecar [gpas-engines-downloader:0.3.16] | CPU:None/None | MEM:None/None
+,,,,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-container [gpas-container:10.X.X.X] | CPU:8/8 | MEM:28Gi/28Gi | JAVA_OPTS:-Xms6G -Xmx6G
+,gpas-core-blue-777884f8b4-5hxr7,gpas-core-blue-777884f8b4 [ReplicaSet],7,git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+,,,,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-core [gpas-core:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms12G -Xmx12G
+,gpas-couchbase-0000,gpas-couchbase [CouchbaseCluster],7,couchbase-server [server:enterprise-7.2.5] | CPU:16/16 | MEM:64Gi/64Gi
+,,,,metrics [exporter:1.0.5] | CPU:None/None | MEM:None/None
+,gpas-couchlabs-exporter-574965f98d-twzmd,gpas-couchlabs-exporter-574965f98d [ReplicaSet],1,prometheus-couchlabs-exporter [couchlabs_exporter:v1.0.1] | CPU:None/None | MEM:None/None
+,gpas-forfun-76d5548d44-dqzjx,gpas-forfun-76d5548d44 [ReplicaSet],2,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-forfun [forfun:10.X.X.X] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1508m -Xmx1508m
+,gpas-front-64dfb9689d-lxkgp,gpas-front-64dfb9689d [ReplicaSet],2,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-front [gpas-front:10.X.X.X] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8G -Xmx8G
+,gpas-maintenance-856d5966cc-pnl4d,gpas-maintenance-856d5966cc [ReplicaSet],1,git-checkout [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+,,,,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-maintenance [gpas-core:10.X.X.X] | CPU:8/8 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms7G -Xmx7G
+,gpas-mp-687df9444b-rxhfr,gpas-mp-687df9444b [ReplicaSet],1,core-logrotate [logrotate-tool:0.1] | CPU:None/None | MEM:None/None
+,,,,gpas-mp [gpasmp:10.X.X.X] | CPU:8/8 | MEM:24Gi/24Gi | JAVA_OPTS:-Xms20G -Xmx20G
+gpas-chat,gpas-chat-6567c69d74-d7fvg,gpas-chat-6567c69d74 [ReplicaSet],1,gpas-chat [ms-chat-service:10.X.X.X] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+,popgpas-redis-cluster-node-0,popgpas-redis-cluster-node [StatefulSet],3,redis [redis:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/1Gi
+,,,,sentinel [redis-sentinel:7.0.11-debian-11-r27] | CPU:100m/1 | MEM:128Mi/512Mi
+,,,,metrics [redis-exporter:1.62.0-debian-12-r3] | CPU:None/None | MEM:None/None
+,popgpas-sentinel-exporter-8688799f4c-zn4vd,popgpas-sentinel-exporter-8688799f4c [ReplicaSet],1,popgpas-sentinel-exporter [redis-exporter:1.62.0-debian-12-r3] | CPU:10m/100m | MEM:64Mi/256Mi | JAVA_OPTS:-Xms512m -Xmx512m
+istio-system,cert-facts-istio-brands-5784ddf788-4wtpz,cert-facts-istio-brands-5784ddf788 [ReplicaSet],1,get-facts [openssl] | CPU:None/None | MEM:None/None
+,,,,expose-json [busybox] | CPU:None/None | MEM:None/None
+,,,,x509-exporter [x509-certificate-exporter:3.17.0] | CPU:None/None | MEM:None/None
+,istio-ingressgateway-private-6bjht,istio-ingressgateway-private [DaemonSet],7,istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+,istio-ingressgateway-privil-42cg2,istio-ingressgateway-privil [DaemonSet],7,istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+,istio-ingressgateway-public-28bgf,istio-ingressgateway-public [DaemonSet],7,istio-proxy [proxyv2:1.24.0-distroless] | CPU:1/2 | MEM:1Gi/1Gi
+,istiod-645f694fd-6rxgx,istiod-645f694fd [ReplicaSet],1,discovery [pilot:1.24.0-distroless] | CPU:500m/None | MEM:2Gi/None
+,kiali-74989dbf4f-qft65,kiali-74989dbf4f [ReplicaSet],1,kiali [kiali:v2.7.1] | CPU:10m/None | MEM:64Mi/1Gi
+,ldap-auth-proxy-bb899cb7d-rqbjs,ldap-auth-proxy-bb899cb7d [ReplicaSet],1,ldap-auth-proxy [nginx-ldap-auth:0.0.7] | CPU:10m/50m | MEM:64Mi/120Mi
+kube-system,cloud-controller-manager-site-alpha-pop-k8s-master-01.internal.domain,site-alpha-pop-k8s-master-01.internal.domain [Node],6,cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+,cloud-controller-manager-site-alpha-pop-k8s-master-02.internal.domain,site-alpha-pop-k8s-master-02.internal.domain [Node],6,cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+,cloud-controller-manager-site-alpha-pop-k8s-master-03.internal.domain,site-alpha-pop-k8s-master-03.internal.domain [Node],6,cloud-controller-manager [rke2-cloud-provider:v1.28.15-0.XXXXXXXXXXXX52-XXXXXXXXXXXX-build20241016] | CPU:100m/None | MEM:128Mi/None
+,docker-registry-6d7b9cfbd6-gpqrb,docker-registry-6d7b9cfbd6 [ReplicaSet],1,nginx [nginx:1.21.5-debian-10-r3] | CPU:None/None | MEM:None/None
+,,,,docker-registry [registry:2] | CPU:300m/2 | MEM:5Gi/5Gi
+,kube-proxy-bramega330.internal.domain,bramega330.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega340.internal.domain,bramega340.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega350.internal.domain,bramega350.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega360.internal.domain,bramega360.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega370.internal.domain,bramega370.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega380.internal.domain,bramega380.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kube-proxy-bramega390.internal.domain,bramega390.internal.domain [Node],1,kube-proxy [hardened-kubernetes:v1.28.15-rke2r1-build20241023] | CPU:250m/None | MEM:128Mi/None
+,kubernetes-dashboard-5f478c6b46-x4dkp,kubernetes-dashboard-5f478c6b46 [ReplicaSet],1,kubernetes-dashboard [dashboard:v2.7.0] | CPU:100m/2 | MEM:200Mi/512Mi
+,,,,dashboard-metrics-scraper [metrics-scraper:v1.0.9] | CPU:None/None | MEM:None/None
+,kubernetes-dashboard-metrics-server-84ff44ffdb-h84nr,kubernetes-dashboard-metrics-server-84ff44ffdb [ReplicaSet],1,metrics-server [metrics-server:v0.6.2] | CPU:100m/1 | MEM:None/None
+,rke2-coredns-rke2-coredns-76f6bd7996-5qxps,rke2-coredns-rke2-coredns-76f6bd7996 [ReplicaSet],4,coredns [hardened-coredns:v1.11.3-build20241018] | CPU:100m/100m | MEM:128Mi/128Mi
+,rke2-coredns-rke2-coredns-autoscaler-55669b94d6-nzwbg,rke2-coredns-rke2-coredns-autoscaler-55669b94d6 [ReplicaSet],1,autoscaler [hardened-cluster-autoscaler:v1.8.11-build20241014] | CPU:25m/100m | MEM:16Mi/64Mi
+,rke2-metrics-server-7694cf7d77-r6pbr,rke2-metrics-server-7694cf7d77 [ReplicaSet],1,metrics-server [hardened-k8s-metrics-server:v0.7.1-build20241008] | CPU:100m/None | MEM:200Mi/None
+,rke2-snapshot-controller-5c9df4d7d6-rjhb9,rke2-snapshot-controller-5c9df4d7d6 [ReplicaSet],1,rke2-snapshot-controller [mirrored-sig-storage-snapshot-controller:v8.1.0] | CPU:None/None | MEM:None/None
+,rke2-snapshot-validation-webhook-54f487ff94-4jmv5,rke2-snapshot-validation-webhook-54f487ff94 [ReplicaSet],1,rke2-snapshot-validation-webhook [mirrored-sig-storage-snapshot-validation-webhook:v8.1.0] | CPU:None/None | MEM:None/None
+logging,elasticsearch-master-0,elasticsearch-master [StatefulSet],41,elasticsearch [elasticsearch:7.17.16] | CPU:4/4 | MEM:16Gi/16Gi | JAVA_OPTS:-Xms8g -Xmx8g
+,fluent-bit-2rm5f,fluent-bit [DaemonSet],10,fluent-bit [fluent-bit:3.0.4] | CPU:10m/2 | MEM:100Mi/8Gi
+,kibana-aio-kibana-877f8fdd4-pgg7c,kibana-aio-kibana-877f8fdd4 [ReplicaSet],1,kibana [kibana:7.16.2] | CPU:500m/1 | MEM:2Gi/2Gi
+,kubernetes-events-67cb567d55-6745s,kubernetes-events-67cb567d55 [ReplicaSet],1,fluent-bit [fluent-bit:3.0.4] | CPU:10m/200m | MEM:None/None
+,logstash-aio-logstash-0,logstash-aio-logstash [StatefulSet],10,logstash [logstash:7.17.16] | CPU:4/4 | MEM:5Gi/8Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+mongodb,mongodb-0,mongodb [StatefulSet],3,mongodb [mongodb:8.0.10-debian-12-r0] | CPU:4/4 | MEM:8Gi/8Gi
+,,,,metrics [mongodb-exporter:0.45.0-debian-12-r1] | CPU:100m/150m | MEM:128Mi/192Mi
+monitoring,alertmanager-monitoring-kube-prometheus-alertmanager-0,alertmanager-monitoring-kube-prometheus-alertmanager [StatefulSet],1,alertmanager [alertmanager:v0.24.0] | CPU:None/None | MEM:200Mi/None
+,,,,config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+,elastalert2-54c5c6dd44-5dccd,elastalert2-54c5c6dd44 [ReplicaSet],1,elastalert [elastalert2:2.12.0] | CPU:None/None | MEM:None/None
+,monitoring-grafana-0,monitoring-grafana [StatefulSet],1,grafana [grafana_original:10.4.4] | CPU:300m/1 | MEM:1Gi/4Gi
+,,,,dashboards-downloader [pg_tools:0.0.3] | CPU:None/None | MEM:None/None
+,monitoring-grafana-image-renderer-5db5c9c7c4-gzq26,monitoring-grafana-image-renderer-5db5c9c7c4 [ReplicaSet],1,grafana-image-renderer [grafana-image-renderer:3.11.0] | CPU:50m/2 | MEM:2Gi/2Gi
+,monitoring-kube-prometheus-operator-677757d4c6-ncctb,monitoring-kube-prometheus-operator-677757d4c6 [ReplicaSet],1,kube-prometheus-stack [prometheus-operator:v0.53.0] | CPU:100m/1 | MEM:256Mi/256Mi
+,monitoring-kube-state-metrics-7d4ddc7dcc-txtt9,monitoring-kube-state-metrics-7d4ddc7dcc [ReplicaSet],1,kube-state-metrics [kube-state-metrics:v2.13.0] | CPU:100m/1 | MEM:None/None
+,monitoring-prometheus-node-exporter-4khcx,monitoring-prometheus-node-exporter [DaemonSet],10,node-exporter [node-exporter:v1.0.1] | CPU:None/None | MEM:None/None
+,pop-release-status-29183675-hwfvj,pop-release-status-29183675 [Job],1,main [pg_tools:0.0.3] | CPU:1/1 | MEM:512Mi/512Mi
+,prometheus-adapter-797dbcfcb5-twqxz,prometheus-adapter-797dbcfcb5 [ReplicaSet],1,prometheus-adapter [k8s-prometheus-adapter-amd64:v0.8.4] | CPU:100m/1 | MEM:1Gi/2Gi
+,prometheus-exporters-prometheus-blackbox-exporter-6c86c589m98m6,prometheus-exporters-prometheus-blackbox-exporter-6c86c58975 [ReplicaSet],1,blackbox-exporter [blackbox-exporter:v0.19.0] | CPU:300m/1 | MEM:128Mi/128Mi
+,prometheus-exporters-prometheus-consul-exporter-XXXXXXXXXXXXtnt,prometheus-exporters-prometheus-consul-exporter-76dfc44764 [ReplicaSet],1,prometheus-consul-exporter [consul-exporter:v0.4.0] | CPU:100m/100m | MEM:128Mi/128Mi
+,prometheus-exporters-prometheus-elasticsearch-exporter-7ddkvwbw,prometheus-exporters-prometheus-elasticsearch-exporter-7dd5fdff57 [ReplicaSet],1,exporter [elasticsearch-exporter:v1.3.0] | CPU:500m/1 | MEM:1Gi/1Gi
+,prometheus-exporters-prometheus-es-exporter-78dd6c4579-57g2f,prometheus-exporters-prometheus-es-exporter-78dd6c4579 [ReplicaSet],1,prometheus-es-exporter [prometheus-es-exporter:0.14.0] | CPU:100m/1 | MEM:128Mi/128Mi
+,prometheus-monitoring-kube-prometheus-prometheus-0,prometheus-monitoring-kube-prometheus-prometheus [StatefulSet],1,prometheus [prometheus:v2.54.1] | CPU:4/4 | MEM:30Gi/30Gi
+,,,,config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+,prometheus-pushgateway-58c8577b88-vnb7l,prometheus-pushgateway-58c8577b88 [ReplicaSet],1,pushgateway [pushgateway:v1.5.1] | CPU:None/None | MEM:None/None
+,telegraf-cbd65b598-zxnc6,telegraf-cbd65b598 [ReplicaSet],1,telegraf [telegraf:1.21-alpine] | CPU:2/2 | MEM:4Gi/4Gi
+,vm-single-gpas-server-0,vm-single-gpas-server [StatefulSet],1,vm-single-gpas-server [victoria-metrics:v1.96.0] | CPU:500m/2 | MEM:2Gi/8Gi
+,vm-single-victoria-metrics-single-server-0,vm-single-victoria-metrics-single-server [StatefulSet],1,victoria-metrics-single-server [victoria-metrics:v1.96.0] | CPU:1/2 | MEM:4Gi/8Gi
+,vmcluster-victoria-metrics-cluster-vminsert-6664c8f7fd-k5d5r,vmcluster-victoria-metrics-cluster-vminsert-6664c8f7fd [ReplicaSet],2,victoria-metrics-cluster-vminsert [vminsert:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/2Gi
+,vmcluster-victoria-metrics-cluster-vmselect-7569b99b94-nbv6s,vmcluster-victoria-metrics-cluster-vmselect-7569b99b94 [ReplicaSet],2,victoria-metrics-cluster-vmselect [vmselect:v1.96.0-cluster] | CPU:500m/2 | MEM:256Mi/256Mi
+,vmcluster-victoria-metrics-cluster-vmstorage-0,vmcluster-victoria-metrics-cluster-vmstorage [StatefulSet],2,victoria-metrics-cluster-vmstorage [vmstorage:v1.96.0-cluster] | CPU:100m/1 | MEM:8Gi/12Gi
+nfs-provisioner,nfs-provisioner-6cf78f7b-6mnwf,nfs-provisioner-6cf78f7b [ReplicaSet],1,nfs-subdir-external-provisioner [nfs-subdir-external-provisioner:v4.0.2] | CPU:None/None | MEM:None/None
+nginx,nginx-be-579d85775c-297mm,nginx-be-579d85775c [ReplicaSet],2,nginx [nginx:1.21.6-debian-10-r69] | CPU:500m/2 | MEM:500Mi/1Gi
+,,,,metrics [nginx-exporter:0.10.0-debian-10-r8] | CPU:500m/2 | MEM:500Mi/1Gi
+,,,,consul-template [consul-template:0.27.2] | CPU:100m/200m | MEM:128Mi/128Mi
+pop-site-alpha,ms-wallet-25-5-0-22-84c844cf48-bbcpz,ms-wallet-25-5-0-22-84c844cf48 [ReplicaSet],2,ms-wallet [ms-wallet:10.X.X.X] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1400m -Xmx1400m
+,pop-admin-6bd95b49fb-b9zwf,pop-admin-6bd95b49fb [ReplicaSet],1,pop-admin [pop-mvc-admin:10.X.X.X] | CPU:2/2 | MEM:5Gi/5Gi | JAVA_OPTS:-Xms4096m -Xmx4096m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-cms-5c9c4cf74d-vwvqs,pop-cms-5c9c4cf74d [ReplicaSet],1,pop-cms [ms-cms:10.X.X.X] | CPU:1/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+,pop-config-server-5c66f5b857-mg6dm,pop-config-server-5c66f5b857 [ReplicaSet],2,pop-config-server [pop-config-server:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms750m -Xmx750m
+,pop-dgh-adapter-bb7875fb5-dq5xc,pop-dgh-adapter-bb7875fb5 [ReplicaSet],2,pop-dgh-adapter [pop-dgh-adapter:2.1.8] | CPU:500m/1 | MEM:2Gi/2Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+,pop-gcs-7774f47985-htwf5,pop-gcs-7774f47985 [ReplicaSet],2,pop-gcs [ms-gcs:10.X.X.X] | CPU:500m/500m | MEM:1536Mi/1536Mi | JAVA_OPTS:-Xms3072Mi -Xmx3072Mi
+,pop-greentube-25-6-0-7-dbb9765dc-5r928,pop-greentube-25-6-0-7-dbb9765dc [ReplicaSet],2,pop-greentube [pop-mvc-greentube:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-launcher-25-6-0-20-57d9f48549-74t4h,pop-launcher-25-6-0-20-57d9f48549 [ReplicaSet],2,pop-launcher [pop-mvc-launcher:10.X.X.X] | CPU:1/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms1536m -Xmx1536m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-mp-67684b6688-m5qvf,pop-mp-67684b6688 [ReplicaSet],2,pop-mp [pop-mp:23.9.6] | CPU:2/2 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3512m -Xmx3512m
+,pop-perfmock-5797dc7bff-ptbhc,pop-perfmock-5797dc7bff [ReplicaSet],2,pop-perfmock [perfmock:b2f40ae] | CPU:1/1 | MEM:256Mi/1Gi
+,pop-png-25-6-0-7-7fd7d66699-l7mln,pop-png-25-6-0-7-7fd7d66699 [ReplicaSet],2,pop-png [pop-mvc-png:10.X.X.X] | CPU:1/2 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-push-25-6-0-15-585fbcbf69-5wnzm,pop-push-25-6-0-15-585fbcbf69 [ReplicaSet],5,pop-push [pop-mvc-push:10.X.X.X] | CPU:2/4 | MEM:3Gi/3Gi | JAVA_OPTS:-Xms2048m -Xmx2048m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-router-8cc55d58d-5247w,pop-router-8cc55d58d [ReplicaSet],4,pop-router [pop-mvc-router:10.X.X.X] | CPU:8/8 | MEM:11Gi/11Gi | JAVA_OPTS:-Xms8g -Xmx8g
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-sg-25-6-0-7-76df546486-cmd8f,pop-sg-25-6-0-7-76df546486 [ReplicaSet],2,pop-sg [pop-mvc-sg:10.X.X.X] | CPU:500m/1 | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-system-6c759f7c7b-h9wxk,pop-system-6c759f7c7b [ReplicaSet],2,pop-system [pop-mvc-system:10.X.X.X] | CPU:500m/500m | MEM:1Gi/1Gi | JAVA_OPTS:-Xms512m -Xmx512m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+,pop-wallet-25-6-0-16-7566b9db59-6mj6r,pop-wallet-25-6-0-16-7566b9db59 [ReplicaSet],12,pop-wallet [pop-mvc-wallet:10.X.X.X] | CPU:2/4 | MEM:4Gi/4Gi | JAVA_OPTS:-Xms3072m -Xmx3072m
+,,,,pop-gc-logs-collector [pg_tools:0.0.3] | CPU:20m/200m | MEM:128Mi/512Mi
+rapid7,rapid7-monitor-5884b4585c-p762b,rapid7-monitor-5884b4585c [ReplicaSet],1,kubernetes-agent [kubernetes-monitor:2.0.1] | CPU:None/None | MEM:1Gi/2Gi
+tigera-fluentd,fluentd-node-454g5,fluentd-node [DaemonSet],10,fluentd [fluentd:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+tigera-guardian,tigera-guardian-564fb4d4cd-pzwn2,tigera-guardian-564fb4d4cd [ReplicaSet],1,tigera-guardian [guardian:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+tigera-intrusion-detection,intrusion-detection-controller-865df858f5-gqzwj,intrusion-detection-controller-865df858f5 [ReplicaSet],1,controller [intrusion-detection-controller:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,,,,webhooks-processor [webhooks-processor:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+tigera-operator,tigera-operator-767b668b49-jqws5,tigera-operator-767b668b49 [ReplicaSet],1,tigera-operator [operator:v1.37.1] | CPU:None/None | MEM:None/None
+tigera-prometheus,alertmanager-calico-node-alertmanager-0,alertmanager-calico-node-alertmanager [StatefulSet],2,alertmanager [alertmanager:v3.21.0-1.0] | CPU:None/None | MEM:200Mi/None
+,,,,config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+,prometheus-calico-node-prometheus-0,prometheus-calico-node-prometheus [StatefulSet],1,prometheus [prometheus:v3.21.0-1.0] | CPU:None/None | MEM:400Mi/None
+,,,,config-reloader [prometheus-config-reloader:v0.53.0] | CPU:100m/100m | MEM:50Mi/50Mi
+,,,,authn-proxy [prometheus-service:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+tigera-system,tigera-apiserver-6f7b6767b-7n75g,tigera-apiserver-6f7b6767b [ReplicaSet],2,calico-apiserver [cnx-apiserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
+,,,,tigera-queryserver [cnx-queryserver:v3.21.0-1.0] | CPU:None/None | MEM:None/None
