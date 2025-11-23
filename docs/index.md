@@ -24,4 +24,5 @@
 *Проекти, над якими ведеться активна робота.*
 
 * **[🤖 Kubernetes LLM Assistant](k8s_llm/index.md)** — Розробка SRE-асистента для діагностики та FinOps (Dataset Kit & Fine-tuning).
+
 ---

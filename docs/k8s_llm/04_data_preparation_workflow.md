@@ -7,7 +7,7 @@
 ## Етап 1: Ізоляція та Обфускація (Supervisor Zone)
 
 **Мета:** Перетворити приватні дані клієнтів на безпечні "Clean Data".
-**Статус:** ✅ Виконано Supervisor'ом. Студент отримує тільки результат.
+**Статус:** ✅ Виконано Supervisor'ом. Дослідник отримує тільки результат.
 
 ### 1.1 Стратегія Захисту
 Використано багаторівневу обфускацію:
@@ -31,7 +31,7 @@ def obfuscate_text(text, mappings):
     for pattern, replacement in REGEX_PATTERNS:
         text = re.sub(pattern, replacement, text)
     return text
-````
+```
 
 -----
 
@@ -39,9 +39,9 @@ def obfuscate_text(text, mappings):
 
 **Вхідні дані:** Папка `/01_clean_pool` з файлами `site-alpha`, `site-beta`, `site-gamma`.
 
-### 2.1 Завдання Студента
+### 2.1 Завдання Дослідника
 
-Ваша задача — розсортувати ці файли не за назвою сайту, а за **типом проблеми**, визначеним у [01\_k8s\_problem\_taxonomy.md](https://www.google.com/search?q=./01_k8s_problem_taxonomy.md).
+Ваша задача — розсортувати ці файли не за назвою сайту, а за **типом проблеми**, визначеним у [01\_k8s\_problem\_taxonomy.md](./01_k8s_problem_taxonomy.md).
 
 Використовуйте **Додаток А (Gap Analysis)** в кінці цього документу, щоб зрозуміти, які файли вже містять готові проблеми.
 
@@ -89,16 +89,16 @@ def obfuscate_text(text, mappings):
 
 ## Додаток А: Інвентаризація Даних (Gap Analysis)
 
-Ця таблиця показує, що вже знайдено в реальних логах, а що студенту потрібно створити штучно.
+Ця таблиця показує, що вже знайдено в реальних логах, а що Досліднику потрібно створити штучно.
 
-| ID | Проблема | Знайдено в Clean Data? | Джерело (Приклад) | **Дія для Студента** |
+| ID | Проблема | Знайдено в Clean Data? | Джерело (Приклад) | **Дія для Дослідника** |
 |:---|:---|:---|:---|:---|
 | **1.1** | Image Pull Issues | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** (Мутація YAML) |
 | **1.2** | Config Errors | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** |
 | **1.3** | CrashLoopBackOff | ✅ ТАК | `site-beta_pods` (git-checkout) | Використати як є + додати синтез |
 | **2.1** | Pending | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** (Error Injection) |
 | **3.1** | OOMKilled | ✅ ТАК | `site-beta_pods` (consul) | **Пріоритет:** Використати реальні логи\! |
-| **4.1** | Node Overcommit | ✅ ТАК | `Log2_1.txt` | Використати як є |
+| **4.1** | Node Overcommit | ✅ ТАК(Custom Format) | `Log2_1.txt` | (Див. Додаток Б) |
 | **4.2** | Fragmentation | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** (Потрібен Pending Pod) |
 | **4.3** | Infra Mismatch | ✅ ТАК | `site-alpha_nodes` (CPU 77% vs Mem 34%) | Використати як є |
 | **4.4** | Legacy Storage | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** (`gp2`) |
@@ -106,11 +106,9 @@ def obfuscate_text(text, mappings):
 | **5.3** | Missing Limits | ✅ ТАК | `site-alpha_nodes` | Використати як є |
 | **6.1** | Critical QoS Risk | ❌ НІ | - | ⚠️ **СИНТЕЗУВАТИ** (Змінити на Burstable) |
 
-```
-
 ## Додаток Б: Бібліотека Синтетичних Сценаріїв (Reference Examples)
 
-Цей додаток містить еталонні приклади "сирих даних" (Input) для тих сценаріїв, які були відсутні в реальних логах. Студент може використовувати ці блоки для створення файлів у папці `/03_synthetic_cases`.
+Цей додаток містить еталонні приклади "сирих даних" (Input) для тих сценаріїв, які були відсутні в реальних логах. Дослідник може використовувати ці блоки для створення файлів у папці `/03_synthetic_cases`.
 
 ### 1. Проблеми Запуску (Startup)
 
@@ -138,7 +136,7 @@ Events:
   Normal   BackOff    15s (x4 over 65s)  kubelet            Back-off pulling image "docker-registry.site-alpha.internal.domain/payment:v2.5.0-beta"
   Warning  Failed     15s (x4 over 65s)  kubelet            Error: ImagePullBackOff
   Warning  Failed     28s (x2 over 50s)  kubelet            Failed to pull image "docker-registry.site-alpha.internal.domain/payment:v2.5.0-beta": rpc error: code = Unknown desc = manifest unknown: manifest tag not found
-````
+```
 
 #### Сценарій 1.2: Config Dependencies
 
@@ -216,6 +214,35 @@ Node: ip-10-0-1-3
 
 --- Pod Events ---
 Warning  FailedScheduling  5s  default-scheduler  0/3 nodes are available: 3 Insufficient cpu.
+```
+
+#### Сценарій 4.1: Node Resource Overcommit
+
+*Примітка: У реальних даних цей кейс представлений у нестандартному форматі `Log2_1.txt`. Для навчання моделі використовуйте цей стандартний формат `kubectl`.*
+
+**Тип файлу:** `site-alpha_nodes_overcommit.txt`
+**Зміст (Standard `kubectl describe node` output):**
+
+```text
+Name:               ip-10-0-31-113.internal.domain
+Roles:              node
+Capacity:
+  cpu:              4
+  memory:           8Gi
+Allocatable:
+  cpu:              3920m
+  memory:           6680Mi
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                2190m (55%)  6000m (153%)  <-- PROBLEM (Over 100%)
+  memory             2370Mi (35%) 4000Mi (59%)
+  ephemeral-storage  0 (0%)       0 (0%)
+Events:
+  Type    Reason  Age   From     Message
+  ----    ------  ----  ----     -------
+  Normal  NodeHasSufficientMemory  1m   kubelet  Node ip-10-0-31-113 status is now: NodeHasSufficientMemory
 ```
 
 #### Сценарій 4.4: Legacy Storage Class

@@ -13,7 +13,25 @@
   "root_cause": "Технічний ID проблеми з Таксономії (напр., NodeOvercommit)",
   "recommendation": "Інженерна дія з конкретними числами або іменами параметрів"
 }
-````
+```
+
+### Кольорові маркери (Пріоритет та Тип)
+Ці кольори вказують на **характер проблеми** та терміновість реакції SRE-інженера.
+
+* 🔴 **Червоний (Critical / Break-fix):**
+    * **Що це:** Функціональні відмови. Сервіс не працює, падає або не може запуститися.
+    * **Дія:** Потребує негайного виправлення (Fix immediately).
+    * *Приклади:* `OOMKilled`, `CrashLoopBackOff`, `Pending`.
+
+* 🟢 **Зелений (Optimization / FinOps):**
+    * **Що це:** Проблеми ефективності. Сервіс працює стабільно, але ми витрачаємо зайві гроші або ресурси.
+    * **Дія:** Планова оптимізація (Save money / Improve efficiency).
+    * *Приклади:* `Overprovisioned Requests`, `Legacy Storage Class`.
+
+* 🟠 **Помаранчевий/Жовтий (Reliability / Risk):**
+    * **Що це:** Архітектурні ризики. Зараз все працює, але при збої (наприклад, падінні зони AWS) сервіс ляже.
+    * **Дія:** Превентивні заходи (Prevent future outage).
+    * *Приклади:* `Single AZ Risk`, `Burstable QoS for DB`.
 
 -----
 
@@ -21,11 +39,9 @@
 
 ### 1\. Проблеми Запуску (Startup)
 
-#### 🔴 Сценарій: Image Pull Issues (NEW)
+#### 🔴 Сценарій: Image Pull Issues 
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -35,11 +51,9 @@
 }
 ```
 
-#### 🔴 Сценарій: Config Dependencies (NEW)
+#### 🔴 Сценарій: Config Dependencies
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -52,8 +66,6 @@
 #### 🔴 Сценарій: CrashLoopBackOff
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -69,8 +81,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "The Pod cannot be scheduled because no node has enough free CPU capacity to satisfy the request of 2000m (2 Cores).",
@@ -79,11 +89,9 @@
 }
 ```
 
-#### 🔴 Сценарій: Affinity/Taint Conflicts (NEW)
+#### 🔴 Сценарій: Affinity/Taint Conflicts 
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -99,8 +107,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "The container was terminated with Exit Code 137 (OOMKilled), meaning it tried to use more memory than its limit.",
@@ -109,11 +115,9 @@
 }
 ```
 
-#### 🔴 Сценарій: Probe Failures (NEW)
+#### 🔴 Сценарій: Probe Failures 
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -129,11 +133,9 @@
 
 ### 4\. Інфраструктурна Ефективність
 
-#### 🟢 Сценарій: Node Resource Overcommit (NEW)
+#### 🟢 Сценарій: Node Resource Overcommit 
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -147,8 +149,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "The cluster has sufficient total capacity (20 CPU free), but resources are fragmented across nodes, preventing the scheduling of a 4 CPU pod.",
@@ -161,8 +161,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "Node resource usage is unbalanced: Memory is highly utilized (90%) while CPU is idle (10%).",
@@ -174,8 +172,6 @@
 #### 🟢 Сценарій: Legacy Storage Class
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -191,8 +187,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "The Pod is overprovisioned. It requests 4000m CPU but uses only ~500m at peak (P95).",
@@ -201,11 +195,9 @@
 }
 ```
 
-#### 🟢 Сценарій: Missing Limits (NEW)
+#### 🟢 Сценарій: Missing Limits 
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -218,8 +210,6 @@
 #### 🟢 Сценарій: VPA Recommendation
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
@@ -235,8 +225,6 @@
 
   * **Output Template:**
 
-<!-- end list -->
-
 ```json
 {
   "summary": "Critical DB workload is running with 'Burstable' QoS (requests < limits).",
@@ -248,8 +236,6 @@
 #### 🟠 Сценарій: Single AZ Risk
 
   * **Output Template:**
-
-<!-- end list -->
 
 ```json
 {
