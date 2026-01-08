@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "uk" }}">
+<html lang="{{ page.lang | default: "uk" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown-light.min.css">
   
   <style>
-    /* Центрування та відступи, як на GitHub */
+    /* Центрування сторінки */
     .markdown-body {
       box-sizing: border-box;
       min-width: 200px;
@@ -16,40 +16,23 @@
       margin: 0 auto;
       padding: 45px;
     }
-
-    /* Адаптивність для мобільних */
-    @media (max-width: 767px) {
-      .markdown-body {
-        padding: 15px;
-      }
-    }
-    
-    /* Додатковий стиль для навігації (якщо потрібно) */
-    .site-header {
-        text-align: center;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eaecef;
-    }
-    .site-header a {
-        text-decoration: none;
-        color: #0366d6;
-        font-size: 1.2em;
-    }
+    @media (max-width: 767px) { .markdown-body { padding: 15px; } }
   </style>
 
-  {% include mathjax.html %}
-
+  <script>
+    MathJax = {
+      tex: { 
+        inlineMath: [['$', '$'], ['\\(', '\\)']], 
+        displayMath: [['$$', '$$'], ['\\[', '\\]']] 
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  
   <article class="markdown-body">
-    <div class="site-header">
-        <a href="{{ "/" | relative_url }}">🏠 До змісту (Index)</a>
-    </div>
-
     {{ content }}
   </article>
-
 </body>
 </html>
