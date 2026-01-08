@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "uk" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: "Lectures" }}</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown-light.min.css">
   
-  {%- include head.html -%}
+  <style>
+    /* Центрування та відступи, як на GitHub */
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    /* Адаптивність для мобільних */
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+    
+    /* Додатковий стиль для навігації (якщо потрібно) */
+    .site-header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaecef;
+    }
+    .site-header a {
+        text-decoration: none;
+        color: #0366d6;
+        font-size: 1.2em;
+    }
+  </style>
 
   {% include mathjax.html %}
 
-  <body>
-    {%- include header.html -%}
+</head>
+<body>
+  
+  <article class="markdown-body">
+    <div class="site-header">
+        <a href="{{ "/" | relative_url }}">🏠 До змісту (Index)</a>
+    </div>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    {{ content }}
+  </article>
 
-    {%- include footer.html -%}
-  </body>
-
+</body>
 </html>
