@@ -66,7 +66,7 @@ $$f(g \cdot x) = f(x), \quad \forall g \in G, x \in X$$
 - Кожне ребро має **edge features** $e_{ij} \in \mathbb{R}^k$ (відстань, час проїзду, вартість)
 
 **Геометрична структура:**
-Відстань між вершинами $v_i$ та $v_j$ визначається не лише евклідовою метрикою $||x_i - x_j||_2$, але й **графовою метрикою** (shortest path distance):
+Відстань між вершинами $v_i$ та $v_j$ визначається не лише евклідовою метрикою $\|x_i - x_j\|_2$, але й **графовою метрикою** (shortest path distance):
 $$d_G(v_i, v_j) = \min_{p \in \text{paths}(i,j)} \sum_{(u,v) \in p} w_{uv}$$
 
 Де $w_{uv}$ — вага ребра (час, вартість, відстань).
@@ -175,7 +175,7 @@ $$IPA(\mathbf{q}, \mathbf{k}, \mathbf{v}, \mathbf{T}) = \text{Softmax}\left(\fra
 
 1. Кожна амінокислота стає містом
 2. Відстань між містами $i$ та $j$:
-   $$D_{ij} = \min_{\mathbf{r}_1, \dots, \mathbf{r}_N} E(\mathbf{r}_1, \dots, \mathbf{r}_N) \text{ subject to } ||\mathbf{r}_i - \mathbf{r}_j|| = d_{target}$$
+   $$D_{ij} = \min_{\mathbf{r}_1, \dots, \mathbf{r}_N} E(\mathbf{r}_1, \dots, \mathbf{r}_N) \text{ subject to } \|\mathbf{r}_i - \mathbf{r}_j\| = d_{target}$$
 
 3. Оптимальний маршрут TSP відповідає послідовності згортання білка.
 

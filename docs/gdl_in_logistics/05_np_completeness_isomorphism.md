@@ -88,7 +88,7 @@ $$P \subseteq NP \subseteq \text{NP-Complete} \subseteq \text{NP-Hard}$$
 2. **Встановлюємо енергію взаємодії:**
    Для кожної пари амінокислот $(i, j)$ встановлюємо:
    $$E_{ij}(\mathbf{r}_i, \mathbf{r}_j) = \begin{cases}
-   D_{ij} & \text{якщо } ||\mathbf{r}_i - \mathbf{r}_j|| = d_{target} \\
+   D_{ij} & \text{якщо } \|\mathbf{r}_i - \mathbf{r}_j\| = d_{target} \\
    \infty & \text{інакше}
    \end{cases}$$
    
@@ -97,7 +97,7 @@ $$P \subseteq NP \subseteq \text{NP-Complete} \subseteq \text{NP-Hard}$$
 3. **Додаємо обмеження циклу:**
    Додаємо енергетичний термін, який мінімізується лише тоді, коли амінокислоти утворюють цикл (як у TSP):
    $$E_{cycle}(\mathbf{R}) = \begin{cases}
-   0 & \text{якщо } ||\mathbf{r}_1 - \mathbf{r}_N|| = d_{target} \text{ (замкнений цикл)} \\
+   0 & \text{якщо } \|\mathbf{r}_1 - \mathbf{r}_N\| = d_{target} \text{ (замкнений цикл)} \\
    \infty & \text{інакше}
    \end{cases}$$
 
@@ -133,7 +133,7 @@ PFP $\le_p$ TSP
 
 2. **Відстань між містами:**
    Для кожної пари міст $(i, j)$ встановлюємо:
-   $$D_{ij} = \min_{\mathbf{R}} E(\mathbf{R}) \text{ subject to } ||\mathbf{r}_i - \mathbf{r}_j|| = d_{ij}$$
+   $$D_{ij} = \min_{\mathbf{R}} E(\mathbf{R}) \text{ subject to } \|\mathbf{r}_i - \mathbf{r}_j\| = d_{ij}$$
    
    Де $d_{ij}$ — бажана відстань між амінокислотами $i$ та $j$ (визначається з енергетичної функції).
 

@@ -172,7 +172,7 @@ $$\pi_{\mathbf{x}}(\mathbf{z}) = \exp\left(-\frac{D(\mathbf{x}, \mathbf{z})^2}{\
 
 2. ОБЧИСЛЕННЯ ВАГ:
    ДЛЯ i = 1 до N:
-     w_i ← exp(-||x - z_i||² / σ²)
+     w_i ← exp(-\|x - z_i\|² / σ²)
 
 3. НАВЧАННЯ ЛОКАЛЬНОЇ МОДЕЛІ:
    g ← Ridge(α=0.1).fit(Z, Y, sample_weight=w)

@@ -680,7 +680,7 @@ $$\text{GeodesicAttention}(\mathbf{q}, \mathbf{k}, \mathbf{v}, \mathbf{T}) = \te
 - $\text{GeodesicBias}(\mathbf{T}_i, \mathbf{T}_j) = f(d_{ij}, \theta_{ij})$ — bias на основі відстані та кута
 
 **Деталі:**
-- $d_{ij} = ||\mathbf{t}_i - \mathbf{t}_j||_2$ — відстань між позиціями
+- $d_{ij} = \|\mathbf{t}_i - \mathbf{t}_j\|_2$ — відстань між позиціями
 - $\theta_{ij} = \text{angle}(\mathbf{R}_i, \mathbf{R}_j)$ — кут між орієнтаціями
 - $f(d, \theta) = \text{MLP}([d, \cos(\theta), \sin(\theta)])$ — learnable функція
 

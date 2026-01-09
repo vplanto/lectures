@@ -215,7 +215,7 @@ $$\text{Bottleneck} = \{(x, y, t, e) : E(x, y, t) > E_{threshold}\}$$
 $$E(x, y, t) = E_{density}(x, y, t) + E_{time}(x, y, t) + E_{constraint}(x, y, t)$$
 
 Де:
-- $E_{density}(x, y, t) = \sum_{i} \exp\left(-\frac{||(x, y) - (x_i, y_i)||^2}{2\sigma^2}\right)$ — енергія щільності (висока, коли багато агентів)
+- $E_{density}(x, y, t) = \sum_{i} \exp\left(-\frac{\|(x, y) - (x_i, y_i)\|^2}{2\sigma^2}\right)$ — енергія щільності (висока, коли багато агентів)
 - $E_{time}(x, y, t) = \lambda_{time} \cdot \text{TimePenalty}(t, e, l)$ — енергія часу (штрафи за порушення часових вікон)
 - $E_{constraint}(x, y, t) = \lambda_{constraint} \cdot \text{ConstraintPenalty}(x, y, t)$ — енергія обмежень (перешкоди, обмеження пропускної здатності)
 

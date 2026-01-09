@@ -445,7 +445,7 @@ Pair representation $P \in \mathbb{R}^{N \times N \times c_{pair}}$ кодує �
 $$D_{ij} = [d_{ij}, t_{ij}, c_{ij}, p_{ij}, \text{features}_{ij}]$$
 
 Де:
-- $d_{ij} = ||(x_i, y_i) - (x_j, y_j)||_2$ (евклідова відстань)
+- $d_{ij} = \|(x_i, y_i) - (x_j, y_j)\|_2$ (евклідова відстань)
 - $t_{ij}$ — час проїзду (може бути з OSRM або іншого routing engine)
 - $c_{ij}$ — вартість проїзду (може залежати від $d_{ij}$, $t_{ij}$, палива)
 - $p_{ij}$ — ймовірність спільної доставки (з історії трафіку)
@@ -475,7 +475,7 @@ $$\text{Distance}^{(l+1)} = \text{DistanceStack}(\text{Distance}^{(l)}, \text{Hi
 
 **Фізичні обмеження (AlphaFold 2):**
 $$g_{physical}(\mathbf{R}) = \begin{cases}
-0 & \text{якщо } ||\mathbf{r}_i - \mathbf{r}_j|| \ge r_{min} \text{ для всіх } i \neq j \\
+0 & \text{якщо } \|\mathbf{r}_i - \mathbf{r}_j\| \ge r_{min} \text{ для всіх } i \neq j \\
 \infty & \text{інакше (steric clash)}
 \end{cases}$$
 
@@ -634,7 +634,7 @@ $$\text{GeodesicAttention}(\mathbf{q}, \mathbf{k}, \mathbf{v}, \mathbf{T}) = \te
 $$\text{GeodesicBias}(\mathbf{T}_i, \mathbf{T}_j) = f(d_{ij}, \theta_{ij})$$
 
 Де:
-- $d_{ij} = ||\mathbf{t}_i - \mathbf{t}_j||$ — відстань між містами
+- $d_{ij} = \|\mathbf{t}_i - \mathbf{t}_j\|$ — відстань між містами
 - $\theta_{ij} = \text{angle}(\mathbf{R}_i, \mathbf{R}_j)$ — кут між орієнтаціями
 
 **Чому це інваріантно:**
@@ -664,7 +664,7 @@ $$\mathbf{R} = \begin{pmatrix}
 2. **Детермінант:** $\det(\mathbf{R}) = 1$ (зберігає орієнтацію)
 
 **Твердження:**
-$$||\mathbf{R} \mathbf{t}_i - \mathbf{R} \mathbf{t}_j|| = ||\mathbf{t}_i - \mathbf{t}_j||$$
+$$\|\mathbf{R} \mathbf{t}_i - \mathbf{R} \mathbf{t}_j\| = \|\mathbf{t}_i - \mathbf{t}_j\|$$
 
 **Доведення:**
 
@@ -674,7 +674,7 @@ $$\mathbf{R} \mathbf{t}_i - \mathbf{R} \mathbf{t}_j = \mathbf{R}(\mathbf{t}_i - 
 
 **Крок 2:** Обчислюємо квадрат норми:
 
-$$||\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)||^2 = (\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j))^T (\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j))$$
+$$\|\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)\|^2 = (\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j))^T (\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j))$$
 
 **Крок 3:** Використовуємо властивість транспонування:
 
@@ -682,11 +682,11 @@ $$= (\mathbf{t}_i - \mathbf{t}_j)^T \mathbf{R}^T \mathbf{R} (\mathbf{t}_i - \mat
 
 **Крок 4:** Застосовуємо ортогональність $\mathbf{R}^T \mathbf{R} = \mathbf{I}$:
 
-$$= (\mathbf{t}_i - \mathbf{t}_j)^T \mathbf{I} (\mathbf{t}_i - \mathbf{t}_j) = (\mathbf{t}_i - \mathbf{t}_j)^T (\mathbf{t}_i - \mathbf{t}_j) = ||\mathbf{t}_i - \mathbf{t}_j||^2$$
+$$= (\mathbf{t}_i - \mathbf{t}_j)^T \mathbf{I} (\mathbf{t}_i - \mathbf{t}_j) = (\mathbf{t}_i - \mathbf{t}_j)^T (\mathbf{t}_i - \mathbf{t}_j) = \|\mathbf{t}_i - \mathbf{t}_j\|^2$$
 
 **Крок 5:** Беремо квадратний корінь:
 
-$$||\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)|| = ||\mathbf{t}_i - \mathbf{t}_j||$$
+$$\|\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)\| = \|\mathbf{t}_i - \mathbf{t}_j\|$$
 
 **Доведення завершено.** ✅
 
@@ -707,22 +707,22 @@ v_x \sin\theta + v_y \cos\theta
 \end{pmatrix}$$
 
 Норма після обертання:
-$$||\mathbf{R} \mathbf{v}||^2 = (v_x \cos\theta - v_y \sin\theta)^2 + (v_x \sin\theta + v_y \cos\theta)^2$$
+$$\|\mathbf{R} \mathbf{v}\|^2 = (v_x \cos\theta - v_y \sin\theta)^2 + (v_x \sin\theta + v_y \cos\theta)^2$$
 
 Розкриваємо дужки:
 $$= v_x^2 \cos^2\theta - 2v_x v_y \cos\theta \sin\theta + v_y^2 \sin^2\theta + v_x^2 \sin^2\theta + 2v_x v_y \sin\theta \cos\theta + v_y^2 \cos^2\theta$$
 
 Спрощуємо (члени з $2v_x v_y$ скорочуються):
-$$= v_x^2 (\cos^2\theta + \sin^2\theta) + v_y^2 (\sin^2\theta + \cos^2\theta) = v_x^2 + v_y^2 = ||\mathbf{v}||^2$$
+$$= v_x^2 (\cos^2\theta + \sin^2\theta) + v_y^2 (\sin^2\theta + \cos^2\theta) = v_x^2 + v_y^2 = \|\mathbf{v}\|^2$$
 
-Отже: $||\mathbf{R} \mathbf{v}|| = ||\mathbf{v}||$ ✅
+Отже: $\|\mathbf{R} \mathbf{v}\| = \|\mathbf{v}\|$ ✅
 
 **Числовий приклад:**
 
 Нехай:
 - Місто 1: $\mathbf{t}_1 = (3, 4)$
 - Місто 2: $\mathbf{t}_2 = (0, 0)$ (депо)
-- Відстань: $||\mathbf{t}_1 - \mathbf{t}_2|| = ||(3, 4)|| = \sqrt{9 + 16} = 5$
+- Відстань: $\|\mathbf{t}_1 - \mathbf{t}_2\| = \|(3, 4)\| = \sqrt{9 + 16} = 5$
 
 Обертання на $90°$ ($\theta = \pi/2$):
 $$\mathbf{R} = \begin{pmatrix}
@@ -733,13 +733,13 @@ $$\mathbf{R} = \begin{pmatrix}
 Після обертання:
 - $\mathbf{t}_1' = \mathbf{R} \mathbf{t}_1 = (-4, 3)$
 - $\mathbf{t}_2' = \mathbf{R} \mathbf{t}_2 = (0, 0)$
-- Відстань: $||\mathbf{t}_1' - \mathbf{t}_2'|| = ||(-4, 3)|| = \sqrt{16 + 9} = 5$
+- Відстань: $\|\mathbf{t}_1' - \mathbf{t}_2'\| = \|(-4, 3)\| = \sqrt{16 + 9} = 5$
 
 **Результат:** Відстань не змінилася! ✅
 
 **Висновок для Geodesic Attention:**
 
-Оскільки $\text{GeodesicBias}$ залежить лише від $d_{ij} = ||\mathbf{t}_i - \mathbf{t}_j||$ (та кутів між $\mathbf{R}_i$ та $\mathbf{R}_j$), а ці величини інваріантні до глобальних обертань, то Geodesic Attention автоматично інваріантна до обертань та переносів карти.
+Оскільки $\text{GeodesicBias}$ залежить лише від $d_{ij} = \|\mathbf{t}_i - \mathbf{t}_j\|$ (та кутів між $\mathbf{R}_i$ та $\mathbf{R}_j$), а ці величини інваріантні до глобальних обертань, то Geodesic Attention автоматично інваріантна до обертань та переносів карти.
 
 #### 5.1.2. "Атом як Агент": Agent-Environment Interaction
 
@@ -811,7 +811,7 @@ $$\text{GeodesicAttention}(\mathbf{q}_i, \{\mathbf{k}_j\}, \{\mathbf{v}_j\}, \{\
 $$\alpha_{ij} = \text{Softmax}\left(\frac{\mathbf{q}_i^T \mathbf{k}_j}{\sqrt{d_k}} + \text{GeodesicBias}(\mathbf{T}_i, \mathbf{T}_j)\right)$$
 
 Де $\text{GeodesicBias}$ залежить від:
-- $d_{ij} = ||\mathbf{t}_i - \mathbf{t}_j||$ — відстань до клієнта $j$
+- $d_{ij} = \|\mathbf{t}_i - \mathbf{t}_j\|$ — відстань до клієнта $j$
 - $\theta_{ij}$ — кут між напрямком руху кур'єра та напрямком до клієнта
 
 **Рішення агента:**
@@ -1011,7 +1011,7 @@ $$\mathbf{T}_i = (\mathbf{R}_i, \mathbf{t}_i, \tau_i)$$
 $$\text{GeodesicBias}_{4D}(\mathbf{T}_i, \mathbf{T}_j, t_{arrival}) = f(d_{ij}, \theta_{ij}, \text{TimePenalty}(t_{arrival}, e_j, l_j))$$
 
 Де:
-- $d_{ij} = ||\mathbf{t}_i - \mathbf{t}_j||$ — просторова відстань
+- $d_{ij} = \|\mathbf{t}_i - \mathbf{t}_j\|$ — просторова відстань
 - $\theta_{ij} = \text{angle}(\mathbf{R}_i, \mathbf{R}_j)$ — просторовий кут
 - $t_{arrival} = t_i + t_{ij} + \text{service}_i$ — час прибуття в місто $j$
 - $\text{TimePenalty}$ — штраф за порушення часового вікна
@@ -1136,7 +1136,7 @@ $$\mathcal{R}(\pi) = \{(x(t), y(t), t) : t \in [0, T]\}$$
 
 Якщо транспортний засіб рухається з максимальною швидкістю $v_{max}$, то:
 
-$$||(x(t+\Delta t), y(t+\Delta t)) - (x(t), y(t))|| \le v_{max} \cdot \Delta t$$
+$$\|(x(t+\Delta t), y(t+\Delta t)) - (x(t), y(t))\| \le v_{max} \cdot \Delta t$$
 
 Це означає, що маршрут не може "стрибати" в просторі-часі — він повинен бути **безперервною кривою** з обмеженою похідною.
 
@@ -1247,7 +1247,7 @@ $$\mathcal{R}_i = \{(x, y, t) : (x, y) = (x_i, y_i), \quad t \in [e_i, l_i]\}$$
 
 Клієнт $i$ досяжний, якщо:
 
-$$\exists t \in [e_i, l_i] : t \ge t_0 + \frac{||(x_i, y_i) - (x_0, y_0)||}{v_{max}}$$
+$$\exists t \in [e_i, l_i] : t \ge t_0 + \frac{\|(x_i, y_i) - (x_0, y_0)\|}{v_{max}}$$
 
 Де $v_{max}$ — максимальна швидкість.
 
@@ -1312,7 +1312,7 @@ $$\exists t \in [e_i, l_i] : t \ge t_0 + \frac{||(x_i, y_i) - (x_0, y_0)||}{v_{m
 
 Для клієнта $i$ з координатами $(x_i, y_i)$ та часовим вікном $[e_i, l_i]$, коридор можна уявити як **тунель** у просторі-часі:
 
-$$\mathcal{T}_i = \{(x, y, t) : ||(x, y) - (x_i, y_i)|| \le \epsilon, \quad t \in [e_i, l_i]\}$$
+$$\mathcal{T}_i = \{(x, y, t) : \|(x, y) - (x_i, y_i)\| \le \epsilon, \quad t \in [e_i, l_i]\}$$
 
 Де $\epsilon$ — мала толерантність (наприклад, радіус парковки).
 
@@ -1340,7 +1340,7 @@ $$\mathcal{T}_i = \{(x, y, t) : ||(x, y) - (x_i, y_i)|| \le \epsilon, \quad t \i
 
 Транспортний засіб "проходить" через тунель $\mathcal{T}_i$, якщо:
 
-$$\exists t \in [e_i, l_i] : ||(x(t), y(t)) - (x_i, y_i)|| \le \epsilon$$
+$$\exists t \in [e_i, l_i] : \|(x(t), y(t)) - (x_i, y_i)\| \le \epsilon$$
 
 **Приклад 7: Об'єднання коридорів для групи клієнтів**
 
@@ -1431,7 +1431,7 @@ $$\mathcal{C}_i = \{(10, 0, t) : t \in [20, 40]\}$$
 **Умова досяжності:**
 
 Якщо максимальна швидкість $v_{max} = 1$, то:
-- Мінімальний час проїзду: $t_{min} = \frac{||(10, 0) - (0, 0)||}{v_{max}} = 10$
+- Мінімальний час проїзду: $t_{min} = \frac{\|(10, 0) - (0, 0)\|}{v_{max}} = 10$
 - Час прибуття: $t_{arrival} = 0 + 10 = 10$
 - Умова: $t_{arrival} \in [20, 40]$ → **НЕ досяжний без очікування**
 
@@ -1479,8 +1479,8 @@ $$\gamma(t) = \begin{cases}
 Для точки $(x, y, t)$ та коридору $\mathcal{C}_i = \{(x_i, y_i, t') : t' \in [e_i, l_i]\}$:
 
 $$d_{corridor}((x, y, t), \mathcal{C}_i) = \begin{cases}
-||(x, y) - (x_i, y_i)|| & \text{якщо } t \in [e_i, l_i] \\
-||(x, y) - (x_i, y_i)|| + \alpha \cdot \min(|t - e_i|, |t - l_i|) & \text{інакше}
+\|(x, y) - (x_i, y_i)\| & \text{якщо } t \in [e_i, l_i] \\
+\|(x, y) - (x_i, y_i)\| + \alpha \cdot \min(|t - e_i|, |t - l_i|) & \text{інакше}
 \end{cases}$$
 
 **Зв'язок з TimePenalty:**
@@ -1772,12 +1772,12 @@ $$P(\pi) = \prod_{k=1}^{N} P(\pi_k | \text{all frames})$$
 ### 5.3. Loss Function для TSP
 
 **Оригінальний FAPE (Frame Aligned Point Error):**
-$$\mathcal{L}_{FAPE} = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|\text{atoms}_i|} \sum_{a \in \text{atoms}_i} ||\mathbf{T}_i^{-1} \mathbf{r}_a^{pred} - \mathbf{T}_i^{-1} \mathbf{r}_a^{true}||$$
+$$\mathcal{L}_{FAPE} = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|\text{atoms}_i|} \sum_{a \in \text{atoms}_i} \|\mathbf{T}_i^{-1} \mathbf{r}_a^{pred} - \mathbf{T}_i^{-1} \mathbf{r}_a^{true}\|$$
 
 **Адаптований Loss для TSP:**
 
 **1. Tour Length Loss:**
-$$\mathcal{L}_{length} = ||C(\pi^{pred}) - C(\pi^{true})||_2$$
+$$\mathcal{L}_{length} = \|C(\pi^{pred}) - C(\pi^{true})\|_2$$
 
 Де $C(\pi)$ — вартість маршруту.
 
@@ -2319,7 +2319,7 @@ $$\text{BottleneckScore}(\mathbf{x}) > \text{threshold}$$
 
 **Loss функція:**
 
-$$\mathcal{L} = \sum_{t} ||\text{BottleneckScore}_{predicted}(\mathbf{x}^{(t+\Delta t)}) - \text{BottleneckScore}_{actual}(\mathbf{x}^{(t+\Delta t)})||^2$$
+$$\mathcal{L} = \sum_{t} \|\text{BottleneckScore}_{predicted}(\mathbf{x}^{(t+\Delta t)}) - \text{BottleneckScore}_{actual}(\mathbf{x}^{(t+\Delta t)})\|^2$$
 
 **Практичне застосування:**
 

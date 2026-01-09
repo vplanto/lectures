@@ -218,7 +218,7 @@ $$\mathbf{T}_i: \mathbf{x} \mapsto \mathbf{R}_i \mathbf{x} + \mathbf{t}_i$$
 Де $\mathbf{R}_i \in SO(3)$ (спеціальна ортогональна група), $\mathbf{t}_i \in \mathbb{R}^3$.
 
 **GeomBias:**
-$$\text{GeomBias}(\mathbf{T}_i, \mathbf{T}_j) = f(||\mathbf{t}_i - \mathbf{t}_j||, \text{angle}(\mathbf{R}_i, \mathbf{R}_j))$$
+$$\text{GeomBias}(\mathbf{T}_i, \mathbf{T}_j) = f(\|\mathbf{t}_i - \mathbf{t}_j\|, \text{angle}(\mathbf{R}_i, \mathbf{R}_j))$$
 
 Де $f$ — learnable функція, яка залежить лише від **відносних** величин (відстань та кут), а не від абсолютних координат.
 
@@ -227,7 +227,7 @@ $$\text{GeomBias}(\mathbf{T}_i, \mathbf{T}_j) = f(||\mathbf{t}_i - \mathbf{t}_j|
 $$\mathbf{T}_i' = (\mathbf{R} \mathbf{R}_i, \mathbf{R} \mathbf{t}_i + \mathbf{t})$$
 
 То відносна відстань та кут не змінюються:
-- $||\mathbf{t}_i' - \mathbf{t}_j'|| = ||\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)|| = ||\mathbf{t}_i - \mathbf{t}_j||$ (обертання зберігає відстань)
+- $\|\mathbf{t}_i' - \mathbf{t}_j'\| = \|\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)\| = \|\mathbf{t}_i - \mathbf{t}_j\|$ (обертання зберігає відстань)
 - $\text{angle}(\mathbf{R}_i', \mathbf{R}_j') = \text{angle}(\mathbf{R} \mathbf{R}_i, \mathbf{R} \mathbf{R}_j) = \text{angle}(\mathbf{R}_i, \mathbf{R}_j)$ (обертання зберігає кути)
 
 **Висновок:** IPA автоматично інваріантна до обертань та переносів.
@@ -247,7 +247,7 @@ $$\mathbf{T}_i' = (\mathbf{R} \mathbf{R}_i, \mathbf{R} \mathbf{t}_i + \mathbf{t}
 - $\mathbf{t}_j' = \mathbf{R} \mathbf{t}_j$ — позиція після обертання
 
 **Твердження:**
-$$||\mathbf{t}_i' - \mathbf{t}_j'|| = ||\mathbf{t}_i - \mathbf{t}_j||$$
+$$\|\mathbf{t}_i' - \mathbf{t}_j'\| = \|\mathbf{t}_i - \mathbf{t}_j\|$$
 
 **Доведення:**
 
@@ -257,24 +257,24 @@ $$\mathbf{t}_i' - \mathbf{t}_j' = \mathbf{R} \mathbf{t}_i - \mathbf{R} \mathbf{t
 
 **Крок 2:** Обчислюємо норму різниці після обертання:
 
-$$||\mathbf{t}_i' - \mathbf{t}_j'|| = ||\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)||$$
+$$\|\mathbf{t}_i' - \mathbf{t}_j'\| = \|\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)\|$$
 
 **Крок 3:** Використовуємо властивість норми та ортогональності матриці обертання.
 
 Для будь-якого вектора $\mathbf{v} \in \mathbb{R}^d$ та ортогональної матриці $\mathbf{R}$:
 
-$$||\mathbf{R} \mathbf{v}||^2 = (\mathbf{R} \mathbf{v})^T (\mathbf{R} \mathbf{v}) = \mathbf{v}^T \mathbf{R}^T \mathbf{R} \mathbf{v}$$
+$$\|\mathbf{R} \mathbf{v}\|^2 = (\mathbf{R} \mathbf{v})^T (\mathbf{R} \mathbf{v}) = \mathbf{v}^T \mathbf{R}^T \mathbf{R} \mathbf{v}$$
 
 Оскільки $\mathbf{R} \in SO(d)$, маємо $\mathbf{R}^T \mathbf{R} = \mathbf{I}$ (одинична матриця), тому:
 
-$$||\mathbf{R} \mathbf{v}||^2 = \mathbf{v}^T \mathbf{I} \mathbf{v} = \mathbf{v}^T \mathbf{v} = ||\mathbf{v}||^2$$
+$$\|\mathbf{R} \mathbf{v}\|^2 = \mathbf{v}^T \mathbf{I} \mathbf{v} = \mathbf{v}^T \mathbf{v} = \|\mathbf{v}\|^2$$
 
 Отже:
-$$||\mathbf{R} \mathbf{v}|| = ||\mathbf{v}||$$
+$$\|\mathbf{R} \mathbf{v}\| = \|\mathbf{v}\|$$
 
 **Крок 4:** Застосовуємо цю властивість до нашого випадку:
 
-$$||\mathbf{t}_i' - \mathbf{t}_j'|| = ||\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)|| = ||\mathbf{t}_i - \mathbf{t}_j||$$
+$$\|\mathbf{t}_i' - \mathbf{t}_j'\| = \|\mathbf{R}(\mathbf{t}_i - \mathbf{t}_j)\| = \|\mathbf{t}_i - \mathbf{t}_j\|$$
 
 **Доведення завершено.** ✅
 
@@ -315,7 +315,7 @@ $$\mathbf{R}^T \mathbf{R} = \begin{pmatrix}
 Нехай:
 - $\mathbf{t}_1 = (1, 0)$ — перша точка
 - $\mathbf{t}_2 = (0, 1)$ — друга точка
-- Відстань до обертання: $||\mathbf{t}_1 - \mathbf{t}_2|| = ||(1, -1)|| = \sqrt{1^2 + (-1)^2} = \sqrt{2}$
+- Відстань до обертання: $\|\mathbf{t}_1 - \mathbf{t}_2\| = \|(1, -1)\| = \sqrt{1^2 + (-1)^2} = \sqrt{2}$
 
 Обертання на $90°$ ($\theta = \pi/2$):
 
@@ -327,13 +327,13 @@ $$\mathbf{R} = \begin{pmatrix}
 Після обертання:
 - $\mathbf{t}_1' = \mathbf{R} \mathbf{t}_1 = (0, 1)$
 - $\mathbf{t}_2' = \mathbf{R} \mathbf{t}_2 = (-1, 0)$
-- Відстань після обертання: $||\mathbf{t}_1' - \mathbf{t}_2'|| = ||(1, 1)|| = \sqrt{1^2 + 1^2} = \sqrt{2}$
+- Відстань після обертання: $\|\mathbf{t}_1' - \mathbf{t}_2'\| = \|(1, 1)\| = \sqrt{1^2 + 1^2} = \sqrt{2}$
 
 **Результат:** Відстань не змінилася! ✅
 
 **Висновок для IPA:**
 
-Оскільки $\text{GeomBias}$ залежить лише від $||\mathbf{t}_i - \mathbf{t}_j||$ (та кутів між $\mathbf{R}_i$ та $\mathbf{R}_j$), а ці величини інваріантні до глобальних обертань, то IPA автоматично інваріантна до обертань та переносів.
+Оскільки $\text{GeomBias}$ залежить лише від $\|\mathbf{t}_i - \mathbf{t}_j\|$ (та кутів між $\mathbf{R}_i$ та $\mathbf{R}_j$), а ці величини інваріантні до глобальних обертань, то IPA автоматично інваріантна до обертань та переносів.
 
 ### 4.2. Структура Structure Module
 
@@ -413,7 +413,7 @@ $$\mathbf{r}_{atom} = \mathbf{T}_i \cdot \mathbf{r}_{local}$$
 Це основна метрика втрат AlphaFold 2. Вона вимірює помилку в **локальних системах координат** (frames), а не в глобальних координатах.
 
 **Формалізація:**
-$$\mathcal{L}_{FAPE} = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|\text{atoms}_i|} \sum_{a \in \text{atoms}_i} ||\mathbf{T}_i^{-1} \mathbf{r}_a^{pred} - \mathbf{T}_i^{-1} \mathbf{r}_a^{true}||$$
+$$\mathcal{L}_{FAPE} = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{|\text{atoms}_i|} \sum_{a \in \text{atoms}_i} \|\mathbf{T}_i^{-1} \mathbf{r}_a^{pred} - \mathbf{T}_i^{-1} \mathbf{r}_a^{true}\|$$
 
 Де:
 - $\mathbf{r}_a^{pred}$ — передбачена позиція атома

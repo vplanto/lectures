@@ -53,7 +53,7 @@ DeepMind використала AlphaFold 2 для передбачення ст
 Для білка з $N$ амінокислотами, матриця суміжності $A \in \{0,1\}^{N \times N}$ визначається як:
 $$A_{ij} = \begin{cases}
 1 & \text{якщо } |i-j| = 1 \text{ (ковалентний зв'язок)} \\
-1 & \text{якщо } ||\mathbf{r}_i - \mathbf{r}_j|| < d_{cutoff} \text{ (просторова близькість)} \\
+1 & \text{якщо } \|\mathbf{r}_i - \mathbf{r}_j\| < d_{cutoff} \text{ (просторова близькість)} \\
 0 & \text{інакше}
 \end{cases}$$
 

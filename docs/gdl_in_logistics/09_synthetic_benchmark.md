@@ -85,7 +85,7 @@ $$x_i, y_i \sim \begin{cases}
 ### 2.3. Метрики відстаней: Евклідова vs Дорожня
 
 **Евклідова відстань:**
-$$d_{ij}^{euclidean} = ||\mathbf{x}_i - \mathbf{x}_j||_2 = \sqrt{(x_i - x_j)^2 + (y_i - y_j)^2}$$
+$$d_{ij}^{euclidean} = \|\mathbf{x}_i - \mathbf{x}_j\|_2 = \sqrt{(x_i - x_j)^2 + (y_i - y_j)^2}$$
 
 **Переваги:**
 - Швидко обчислюється: $O(N^2)$

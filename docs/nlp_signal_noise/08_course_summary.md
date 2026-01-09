@@ -398,8 +398,8 @@ $$P_{\text{new}}(Y | X) = \frac{P_{\text{new}}(X | Y) \cdot P_{\text{new}}(Y)}{P
 $$P_{\text{old}}(Y | X) \neq P_{\text{new}}(Y | X)$$
 
 **Вимірювання drift:**
-- **KL Divergence:** $D_{KL}(P_{\text{old}} || P_{\text{new}})$
-- **JS Divergence:** $D_{JS}(P_{\text{old}} || P_{\text{new}})$
+- **KL Divergence:** $D_{KL}(P_{\text{old}} \| P_{\text{new}})$
+- **JS Divergence:** $D_{JS}(P_{\text{old}} \| P_{\text{new}})$
 - **PSI (Population Stability Index):** $\text{PSI} = \sum_i (P_{\text{old},i} - P_{\text{new},i}) \log \frac{P_{\text{old},i}}{P_{\text{new},i}}$
 
 ### Приклад: Concept Drift у Логах

@@ -48,11 +48,11 @@ nav_order: 10
 Нехай:
 - $\mathbf{x}$ — спостереження для пояснення
 - $\phi(\mathbf{x})$ — пояснення (наприклад, SHAP значення)
-- $\mathcal{N}_\epsilon(\mathbf{x}) = \{\mathbf{x}' : ||\mathbf{x}' - \mathbf{x}|| \leq \epsilon\}$ — $\epsilon$-окіл спостереження
+- $\mathcal{N}_\epsilon(\mathbf{x}) = \{\mathbf{x}' : \|\mathbf{x}' - \mathbf{x}\| \leq \epsilon\}$ — $\epsilon$-окіл спостереження
 
 **Robustness** визначається як:
 
-$$\text{Robustness}(\phi, \mathbf{x}, \epsilon) = 1 - \frac{1}{|\mathcal{N}_\epsilon(\mathbf{x})|} \sum_{\mathbf{x}' \in \mathcal{N}_\epsilon(\mathbf{x})} \frac{||\phi(\mathbf{x}') - \phi(\mathbf{x})||}{||\phi(\mathbf{x})|| + \delta}$$
+$$\text{Robustness}(\phi, \mathbf{x}, \epsilon) = 1 - \frac{1}{|\mathcal{N}_\epsilon(\mathbf{x})|} \sum_{\mathbf{x}' \in \mathcal{N}_\epsilon(\mathbf{x})} \frac{\|\phi(\mathbf{x}') - \phi(\mathbf{x})\|}{\|\phi(\mathbf{x})\| + \delta}$$
 
 де $\delta > 0$ — мала константа для уникнення ділення на нуль.
 
@@ -66,7 +66,7 @@ $$\text{Robustness}(\phi, \mathbf{x}, \epsilon) = 1 - \frac{1}{|\mathcal{N}_\eps
 
 Варіативність пояснень при багаторазовому запуску:
 
-$$\text{Var}(\phi) = \frac{1}{n-1} \sum_{i=1}^{n} ||\phi_i(\mathbf{x}) - \bar{\phi}(\mathbf{x})||^2$$
+$$\text{Var}(\phi) = \frac{1}{n-1} \sum_{i=1}^{n} \|\phi_i(\mathbf{x}) - \bar{\phi}(\mathbf{x})\|^2$$
 
 де:
 - $\phi_i(\mathbf{x})$ — пояснення при $i$-му запуску
@@ -77,7 +77,7 @@ $$\text{Var}(\phi) = \frac{1}{n-1} \sum_{i=1}^{n} ||\phi_i(\mathbf{x}) - \bar{\p
 
 Відносна міра варіативності:
 
-$$\text{CV}(\phi) = \frac{\sqrt{\text{Var}(\phi)}}{||\bar{\phi}(\mathbf{x})|| + \delta}$$
+$$\text{CV}(\phi) = \frac{\sqrt{\text{Var}(\phi)}}{\|\bar{\phi}(\mathbf{x})\| + \delta}$$
 
 **Критерій стабільності:**
 - $\text{CV} < 0.1$ — висока стабільність
