@@ -79,7 +79,9 @@ $$d_G(v_i, v_j) = \min_{p \in \text{paths}(i,j)} \sum_{(u,v) \in p} w_{uv}$$
 
 На кожному шарі $l$ вершина $v_i$ отримує "повідомлення" від сусідів та оновлює своє представлення:
 
-$$h_i^{(l+1)} = \text{UPDATE}^{(l)}\left(h_i^{(l)}, \text{AGGREGATE}^{(l)}\left(\{h_j^{(l)} : j \in \mathcal{N}(i)\}\right)\right)$$
+$$
+h_i^{(l+1)} = \text{UPDATE}^{(l)}\left(h_i^{(l)}, \text{AGGREGATE}^{(l)}\left( \{h_j^{(l)} : j \in \mathcal{N}(i)\} \right)\right)
+$$
 
 Де:
 - $\mathcal{N}(i)$ — множина сусідів вершини $i$
@@ -141,7 +143,9 @@ Evoformer використовує **Attention mechanism** для виявлен
 
 Замість обробки координат напряму, IPA працює з **відносними позиціями** та **кутами**:
 
-$$IPA(\mathbf{q}, \mathbf{k}, \mathbf{v}, \mathbf{T}) = \text{Softmax}\left(\frac{\mathbf{q}^T \mathbf{k}}{\sqrt{d_k}} + \text{GeomBias}(\mathbf{T})\right) \mathbf{v}$$
+$$
+\text{IPA}(\mathbf{q}, \mathbf{k}, \mathbf{v}, \mathbf{T}) = \text{Softmax}\left( \frac{\mathbf{q}^\top \mathbf{k}}{\sqrt{d_k}} + \text{GeomBias}(\mathbf{T}) \right) \mathbf{v}
+$$
 
 Де $\mathbf{T}$ — тензор трансформацій (обертання + переноси), а $\text{GeomBias}$ — функція, яка залежить лише від **відносних** позицій, а не абсолютних.
 
@@ -225,7 +229,7 @@ class GraphBatch:
     batch_ptr: Tensor      # [batch_size+1] - вказівники на початок кожного графа
 ```
 **Переваги:**
-- Пам'ять: $O(\sum_i |V_i| + \sum_i |E_i|)$ замість $O(\text{batch_size} \times \max_i |V_i|^2)$
+- Пам'ять: $O(\sum_i |V_i| + \sum_i |E_i|)$ замість $O(\text{batch\_size} \times \max_i |V_i|^2)$
 - Для batch з графами розмірів [10, 50, 1000]: економія пам'яті $>90\%$
 
 **Висновок:** Використовуємо **PyTorch Geometric** або **DGL** — вони автоматично конвертують графи в CSR format.
@@ -233,7 +237,10 @@ class GraphBatch:
 ### 5.2. Паралелізм на GPU: Sparse Matrix Multiplication
 
 **Операція Message Passing:**
-$$H^{(l+1)} = \sigma(A H^{(l)} W^{(l)})$$
+
+$$
+H^{(l+1)} = \sigma(A H^{(l)} W^{(l)})
+$$
 
 Де $A$ — матриця суміжності (sparse), $H^{(l)}$ — node features, $W^{(l)}$ — ваги шару.
 
@@ -375,4 +382,3 @@ Cost per route: 0.2 ms (в 500 разів дешевше)
 ---
 
 **Наступний крок:** Перехід до детального розбору класичної транспортної задачі та її обмежень ([01_classical_transport_problem.md](./01_classical_transport_problem.md)).
-
