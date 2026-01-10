@@ -35,7 +35,9 @@
 
 **Математична формалізація:**
 
-$$MCC = \frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}$$
+$$
+\text{MCC} = \frac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}
+$$
 
 **Детальніше:** 
 - [10_seminar_metrics_extreme_imbalance.md](./10_seminar_metrics_extreme_imbalance.md) — метрики для незбалансованих даних
@@ -64,7 +66,7 @@ $$MCC = \frac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN 
 - [01_noise_in_production.md](./01_noise_in_production.md) — Alert Fatigue в DevOps
 - [00_the_bayesian_trap.md](./00_the_bayesian_trap.md) — математична основа Base Rate Fallacy
 
-• Математична формалізація через теорему Байєса: обчислення $P(\text{Critical} | \text{"Error"})$
+• Математична формалізація через теорему Байєса: обчислення $P(\text{Critical} \mid \text{"Error"})$
 
 **Матеріали:** 
 - [02_math_setup_classification.md](./02_math_setup_classification.md) — формалізація задачі класифікації
@@ -795,4 +797,3 @@ else:
 
 3. **Boughorbel, S., Jarray, F., & El-Anbari, M.** (2017). "Optimal classifier for imbalanced data using Matthews Correlation Coefficient metric"
    - PLOS ONE. Застосування MCC для незбалансованих даних.
-

@@ -20,9 +20,17 @@ author: Віталій Платонов
 
 Для людини всі три означають критичний збій бази даних. Для Bag of Words:
 
-$$X_1 = \{"Database", "connection", "failed"\}$$
-$$X_2 = \{"DB", "down"\}$$
-$$X_3 = \{"Connection", "lost"\}$$
+$$
+X_1 = \{ \texttt{"Database"}, \texttt{"connection"}, \texttt{"failed"} \}
+$$
+
+$$
+X_2 = \{ \texttt{"DB"}, \texttt{"down"} \}
+$$
+
+$$
+X_3 = \{ \texttt{"Connection"}, \texttt{"lost"} \}
+$$
 
 **Перетин:** $\emptyset$ (порожня множина)
 
@@ -65,51 +73,65 @@ Naive Bayes не зрозуміє, що інші варіанти — це те 
 
 **Приклад:**
 
-$$\mathbf{v}_{\text{"database"}} = (0.2, -0.1, 0.5, \ldots, 0.3) \in \mathbb{R}^{300}$$
+$$
+\mathbf{v}_{\texttt{"database"}} = (0.2, -0.1, 0.5, \ldots, 0.3) \in \mathbb{R}^{300}
+$$
 
-$$\mathbf{v}_{\text{"connection"}} = (0.3, -0.05, 0.4, \ldots, 0.25) \in \mathbb{R}^{300}$$
+$$
+\mathbf{v}_{\texttt{"connection"}} = (0.3, -0.05, 0.4, \ldots, 0.25) \in \mathbb{R}^{300}
+$$
 
-### Властивості Векторного Простору
+### Властивості векторного простору
 
 1. **Додавання:** $\mathbf{v}_1 + \mathbf{v}_2$ — комбінація значень
 2. **Множення на скаляр:** $\alpha \mathbf{v}$ — масштабування
 3. **Скалярний добуток:** $\mathbf{v}_1 \cdot \mathbf{v}_2 = \sum_{i=1}^{N} v_{1,i} \cdot v_{2,i}$
-4. **Норма:** $\|\mathbf{v}\| = \sqrt{\mathbf{v} \cdot \mathbf{v}} = \sqrt{\sum_{i=1}^{N} v_i^2}$
+4. **Норма:** $\lVert \mathbf{v} \rVert = \sqrt{\mathbf{v} \cdot \mathbf{v}} = \sqrt{\sum_{i=1}^{N} v_i^2}$
 
-## Косинусна Відстань: Міра Схожості
+## Косинусна відстань: міра схожості
 
-### Євклідова Відстань
+### Євклідова відстань
 
 **Визначення:**
 
-$$d(\mathbf{v}_1, \mathbf{v}_2) = \|\mathbf{v}_1 - \mathbf{v}_2\| = \sqrt{\sum_{i=1}^{N} (v_{1,i} - v_{2,i})^2}$$
+$$
+d(\mathbf{v}_1, \mathbf{v}_2) = \lVert \mathbf{v}_1 - \mathbf{v}_2 \rVert = \sqrt{\sum_{i=1}^{N} (v_{1,i} - v_{2,i})^2}
+$$
 
 **Проблема:** Залежить від довжини векторів. Два довгі вектори можуть бути далеко, навіть якщо вони спрямовані однаково.
 
-### Косинусна Відстань
+### Косинусна відстань
 
 **Ідея:** Вимірюємо кут між векторами, а не їх абсолютну відстань.
 
 **Косинус кута:**
 
-$$\cos(\theta) = \frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\|\mathbf{v}_1\| \cdot \|\mathbf{v}_2\|}$$
+$$
+\cos(\theta) = \frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\lVert \mathbf{v}_1 \rVert \cdot \lVert \mathbf{v}_2 \rVert}
+$$
 
 **Косинусна відстань:**
 
-$$d_{\cos}(\mathbf{v}_1, \mathbf{v}_2) = 1 - \cos(\theta) = 1 - \frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\|\mathbf{v}_1\| \cdot \|\mathbf{v}_2\|}$$
+$$
+d_{\cos}(\mathbf{v}_1, \mathbf{v}_2) = 1 - \cos(\theta) = 1 - \frac{\mathbf{v}_1 \cdot \mathbf{v}_2}{\lVert \mathbf{v}_1 \rVert \cdot \lVert \mathbf{v}_2 \rVert}
+$$
 
 **Властивості:**
-- $d_{\cos} \in [0, 2]$ (для ненормалізованих векторів)
+- $d_{\cos} \in [0, 2]$ (для векторів, що можуть мати від'ємні координати)
 - $d_{\cos} = 0$ → вектори однаково спрямовані (ідеальна схожість)
 - $d_{\cos} = 2$ → вектори протилежно спрямовані (максимальна відмінність)
 
 ### Нормалізація
 
-Якщо вектори нормалізовані ($\|\mathbf{v}\| = 1$), то:
+Якщо вектори нормалізовані ($\lVert \mathbf{v} \rVert = 1$), то:
 
-$$\cos(\theta) = \mathbf{v}_1 \cdot \mathbf{v}_2$$
+$$
+\cos(\theta) = \mathbf{v}_1 \cdot \mathbf{v}_2
+$$
 
-$$d_{\cos}(\mathbf{v}_1, \mathbf{v}_2) = 1 - \mathbf{v}_1 \cdot \mathbf{v}_2$$
+$$
+d_{\cos}(\mathbf{v}_1, \mathbf{v}_2) = 1 - \mathbf{v}_1 \cdot \mathbf{v}_2
+$$
 
 **Переваги:**
 - Не залежить від довжини векторів
@@ -119,19 +141,31 @@ $$d_{\cos}(\mathbf{v}_1, \mathbf{v}_2) = 1 - \mathbf{v}_1 \cdot \mathbf{v}_2$$
 
 **Вектори:**
 
-$$\mathbf{v}_{\text{"database"}} = (0.6, 0.8)$$
-$$\mathbf{v}_{\text{"DB"}} = (0.3, 0.4)$$
-$$\mathbf{v}_{\text{"connection"}} = (0.8, 0.6)$$
+$$
+\mathbf{v}_{\texttt{"database"}} = (0.6, 0.8)
+$$
+
+$$
+\mathbf{v}_{\texttt{"DB"}} = (0.3, 0.4)
+$$
+
+$$
+\mathbf{v}_{\texttt{"connection"}} = (0.8, 0.6)
+$$
 
 **Косинусна схожість:**
 
-$$\cos(\text{"database"}, \text{"DB"}) = \frac{0.6 \cdot 0.3 + 0.8 \cdot 0.4}{\sqrt{0.6^2 + 0.8^2} \cdot \sqrt{0.3^2 + 0.4^2}} = \frac{0.18 + 0.32}{1.0 \cdot 0.5} = 1.0$$
+$$
+\cos(\texttt{"database"}, \texttt{"DB"}) = \frac{0.6 \cdot 0.3 + 0.8 \cdot 0.4}{\sqrt{0.6^2 + 0.8^2} \cdot \sqrt{0.3^2 + 0.4^2}} = \frac{0.18 + 0.32}{1.0 \cdot 0.5} = 1.0
+$$
 
-**Висновок:** "database" та "DB" майже ідентичні за напрямком (синоніми).
+**Висновок:** `database` та `DB` майже ідентичні за напрямком (синоніми).
 
-$$\cos(\text{"database"}, \text{"connection"}) = \frac{0.6 \cdot 0.8 + 0.8 \cdot 0.6}{1.0 \cdot 1.0} = \frac{0.48 + 0.48}{1.0} = 0.96$$
+$$
+\cos(\texttt{"database"}, \texttt{"connection"}) = \frac{0.6 \cdot 0.8 + 0.8 \cdot 0.6}{1.0 \cdot 1.0} = \frac{0.48 + 0.48}{1.0} = 0.96
+$$
 
-**Висновок:** "database" та "connection" теж близькі (пов'язані концепти).
+**Висновок:** `database` та `connection` теж близькі (пов'язані концепти).
 
 ## Word2Vec: Інтуїція та Математика
 
@@ -152,7 +186,9 @@ $$\cos(\text{"database"}, \text{"connection"}) = \frac{0.6 \cdot 0.8 + 0.8 \cdot
 
 Для слова $w$ та контекстного слова $c$:
 
-$$P(c | w) = \frac{\exp(\mathbf{v}_c \cdot \mathbf{v}_w)}{\sum_{c' \in V} \exp(\mathbf{v}_{c'} \cdot \mathbf{v}_w)}$$
+$$
+P(c \mid w) = \frac{\exp(\mathbf{v}_c \cdot \mathbf{v}_w)}{\sum_{c' \in V} \exp(\mathbf{v}_{c'} \cdot \mathbf{v}_w)}
+$$
 
 де:
 - $\mathbf{v}_w$ — вектор слова (word embedding)
@@ -168,10 +204,16 @@ $$P(c | w) = \frac{\exp(\mathbf{v}_c \cdot \mathbf{v}_w)}{\sum_{c' \in V} \exp(\
 **Математика:**
 
 Якщо:
-- $\mathbf{v}_{\text{King}} - \mathbf{v}_{\text{Man}} \approx \mathbf{v}_{\text{Queen}} - \mathbf{v}_{\text{Woman}}$
+
+$$
+\mathbf{v}_{\text{King}} - \mathbf{v}_{\text{Man}} \approx \mathbf{v}_{\text{Queen}} - \mathbf{v}_{\text{Woman}}
+$$
 
 То:
-- $\mathbf{v}_{\text{King}} - \mathbf{v}_{\text{Man}} + \mathbf{v}_{\text{Woman}} \approx \mathbf{v}_{\text{Queen}}$
+
+$$
+\mathbf{v}_{\text{King}} - \mathbf{v}_{\text{Man}} + \mathbf{v}_{\text{Woman}} \approx \mathbf{v}_{\text{Queen}}
+$$
 
 **Чому це працює:**
 
@@ -179,7 +221,9 @@ $$P(c | w) = \frac{\exp(\mathbf{v}_c \cdot \mathbf{v}_w)}{\sum_{c' \in V} \exp(\
 
 **Для технічних термінів:**
 
-$$\mathbf{v}_{\text{"database"}} - \mathbf{v}_{\text{"connection"}} + \mathbf{v}_{\text{"server"}} \approx \mathbf{v}_{\text{"DB server"}}$$
+$$
+\mathbf{v}_{\texttt{"database"}} - \mathbf{v}_{\texttt{"connection"}} + \mathbf{v}_{\texttt{"server"}} \approx \mathbf{v}_{\texttt{"DB server"}}
+$$
 
 ### Continuous Bag of Words (CBOW)
 
@@ -187,7 +231,9 @@ $$\mathbf{v}_{\text{"database"}} - \mathbf{v}_{\text{"connection"}} + \mathbf{v}
 
 **Формалізація:**
 
-$$P(w | c_1, c_2, \ldots, c_n) = \frac{\exp(\mathbf{v}_w \cdot \bar{\mathbf{v}}_c)}{\sum_{w' \in V} \exp(\mathbf{v}_{w'} \cdot \bar{\mathbf{v}}_c)}$$
+$$
+P(w \mid c_1, c_2, \ldots, c_n) = \frac{\exp(\mathbf{v}_w \cdot \bar{\mathbf{v}}_c)}{\sum_{w' \in V} \exp(\mathbf{v}_{w'} \cdot \bar{\mathbf{v}}_c)}
+$$
 
 де $\bar{\mathbf{v}}_c = \frac{1}{n} \sum_{i=1}^{n} \mathbf{v}_{c_i}$ — середній вектор контексту.
 
@@ -488,17 +534,21 @@ if __name__ == "__main__":
 
 **Embeddings:** Всі схожі (косинусна схожість > 0.8)
 
-### Рішення: Класифікація через Середній Вектор
+### Рішення: Класифікація через середній вектор
 
 Для фрази $d = \{w_1, w_2, \ldots, w_n\}$:
 
-$$\bar{\mathbf{v}}_d = \frac{1}{n} \sum_{i=1}^{n} \mathbf{v}_{w_i}$$
+$$
+\bar{\mathbf{v}}_d = \frac{1}{n} \sum_{i=1}^{n} \mathbf{v}_{w_i}
+$$
 
 **Класифікація:** Порівнюємо $\bar{\mathbf{v}}_d$ з прототипами класів.
 
 **Приклад:**
 
-$$\bar{\mathbf{v}}_{\text{"DB down"}} \approx \bar{\mathbf{v}}_{\text{"database connection failed"}}$$
+$$
+\bar{\mathbf{v}}_{\texttt{"DB down"}} \approx \bar{\mathbf{v}}_{\texttt{"database connection failed"}}
+$$
 
 Обидва класифікуються як Critical.
 
@@ -564,8 +614,3 @@ $$\bar{\mathbf{v}}_{\text{"DB down"}} \approx \bar{\mathbf{v}}_{\text{"database 
 ---
 
 **Примітка для студентів:** Почніть з Mikolov et al. (2013) для розуміння Word2Vec, потім перейдіть до Levy & Goldberg для математичної строгості. Для практики використовуйте Gensim та приклади з Turney & Pantel. Перед переходом до BERT прочитайте Peters et al. про ELMo.
-
-
-
-
-
