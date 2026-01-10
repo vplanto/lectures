@@ -12,17 +12,21 @@ author: Віталій Платонов
 
 ## Припущення Незалежності: Чому "Наївне"
 
-### Математична Формулювання
+### Математичне формулювання
 
 У попередньому розділі ми використовували формулу:
 
-$$P(w_1, w_2, \ldots, w_n | c) = \prod_{i=1}^{n} P(w_i | c)$$
+$$
+P(w_1, w_2, \ldots, w_n \mid c) = \prod_{i=1}^{n} P(w_i \mid c)
+$$
 
 Це означає: ймовірність спільної появи слів дорівнює добутку ймовірностей окремих слів.
 
 **Припущення незалежності:**
 
-$$P(w_i, w_j | c) = P(w_i | c) \cdot P(w_j | c)$$
+$$
+P(w_i, w_j \mid c) = P(w_i \mid c) \cdot P(w_j \mid c)
+$$
 
 для будь-яких $i \neq j$.
 
@@ -36,7 +40,9 @@ $$P(w_i, w_j | c) = P(w_i | c) \cdot P(w_j | c)$$
 
 **Реальна ймовірність:**
 
-$$P(\text{"Connection"}, \text{"refused"} | \text{Critical}) \neq P(\text{"Connection"} | \text{Critical}) \cdot P(\text{"refused"} | \text{Critical})$$
+$$
+P(\texttt{"Connection"}, \texttt{"refused"} \mid \text{Critical}) \neq P(\texttt{"Connection"} \mid \text{Critical}) \cdot P(\texttt{"refused"} \mid \text{Critical})
+$$
 
 Наївний Байєс ігнорує цю кореляцію.
 
@@ -77,17 +83,23 @@ Naive Bayes має дві основні варіації, які по-різн�
 
 Для документа $d$ з $n$ словами, де слово $w_i$ з'являється $x_i$ разів:
 
-$$P(d | c) = \frac{(\sum_{i=1}^{|V|} x_i)!}{\prod_{i=1}^{|V|} x_i!} \prod_{i=1}^{|V|} P(w_i | c)^{x_i}$$
+$$
+P(d \mid c) = \frac{(\sum_{i=1}^{|V|} x_i)!}{\prod_{i=1}^{|V|} x_i!} \prod_{i=1}^{|V|} P(w_i \mid c)^{x_i}
+$$
 
 де $V$ — словник, $x_i$ — кількість разів, що слово $w_i$ з'являється в документі.
 
 **Спрощення (ігноруємо факторіали, бо вони однакові для всіх класів):**
 
-$$P(d | c) \propto \prod_{i=1}^{|V|} P(w_i | c)^{x_i}$$
+$$
+P(d \mid c) \propto \prod_{i=1}^{|V|} P(w_i \mid c)^{x_i}
+$$
 
 **Оцінка ймовірності слова:**
 
-$$P(w_i | c) = \frac{\text{count}(w_i, c) + \alpha}{\sum_{j=1}^{|V|} \text{count}(w_j, c) + \alpha \cdot |V|}$$
+$$
+P(w_i \mid c) = \frac{\text{count}(w_i, c) + \alpha}{\sum_{j=1}^{|V|} \text{count}(w_j, c) + \alpha \cdot |V|}
+$$
 
 де $\alpha$ — Лапласове згладжування.
 
@@ -104,11 +116,15 @@ $$P(w_i | c) = \frac{\text{count}(w_i, c) + \alpha}{\sum_{j=1}^{|V|} \text{count
 
 Для документа $d$, де $x_i \in \{0, 1\}$ — індикатор наявності слова $w_i$:
 
-$$P(d | c) = \prod_{i=1}^{|V|} P(w_i | c)^{x_i} \cdot (1 - P(w_i | c))^{1-x_i}$$
+$$
+P(d \mid c) = \prod_{i=1}^{|V|} P(w_i \mid c)^{x_i} \cdot (1 - P(w_i \mid c))^{1-x_i}
+$$
 
 **Оцінка ймовірності слова:**
 
-$$P(w_i | c) = \frac{\text{documents}(w_i \in d, c) + \alpha}{\text{total documents}(c) + \alpha \cdot 2}$$
+$$
+P(w_i \mid c) = \frac{\text{documents}(w_i \in d, c) + \alpha}{\text{total documents}(c) + \alpha \cdot 2}
+$$
 
 де $\text{documents}(w_i \in d, c)$ — кількість документів класу $c$, що містять слово $w_i$.
 
@@ -126,11 +142,11 @@ $$P(w_i | c) = \frac{\text{documents}(w_i \in d, c) + \alpha}{\text{total docume
 ```
 
 **Multinomial:**
-- "віагра" з'являється 3 рази → $P(\text{"віагра"} | \text{Spam})^3$
+- "віагра" з'являється 3 рази → $P(\text{"віагра"} \mid \text{Spam})^3$
 - Частота важлива: 3 входження сильніше, ніж 1
 
 **Bernoulli:**
-- "віагра" присутнє (1) → $P(\text{"віагра"} | \text{Spam})^1$
+- "віагра" присутнє (1) → $P(\text{"віагра"} \mid \text{Spam})^1$
 - Частота не важлива: 3 входження = 1 входження
 
 **Висновок:** Для спаму Multinomial краще, бо повторення слів ("віагра" 5 разів) — сильний індикатор.
@@ -156,11 +172,15 @@ $$P(w_i | c) = \frac{\text{documents}(w_i \in d, c) + \alpha}{\text{total docume
 
 **Multinomial для логу:**
 
-$$P(\text{Critical} | \text{"ERROR ERROR ERROR"}) \propto P(\text{Critical}) \cdot P(\text{"ERROR"} | \text{Critical})^3$$
+$$
+P(\text{Critical} \mid \text{"ERROR ERROR ERROR"}) \propto P(\text{Critical}) \cdot P(\text{"ERROR"} \mid \text{Critical})^3
+$$
 
 **Bernoulli для того ж логу:**
 
-$$P(\text{Critical} | \text{"ERROR ERROR ERROR"}) \propto P(\text{Critical}) \cdot P(\text{"ERROR"} | \text{Critical})^1 \cdot (1 - P(\text{"ERROR"} | \text{Critical}))^0$$
+$$
+P(\text{Critical} \mid \text{"ERROR ERROR ERROR"}) \propto P(\text{Critical}) \cdot P(\text{"ERROR"} \mid \text{Critical})^1 \cdot (1 - P(\text{"ERROR"} \mid \text{Critical}))^0
+$$
 
 **Різниця:** Multinomial "переоцінює" повторення, Bernoulli фокусується на наявності.
 
@@ -321,45 +341,59 @@ class HybridNaiveBayes:
 
 **Наївний Байєс обчислює:**
 
-$$P(\text{Spam} | \text{"віагра"}, \text{"казино"}) \propto P(\text{Spam}) \cdot P(\text{"віагра"} | \text{Spam}) \cdot P(\text{"казино"} | \text{Spam})$$
+$$
+P(\text{Spam} \mid \text{"віагра"}, \text{"казино"}) \propto P(\text{Spam}) \cdot P(\text{"віагра"} \mid \text{Spam}) \cdot P(\text{"казино"} \mid \text{Spam})
+$$
 
 **Чому це працює, навіть якщо слова корелюють?**
 
 1. **Обидва слова сильні індикатори спаму:**
-   - $P(\text{"віагра"} | \text{Spam}) \approx 0.8$ (висока)
-   - $P(\text{"казино"} | \text{Spam}) \approx 0.7$ (висока)
+   - $P(\text{"віагра"} \mid \text{Spam}) \approx 0.8$ (висока)
+   - $P(\text{"казино"} \mid \text{Spam}) \approx 0.7$ (висока)
 
 2. **У нормальних листах обидва рідкісні:**
-   - $P(\text{"віагра"} | \text{Ham}) \approx 0.001$ (дуже низька)
-   - $P(\text{"казино"} | \text{Ham}) \approx 0.002$ (дуже низька)
+   - $P(\text{"віагра"} \mid \text{Ham}) \approx 0.001$ (дуже низька)
+   - $P(\text{"казино"} \mid \text{Ham}) \approx 0.002$ (дуже низька)
 
-3. **Добуток все одно правильний порядок:**
+3. **Добуток все одно дає правильний порядок:**
 
-$$P(\text{Spam} | \text{"віагра"}, \text{"казино"}) \propto 0.1 \times 0.8 \times 0.7 = 0.056$$
+$$
+P(\text{Spam} \mid \text{"віагра"}, \text{"казино"}) \propto 0.1 \cdot 0.8 \cdot 0.7 = 0.056
+$$
 
-$$P(\text{Ham} | \text{"віагра"}, \text{"казино"}) \propto 0.9 \times 0.001 \times 0.002 = 0.0000018$$
+$$
+P(\text{Ham} \mid \text{"віагра"}, \text{"казино"}) \propto 0.9 \cdot 0.001 \cdot 0.002 = 0.0000018
+$$
 
-**Співвідношення:** $\frac{0.056}{0.0000018} \approx 31,111$ — настільки велике, що помилка від незалежності не критична.
+**Співвідношення:** $\frac{0.056}{0.0000018} \approx 31{,}111$ — настільки велике, що помилка від незалежності не критична.
 
-### Математичне Пояснення
+### Математичне пояснення
 
 Навіть якщо реальна ймовірність:
 
-$$P(\text{"віагра"}, \text{"казино"} | \text{Spam}) = 0.6$$
+$$
+P(\text{"віагра"}, \text{"казино"} \mid \text{Spam}) = 0.6
+$$
 
-(вища за добуток $0.8 \times 0.7 = 0.56$), але:
+(вища за добуток $0.8 \cdot 0.7 = 0.56$), але:
 
-$$P(\text{"віагра"}, \text{"казино"} | \text{Ham}) = 0.000001$$
+$$
+P(\text{"віагра"}, \text{"казино"} \mid \text{Ham}) = 0.000001
+$$
 
-(набагато нижча за добуток $0.001 \times 0.002 = 0.000002$).
+(набагато нижча за добуток $0.001 \cdot 0.002 = 0.000002$).
 
 **Відношення ймовірностей:**
 
-$$\frac{P(\text{Spam} | \text{"віагра"}, \text{"казино"})}{P(\text{Ham} | \text{"віагра"}, \text{"казино"})} \approx \frac{0.6}{0.000001} = 600,000$$
+$$
+\frac{P(\text{Spam} \mid \text{"віагра"}, \text{"казино"})}{P(\text{Ham} \mid \text{"віагра"}, \text{"казино"})} \approx \frac{0.6}{0.000001} = 600{,}000
+$$
 
 Наївний Байєс дає:
 
-$$\frac{0.56}{0.000002} = 280,000$$
+$$
+\frac{0.56}{0.000002} = 280{,}000
+$$
 
 **Висновок:** Порядок величини правильний, навіть якщо точне значення неточне. Для бінарної класифікації (Spam/Ham) цього достатньо.
 
@@ -373,37 +407,45 @@ $$\frac{0.56}{0.000002} = 280,000$$
 
 **Проблема:** Слово "Connection" з'являється в обох, але значення залежить від контексту.
 
-### Математичний Аналіз
+### Математичний аналіз
 
 **Наївний Байєс обчислює:**
 
-$$P(\text{Critical} | \text{"Connection"}, \text{"refused"}) \propto P(\text{Critical}) \cdot P(\text{"Connection"} | \text{Critical}) \cdot P(\text{"refused"} | \text{Critical})$$
+$$
+P(\text{Critical} \mid \text{"Connection"}, \text{"refused"}) \propto P(\text{Critical}) \cdot P(\text{"Connection"} \mid \text{Critical}) \cdot P(\text{"refused"} \mid \text{Critical})
+$$
 
 **Проблема 1: "Connection" не специфічне**
 
-- $P(\text{"Connection"} | \text{Critical}) \approx 0.3$ (середнє)
-- $P(\text{"Connection"} | \text{Normal}) \approx 0.4$ (вище!)
+- $P(\text{"Connection"} \mid \text{Critical}) \approx 0.3$ (середнє)
+- $P(\text{"Connection"} \mid \text{Normal}) \approx 0.4$ (вище!)
 
 "Connection" частіше з'являється в нормальних логах, ніж у критичних.
 
 **Проблема 2: "Refused" без контексту**
 
-- $P(\text{"refused"} | \text{Critical}) \approx 0.2$
-- $P(\text{"refused"} | \text{Normal}) \approx 0.01$
+- $P(\text{"refused"} \mid \text{Critical}) \approx 0.2$
+- $P(\text{"refused"} \mid \text{Normal}) \approx 0.01$
 
 "Refused" — сильний індикатор, але не достатній сам по собі.
 
 **Добуток:**
 
-$$P(\text{Critical} | \text{"Connection"}, \text{"refused"}) \propto 0.0001 \times 0.3 \times 0.2 = 0.000006$$
+$$
+P(\text{Critical} \mid \text{"Connection"}, \text{"refused"}) \propto 0.0001 \cdot 0.3 \cdot 0.2 = 0.000006
+$$
 
-$$P(\text{Normal} | \text{"Connection"}, \text{"refused"}) \propto 0.9999 \times 0.4 \times 0.01 = 0.0039996$$
+$$
+P(\text{Normal} \mid \text{"Connection"}, \text{"refused"}) \propto 0.9999 \cdot 0.4 \cdot 0.01 = 0.0039996
+$$
 
 **Співвідношення:** $\frac{0.000006}{0.0039996} \approx 0.0015$ — на користь Normal!
 
 **Реальність:** "Connection refused" разом — це **завжди** критично. Реальна ймовірність:
 
-$$P(\text{Critical} | \text{"Connection"}, \text{"refused"}) \approx 0.95$$
+$$
+P(\text{Critical} \mid \text{"Connection"}, \text{"refused"}) \approx 0.95
+$$
 
 **Висновок:** Наївний Байєс помиляється на 3 порядки величини.
 
@@ -427,15 +469,19 @@ $$P(\text{Critical} | \text{"Connection"}, \text{"refused"}) \approx 0.95$$
 
 ## Лапласове Згладжування
 
-### Проблема Нульових Ймовірностей
+### Проблема нульових ймовірностей
 
 Якщо слово $w$ не зустрічалося в навчальних даних класу $c$, то:
 
-$$P(w | c) = 0$$
+$$
+P(w \mid c) = 0
+$$
 
 **Наслідок:** Весь добуток стає нулем:
 
-$$P(c | w_1, w_2, \ldots, w_n) \propto P(c) \cdot 0 \cdot \ldots = 0$$
+$$
+P(c \mid w_1, w_2, \ldots, w_n) \propto P(c) \cdot 0 \cdot \ldots = 0
+$$
 
 Навіть якщо інші слова вказують на клас $c$.
 
@@ -443,17 +489,21 @@ $$P(c | w_1, w_2, \ldots, w_n) \propto P(c) \cdot 0 \cdot \ldots = 0$$
 
 Навчальні дані не містили слова "segmentation". Новий лог: "segmentation fault detected".
 
-$$P(\text{Critical} | \text{"segmentation"}, \text{"fault"}) \propto P(\text{Critical}) \cdot 0 \cdot P(\text{"fault"} | \text{Critical}) = 0$$
+$$
+P(\text{Critical} \mid \text{"segmentation"}, \text{"fault"}) \propto P(\text{Critical}) \cdot 0 \cdot P(\text{"fault"} \mid \text{Critical}) = 0
+$$
 
 Але "segmentation fault" — це **завжди** критично!
 
-### Рішення: Лапласове Згладжування
+### Рішення: Лапласове згладжування
 
 **Ідея:** Додаємо невелику константу $\alpha$ до кожної частоти.
 
 **Формула:**
 
-$$P(w | c) = \frac{\text{count}(w, c) + \alpha}{\sum_{w' \in V} \text{count}(w', c) + \alpha \cdot |V|}$$
+$$
+P(w \mid c) = \frac{\text{count}(w, c) + \alpha}{\sum_{w' \in V} \text{count}(w', c) + \alpha \cdot |V|}
+$$
 
 де:
 - $\alpha$ — параметр згладжування (зазвичай $\alpha = 1$)
@@ -462,23 +512,27 @@ $$P(w | c) = \frac{\text{count}(w, c) + \alpha}{\sum_{w' \in V} \text{count}(w',
 
 **Інтерпретація:** Уявімо, що ми додали $\alpha$ входжень кожного слова до кожного класу перед підрахунком.
 
-### Математичне Обґрунтування
+### Математичне обґрунтування
 
 **Без згладжування:**
 
-$$P(w | c) = \frac{\text{count}(w, c)}{\sum_{w' \in V} \text{count}(w', c)}$$
+$$
+P(w \mid c) = \frac{\text{count}(w, c)}{\sum_{w' \in V} \text{count}(w', c)}
+$$
 
-**Проблема:** Якщо $\text{count}(w, c) = 0$, то $P(w | c) = 0$.
+**Проблема:** Якщо $\text{count}(w, c) = 0$, то $P(w \mid c) = 0$.
 
 **Зі згладжуванням:**
 
-$$P(w | c) = \frac{\text{count}(w, c) + \alpha}{\sum_{w' \in V} \text{count}(w', c) + \alpha \cdot |V|}$$
+$$
+P(w \mid c) = \frac{\text{count}(w, c) + \alpha}{\sum_{w' \in V} \text{count}(w', c) + \alpha \cdot |V|}
+$$
 
 **Властивості:**
 
-1. Якщо $\text{count}(w, c) = 0$, то $P(w | c) = \frac{\alpha}{\sum_{w'} \text{count}(w', c) + \alpha \cdot |V|} > 0$
+1. Якщо $\text{count}(w, c) = 0$, то $P(w \mid c) = \frac{\alpha}{\sum_{w'} \text{count}(w', c) + \alpha \cdot |V|} > 0$
 2. Якщо $\text{count}(w, c) > 0$, то оцінка зміщується, але залишається розумною
-3. $\sum_{w \in V} P(w | c) = 1$ (ймовірності нормалізовані)
+3. $\sum_{w \in V} P(w \mid c) = 1$ (ймовірності нормалізовані)
 
 ### Вибір Параметра $\alpha$
 
@@ -835,4 +889,3 @@ if __name__ == "__main__":
 ---
 
 **Примітка для студентів:** Почніть з McCallum & Nigam (1998) — це ключова робота про різницю між Multinomial та Bernoulli моделями. Розуміння цієї різниці критично для вибору правильної моделі: Multinomial для спаму (частота важлива), Bernoulli для логів (наявність важливіша). Потім перейдіть до Domingos & Pazzani для розуміння, чому Naive Bayes працює навіть при порушенні припущень. Для практики використовуйте документацію Scikit-learn та приклади з Manning et al.
-

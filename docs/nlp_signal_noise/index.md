@@ -35,7 +35,7 @@
 
 * **[02_math_setup_classification.md](./02_math_setup_classification.md)**
     * **Тема:** Математична формалізація задачі класифікації.
-    * **Зміст:** Текст як множина токенів $X = \{w_1, w_2, ... w_n\}$. Постановка задачі $P(Class | Features)$. Теорема Байєса: $P(Spam|Word) = \frac{P(Word|Spam)P(Spam)}{P(Word)}$.
+    * **Зміст:** Текст як множина токенів $X = \{w_1, w_2, \dots, w_n\}$. Постановка задачі $P(\text{Class} \mid \text{Features})$. Теорема Байєса: $P(\text{Spam} \mid \text{Word}) = \frac{P(\text{Word} \mid \text{Spam})P(\text{Spam})}{P(\text{Word})}$.
     
 * **[03_naive_bayes_deep_dive.md](./03_naive_bayes_deep_dive.md)**
     * **Тема:** "Наївний" Байєс та його межі.
