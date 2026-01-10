@@ -32,18 +32,24 @@ author: Віталій Платонов
 Позначимо:
 - $P(\text{Critical}) = 0.0001$ — ймовірність критичного збою (base rate)
 - $P(\text{Normal}) = 0.9999$ — ймовірність нормальної роботи
-- $P(\text{"Error"}|\text{Critical}) = 0.95$ — ймовірність знайти "Error", якщо збій критичний
-- $P(\text{"Error"}|\text{Normal}) = 0.01$ — ймовірність знайти "Error" у нормальних логах (некритичні помилки)
+- $P(\text{"Error"} \mid \text{Critical}) = 0.95$ — ймовірність знайти "Error", якщо збій критичний
+- $P(\text{"Error"} \mid \text{Normal}) = 0.01$ — ймовірність знайти "Error" у нормальних логах (некритичні помилки)
 
 **Питання:** Якщо `grep "Error"` знайшов рядок, яка ймовірність, що це критичний збій?
 
 **Відповідь через теорему Байєса:**
 
-$$P(\text{Critical}|\text{"Error"}) = \frac{P(\text{"Error"}|\text{Critical}) \cdot P(\text{Critical})}{P(\text{"Error"})}$$
+$$
+P(\text{Critical} \mid \text{"Error"}) = \frac{P(\text{"Error"} \mid \text{Critical}) \cdot P(\text{Critical})}{P(\text{"Error"})}
+$$
 
-$$P(\text{"Error"}) = 0.95 \cdot 0.0001 + 0.01 \cdot 0.9999 = 0.000095 + 0.009999 = 0.010094$$
+$$
+P(\text{"Error"}) = 0.95 \cdot 0.0001 + 0.01 \cdot 0.9999 = 0.000095 + 0.009999 = 0.010094
+$$
 
-$$P(\text{Critical}|\text{"Error"}) = \frac{0.95 \cdot 0.0001}{0.010094} \approx 0.0094 = 0.94\%$$
+$$
+P(\text{Critical} \mid \text{"Error"}) = \frac{0.95 \cdot 0.0001}{0.010094} \approx 0.0094 = 0.94\%
+$$
 
 **Висновок:** З 10,000 рядків з "Error" лише ~94 справді критичні. Решта 9,906 — шум.
 
@@ -499,4 +505,3 @@ def improved_grep(logs: List[str]) -> List[str]:
 ---
 
 **Примітка для студентів:** Почніть з Google SRE Book для розуміння проблеми Alert Fatigue в реальних системах. Потім перейдіть до He & Garcia для математичного підходу до незбалансованих даних. Для практичної реалізації використовуйте документацію Scikit-learn.
-
