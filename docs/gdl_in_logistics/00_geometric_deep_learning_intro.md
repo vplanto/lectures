@@ -92,9 +92,9 @@ $$
 Після $L$ шарів, вершина $v_i$ "бачить" всі вершини на відстані $\le L$ (receptive field). Для задачі маршрутизації це означає, що модель враховує не лише прямі сусіди, але й **глобальну структуру** графа.
 
 **Складність:**
-- Один шар: $O(|E| \cdot d)$ операцій (де $d$ — розмірність features)
-- $L$ шарів: $O(L \cdot |E| \cdot d)$
-- Для розрідженого графа (кожне місто з'єднане з $k \ll N$ сусідами): $|E| = O(kN)$, тому загальна складність $O(L \cdot k \cdot N \cdot d)$ — **лінійна** за кількістю вершин!
+- Один шар: $O(\lvert E \rvert \cdot d)$ операцій (де $d$ — розмірність features)
+- $L$ шарів: $O(L \cdot \lvert E \rvert \cdot d)$
+- Для розрідженого графа (кожне місто з'єднане з $k \ll N$ сусідами): $\lvert E \rvert = O(kN)$, тому загальна складність $O(L \cdot k \cdot N \cdot d)$ — **лінійна** за кількістю вершин!
 
 Порівняйте з Branch & Bound: $O(2^N)$.
 
@@ -229,7 +229,7 @@ class GraphBatch:
     batch_ptr: Tensor      # [batch_size+1] - вказівники на початок кожного графа
 ```
 **Переваги:**
-- Пам'ять: $O(\sum_i |V_i| + \sum_i |E_i|)$ замість $O(\text{batch\_size} \times \max_i |V_i|^2)$
+- Пам'ять: $O(\sum_i \lvert V_i \rvert + \sum_i \lvert E_i \rvert)$ замість $O(\text{batch\_size} \times \max_i \lvert V_i \rvert^2)$
 - Для batch з графами розмірів [10, 50, 1000]: економія пам'яті $>90\%$
 
 **Висновок:** Використовуємо **PyTorch Geometric** або **DGL** — вони автоматично конвертують графи в CSR format.
@@ -246,15 +246,15 @@ $$
 
 **Складність на CPU:**
 - Dense multiplication: $O(N^2 \cdot d)$
-- Sparse (CSR): $O(|E| \cdot d)$
+- Sparse (CSR): $O(\lvert E \rvert \cdot d)$
 
 **На GPU (cuSPARSE):**
 - Dense: $O(N^2 \cdot d / \text{cores})$ — обмежено bandwidth пам'яті
-- Sparse: $O(|E| \cdot d / \text{cores})$ — ефективніше, бо читаємо тільки ненульові елементи
+- Sparse: $O(\lvert E \rvert \cdot d / \text{cores})$ — ефективніше, бо читаємо тільки ненульові елементи
 
 **Throughput для VRP з $N=200$:**
 - CPU (Gurobi B&B): 1 instance за 60 секунд
-- GPU (GDL model, batch_size=32): 32 instances за 0.1 секунди
+- GPU (GDL model, batch\_size=32): 32 instances за 0.1 секунди
 - **Прискорення: $>19,000\times$**
 
 ### 5.3. Latency vs Throughput: Online vs Batch Inference
