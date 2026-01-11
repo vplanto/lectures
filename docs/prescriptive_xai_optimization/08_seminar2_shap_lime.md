@@ -106,9 +106,9 @@ $$\sum_{i=1}^{d} \phi_i = f(\mathbf{x}) - f(\emptyset)$$
 
 Ваги для зразків визначаються через **Shapley kernel**:
 
-$$w(\mathbf{z}') = \frac{(d-1)}{\binom{d}{|\mathbf{z}'|} \cdot |\mathbf{z}'| \cdot (d - |\mathbf{z}'|)}$$
+$$w(\mathbf{z}') = \frac{(d-1)}{\binom{d}{\lvert\mathbf{z}'\rvert} \cdot \lvert\mathbf{z}'\rvert \cdot (d - \lvert\mathbf{z}'\rvert)}$$
 
-де $|\mathbf{z}'|$ — кількість одиниць у маски.
+де $\lvert\mathbf{z}'\rvert$ — кількість одиниць у маски.
 
 #### Крок 3: Зважена лінійна регресія
 
@@ -187,7 +187,7 @@ $$\pi_{\mathbf{x}}(\mathbf{z}) = \exp\left(-\frac{D(\mathbf{x}, \mathbf{z})^2}{\
 
 - $\beta_i > 0$: збільшення ознаки $i$ збільшує прогноз
 - $\beta_i < 0$: збільшення ознаки $i$ зменшує прогноз
-- $|\beta_i|$: важливість ознаки $i$
+- $\lvert\beta_i\rvert$: важливість ознаки $i$
 
 ---
 
@@ -250,7 +250,7 @@ Base Value
 $$v_0 = \text{base\_value}$$
 $$v_i = v_{i-1} + \phi_{\sigma(i)} \quad \text{для } i = 1, \ldots, d$$
 
-де $\sigma$ — перестановка індексів за спаданням $|\phi_i|$.
+де $\sigma$ — перестановка індексів за спаданням $\lvert\phi_i\rvert$.
 
 ---
 
@@ -418,4 +418,3 @@ SHAP та LIME надають потужні інструменти для по�
 - **Shapley Values:** Shapley, L. S. (1953). "A value for n-person games." *Contributions to the Theory of Games*.
 - **SHAP:** Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NIPS*.
 - **LIME:** Ribeiro, M. T., et al. (2016). ""Why should I trust you?" Explaining the predictions of any classifier." *KDD*.
-
