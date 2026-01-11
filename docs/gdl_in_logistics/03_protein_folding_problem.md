@@ -41,7 +41,7 @@ DeepMind використала AlphaFold 2 для передбачення ст
 Білок можна представити як граф $G = (V, E, \mathbf{R})$, де:
 - $V = \{v_1, \dots, v_N\}$ — множина амінокислот (residues)
 - $E \subseteq V \times V$ — множина взаємодій між амінокислотами
-- $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$ — 3D координати атомів, де $\mathbf{r}_i \in \mathbb{R}^{3 \times |\text{atoms in } a_i|}$
+- $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$ — 3D координати атомів, де $\mathbf{r}_i \in \mathbb{R}^{3 \times \lvert \text{atoms in } a_i \rvert}$
 
 **Типи ребер (взаємодій):**
 1. **Ковалентні зв'язки (Covalent bonds):** Ребра між послідовними амінокислотами в ланцюгу. Це **орієнтований граф** з послідовністю.
@@ -491,4 +491,3 @@ $$\min_{\pi_1, \dots, \pi_K} C(\pi_1, \dots, \pi_K) \text{ subject to } \text{co
 ---
 
 **Наступний крок:** Деконструкція архітектури AlphaFold 2 ([04_alphafold2_architecture.md](./04_alphafold2_architecture.md)).
-
