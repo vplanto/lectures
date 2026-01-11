@@ -269,10 +269,11 @@ $$\text{GeodesicBias}_{4D}(\mathbf{T}_i, \mathbf{T}_j, E_i, E_j) = f(d_{ij}, \th
 **Крок 3: Виявлення заторів**
 
 Затор виявлено, якщо:
+$$
+\sum_{i \in \text{region}} E_i^{(t)} > E_{threshold} \cdot \lvert \text{region} \rvert
+$$
 
-$$\sum_{i \in \text{region}} E_i^{(t)} > E_{threshold} \cdot |\text{region}|$$
-
-Де $|\text{region}|$ — кількість агентів у регіоні.
+Де $\lvert \text{region} \rvert$ — кількість агентів у регіоні.
 
 ### 4.5. Приклад: Затор на перехресті
 
@@ -370,4 +371,3 @@ $$\mathbf{T}_i^{(t+1)} = \mathbf{T}_i^{(t)} - \alpha \nabla_{\mathbf{T}_i} E(\ma
 ---
 
 **Кінець розділу**
-
