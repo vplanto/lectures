@@ -62,21 +62,26 @@ Recycling (3 ітерації)
 - **MSA:** $M \in \{0,1\}^{M_{seq} \times N \times 20}$, де $M_{seq}$ — кількість гомологічних послідовностей
 - **Template structures:** Структури схожих білків (опціонально)
 
+### Формалізація моделі
+
 **Вихідні дані:**
-- **3D координати:** $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$, де $\mathbf{r}_i \in \mathbb{R}^{3 \times |\text{atoms}|}$
+* **3D координати:** $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$, де $\mathbf{r}_i \in \mathbb{R}^{3 \times |\text{atoms}|}$.
 
 **Функція моделі:**
-$$f_\theta: (S, M) \to \mathbf{R}^*$$
-
+$$
+f_\theta: (S, M) \to \mathbf{R}^*
+$$
 Де $\theta$ — параметри нейромережі (~50M параметрів).
 
 **Цільова функція (Loss):**
-$$\mathcal{L} = \mathcal{L}_{FAPE} + \lambda_1 \mathcal{L}_{distogram} + \lambda_2 \mathcal{L}_{masked\_MSE}$$
+$$
+\mathcal{L} = \mathcal{L}_{FAPE} + \lambda_1 \mathcal{L}_{distogram} + \lambda_2 \mathcal{L}_{masked\_MSE}
+$$
 
 Де:
-- $\mathcal{L}_{FAPE}$ — Frame Aligned Point Error (помилка вирівнювання кадрів)
-- $\mathcal{L}_{distogram}$ — передбачення матриці відстаней
-- $\mathcal{L}_{masked\_MSE}$ — реконструкція MSA
+* $\mathcal{L}_{FAPE}$ — Frame Aligned Point Error (помилка вирівнювання кадрів);
+* $\mathcal{L}_{distogram}$ — передбачення матриці відстаней;
+* $\mathcal{L}_{masked\_MSE}$ — реконструкція MSA.
 
 ---
 
@@ -796,4 +801,3 @@ $12.5 \times 10^9 / (312 \times 10^{12}) \approx 0.04$ секунди теоре
 ---
 
 **Наступний крок:** Доведення ізоморфізму між Protein Folding та NP-повними задачами ([05_np_completeness_isomorphism.md](./05_np_completeness_isomorphism.md)).
-
