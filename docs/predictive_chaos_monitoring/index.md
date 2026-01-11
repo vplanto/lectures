@@ -57,7 +57,7 @@
 * **[05_anomaly_detection_strategies.md](./05_anomaly_detection_strategies.md)**
     * **Тема:** Від Forecasting до Anomaly Detection.
     * **Зміст:** Побудова пайплайну: Sliding Window Input -> LSTM -> Prediction.
-    * **Алгоритм:** Обчислення помилки реконструкції (Reconstruction Error). Якщо $|y_{real} - y_{pred}| > 3\sigma$ (динамічний поріг), то це аномалія, навіть якщо абсолютне значення метрики в нормі.
+    * **Алгоритм:** Обчислення помилки реконструкції (Reconstruction Error). Якщо $\lvert y_{real} - y_{pred} \rvert > 3\sigma$ (динамічний поріг), то це аномалія, навіть якщо абсолютне значення метрики в нормі.
     
 * **[06_frequency_domain_fft.md](./06_frequency_domain_fft.md)**
     * **Тема:** Робота в частотній області (Фур'є).
