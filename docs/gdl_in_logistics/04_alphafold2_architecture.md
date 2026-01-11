@@ -65,7 +65,7 @@ Recycling (3 ітерації)
 ### Формалізація моделі
 
 **Вихідні дані:**
-* **3D координати:** $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$, де $\mathbf{r}_i \in \mathbb{R}^{3 \times |\text{atoms}|}$.
+* **3D координати:** $\mathbf{R} = \{\mathbf{r}_1, \dots, \mathbf{r}_N\}$, де $\mathbf{r}_i \in \mathbb{R}^{3 \times \lvert \text{atoms} \rvert}$.
 
 **Функція моделі:**
 $$
