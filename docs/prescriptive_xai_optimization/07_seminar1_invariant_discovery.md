@@ -48,25 +48,43 @@ temperature = 0.5 × cpu_usage + 40°C
 
 #### Стандартизація даних
 
-Спочатку нормалізуємо дані:
-$$\mathbf{X}_{\text{scaled}} = \frac{\mathbf{X} - \boldsymbol{\mu}}{\boldsymbol{\sigma}}$$
+Спочатку нормалізуємо дані (Z-score normalization):
 
-де $\boldsymbol{\mu}$ — вектор середніх значень, $\boldsymbol{\sigma}$ — вектор стандартних відхилень.
+$$
+z_{ij} = \frac{x_{ij} - \mu_j}{\sigma_j}
+$$
+
+де:
+* $z_{ij}$ — елемент нормалізованої матриці;
+* $x_{ij}$ — вихідне значення $i$-го спостереження для $j$-ї метрики;
+* $\mu_j$ — середнє значення $j$-ї метрики;
+* $\sigma_j$ — стандартне відхилення $j$-ї метрики.
 
 #### PCA трансформація
 
-PCA знаходить ортогональні напрямки максимальної варіативності:
-$$\mathbf{Z} = \mathbf{X}_{\text{scaled}} \mathbf{W}$$
+PCA знаходить ортогональні напрямки максимальної варіативності (Projected Data):
 
-де $\mathbf{W} \in \mathbb{R}^{p \times k}$ — матриця вагових коефіцієнтів (loadings), $k$ — кількість компонент.
+$$
+\mathbf{Z} = \mathbf{X}_{\text{scaled}} \mathbf{W}
+$$
+
+де:
+* $\mathbf{W} \in \mathbb{R}^{p \times k}$ — матриця власних векторів (loadings);
+* $\mathbf{Z} \in \mathbb{R}^{n \times k}$ — матриця головних компонент (scores).
 
 #### Вибір кількості компонент
 
-Визначаємо мінімальну кількість компонент $k^*$, що пояснюють $\geq 95\%$ варіативності:
+Визначаємо мінімальну кількість компонент $k^*$, що пояснюють $\geq 95\%$ кумулятивної дисперсії (за умови, що власні значення впорядковані $\lambda_1 \ge \lambda_2 \ge \dots \ge \lambda_p$):
 
-$$k^* = \arg\min_k \left\{ k : \sum_{i=1}^{k} \lambda_i \geq 0.95 \sum_{i=1}^{p} \lambda_i \right\}$$
+$$
+k^* = \min \left\{ k : \frac{\sum_{i=1}^{k} \lambda_i}{\sum_{j=1}^{p} \lambda_j} \geq 0.95 \right\}
+$$
 
-де $\lambda_i$ — власні значення коваріаційної матриці $\mathbf{C} = \frac{1}{n-1}\mathbf{X}_{\text{scaled}}^T \mathbf{X}_{\text{scaled}}$.
+де $\lambda_i$ — власні значення коваріаційної матриці $\mathbf{C}$:
+
+$$
+\mathbf{C} = \frac{1}{n-1}\mathbf{X}_{\text{scaled}}^\top \mathbf{X}_{\text{scaled}}
+$$
 
 ---
 
@@ -297,4 +315,3 @@ class Invariant:
 - **PCA:** Jolliffe, I. T. (2002). *Principal Component Analysis*. Springer.
 - **Anomaly Detection:** Chandola, V., et al. (2009). "Anomaly detection: A survey." *ACM computing surveys*.
 - **Invariant-based Monitoring:** Dang, T., et al. (2017). "Time series analysis for cyber-physical systems." *IEEE Transactions on Industrial Informatics*.
-
