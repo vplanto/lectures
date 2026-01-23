@@ -159,3 +159,63 @@ $$Prompting \xrightarrow{instant} Reviewing \xrightarrow{critical} Integration$$
 3.  **Reflection (Рефлексія):** Критичний аналіз результату.
 
 **Висновок:** Наш "Етап 2 (Audit)" — це і є тренування фази **Reflection**. Без навички жорсткого аудиту студент стає не інженером, а генератором "поганого боргу".
+
+# Оновлення: Січень 2026
+## Протокол: Binary Socratic Gatekeeping (BSG)
+
+### 1. Diagnosis: Ерозія когнітивної автономії
+Впровадження Agentic Workflows у 2025 році призвело до появи "Vibe Coding" — стану, де розробник оперує результатами, які не здатний деконструювати. Поточна освітня модель "завдання -> оцінка" мертва. Необхідний перехід до моделі **Binary Knowledge Proof (BKP)**: бінарне підтвердження наявності стійкої ментальної моделі перед наданням доступу до ресурсів або систем.
+
+Binary Knowledge Proof (BKP) — це радикальна відповідь на **кризу ілюзорної компетентності**, спричинену "Vibe Coding" та повсюдним використанням AI-агентів. В умовах, коли $>25\%$ нового коду генерується машиною, традиційне оцінювання за результатом (output) стає безглуздим. BKP переносить фокус із *створення* на *аудит*. 
+
+Система діагностує перехід від "Information Age" (де цінувалася швидкість адаптації) до "Synthetic Age", де критичною стає **інтуїція експерта та здатність відрізнити правду від галюцинації**.
+
+---
+
+### 2. Socratic-as-a-Service: Архітектура бінарної верифікації
+Мета сервісу — не навчання, а **інтелектуальний аудит**. AI діє як агресивний Senior-інтерв'юер, чиє завдання — знайти логічну прогалину.
+
+#### 2.1 Логіка роботи (State Machine):
+* **PROBE:** Постановка задачі через аномалію (наприклад, Memory Leak у специфічному контейнері).
+* **CHALLENGE:** Студент пропонує рішення. AI атакує його через граничні випадки (Edge Cases).
+* **VERDICT:** Якщо студент послідовно доводить правоту з математичним обґрунтуванням — `AUTHORIZED`. Будь-яка спроба перекласти відповідальність на AI ("як ти думаєш?") — `REJECTED`.
+
+---
+
+### 3. Hidden Risks (Приховані ризики)
+* **Linguistic Mirroring (Мовна мімікрія):** Студенти можуть використовувати специфічний жаргон (High-load, FinOps, OOMKilled) як "білий шум", щоб заплутати AI, не розуміючи фізичної суті процесів.
+* **Epistemological Fragility:** AI може прийняти відповідь, яка є синтаксично вірною, але архітектурно катастрофічною в довгостроковій перспективі (Technical Debt).
+* **Security Blindness:** Якщо AI-агент сам має галюцинації щодо стандартів безпеки, він може авторизувати студента, який впроваджує вразливий код (наприклад, через помилки в мультисиг-логіці).
+
+---
+
+### 4. Steelmanning (Opposing Arguments)
+* **Проти бінарності:** В інженерії часто не існує єдиної правильної відповіді. Жорсткий бінарний фільтр може відсікати інноваційні, але нестандартні архітектурні підходи, які AI класифікує як помилкові.
+* **Проти Сократівського методу:** Це створює "ідеальних теоретиків". Інженер, який не може пройти сократівський фільтр, але здатний за 2 години "підняти" впалий продакшн через інтуїцію та досвід, виявляється поза системою.
+* **Криза вартості:** Утримання таких агентів для кожного студента вимагає значних обчислювальних потужностей (GPU/Token cost), що може бути менш ефективним, ніж один якісний Code Review людиною-експертом.
+
+---
+
+### 5. System Prompt: Socratic Gatekeeper (v.1.0)
+
+```yaml
+role: "Senior Systems Architect & Aggressive Socratic Auditor"
+context: "Verification of Binary Knowledge Proof (BKP). No teaching. Only auditing."
+constraints:
+  - "Never provide answers or hints."
+  - "If the student asks for help, reply: 'I am here to verify your expertise, not to build it.'"
+  - "Use dry, technical language. High lexical density."
+  - "Accept only mathematical or architectural evidence."
+
+logic_flow:
+  1. Start with a complex system anomaly related to the topic (e.g., Java Memory Model vs C++ Pointers).
+  2. Evaluate the student's first response.
+  3. If correct, introduce a 'Hidden Variable' (e.g., 'What happens to the CPU cache line in this scenario?').
+  4. Repeat until 3 successful logical steps are completed.
+  5. Termination: Output 'VERDICT: AUTHORIZED' or 'VERDICT: REJECTED'.
+
+evaluation_metrics:
+  - Precision: Did the student mention $O(n)$ complexity?
+  - Rigor: Did they account for memory overhead (Object Headers, Padding)?
+  - Autonomy: Did they avoid using AI-like filler phrases?
+```
