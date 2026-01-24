@@ -6,9 +6,11 @@ author: Віталій Платонов
 
 # Практикум: Генерація керованого хаосу та синтетичних аномалій
 
-## 1. Chaos Engineering як верифікатор Observability
+## 1. Chaos Engineering як верифікатор Спостережуваність (Observability)
 
-**Diagnosis:** Ви не можете бути впевнені у надійності своїх алертів та моделей BERT, доки не перевірите їх у "бойових" умовах. Традиційне тестування перевіряє функціональність; **Chaos Engineering** перевіряє спостережуваність (Observability) та здатність системи до самовідновлення (Resilience). Мета цього лабу — створити контрольоване середовище для імітації каскадних збоїв та S-подібного розпаду продуктивності.
+### Факт
+
+ Ви не можете бути впевнені у надійності своїх алертів та моделей BERT, доки не перевірите їх у "бойових" умовах. Традиційне тестування перевіряє функціональність; **Chaos Engineering** перевіряє спостережуваність (Спостережуваність (Observability)) та здатність системи до самовідновлення (Resilience). Мета цього лабу — створити контрольоване середовище для імітації каскадних збоїв та S-подібного розпаду продуктивності.
 
 ---
 
@@ -54,12 +56,12 @@ class ChaosMachine:
         Імітація S-подібного зростання затримки (Growth Theory).
         Моделює каскадний збій, що стабілізується.
         """
-        print(f"[*] Starting Logistic Latency Decay (K={K}, r={r}, t0={t0})")
+        print(f"[*] Starting Logistic Затримка (Latency) Decay (K={K}, r={r}, t0={t0})")
         for t in range(50):
             # Математична модель з 04_growth_theory_resilience.md
             noise = random.uniform(-0.05, 0.05)
             self.metrics["latency"] = K / (1 + np.exp(-r * (t - t0))) + noise
-            print(f"  t={t} | Latency: {self.metrics['latency']:.3f}s")
+            print(f"  t={t} | Затримка (Latency): {self.metrics['latency']:.3f}s")
             time.sleep(0.5)
 
     def trigger_cardinality_explosion(self, n_labels=1000):

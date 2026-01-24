@@ -1,4 +1,4 @@
-# Курс: Observability та інтелектуальна діагностика розподілених систем
+# Курс: Спостережуваність (Observability) та інтелектуальна діагностика розподілених систем
 ## Тема: Від моніторингу "мертвих" метрик до розуміння Unknown Unknowns
 
 **Автор:** Віталій Платонов
@@ -9,7 +9,7 @@
 ---
 
 ### Анотація курсу
-Традиційний моніторинг у Kubernetes помер під вагою High Cardinality. Цей курс фокусується на **Observability** — здатності системи відповідати на питання, які ви не передбачили заздалегідь. Ми поєднуємо класичний OS-стек (Prometheus, Loki, Graylog) з передовими методами AI-діагностики та математичною теорією росту (Growth Theory) для побудови автономних SRE-агентів.
+Традиційний моніторинг у Kubernetes помер під вагою High Cardinality. Цей курс фокусується на **Спостережуваність (Observability)** — здатності системи відповідати на питання, які ви не передбачили заздалегідь. Ми поєднуємо класичний OS-стек (Prometheus, Loki, Graylog) з передовими методами AI-діагностики та математичною теорією росту (Growth Theory) для побудови автономних SRE-агентів.
 
 ---
 
@@ -19,7 +19,7 @@
 Вступ у проблематику через деконструкцію класичних підходів.
 
 * **[00_observability_manifesto.md](./00_observability_manifesto.md)**
-    * **Тема:** Моніторинг vs Observability.
+    * **Тема:** Моніторинг vs Спостережуваність (Observability).
     * **Зміст:** Проблема "Unknown Unknowns". Чому дашборди брешуть. Перехід від перевірки працездатності до дослідження станів системи.
 * **[01_hardware_vs_software_context.md](./01_hardware_vs_software_context.md)**
     * **Тема:** Прокляття кардинальності: IT-системи vs Hardware Fabrics.
@@ -29,7 +29,7 @@
 Використання існуючого математичного апарату для фільтрації шуму та моделювання розпаду.
 
 * **[02_noise_reduction_prerequisites.md](./02_noise_reduction_prerequisites.md)**
-    * **Тема:** Боротьба з Alert Fatigue (Bayesian Logic).
+    * **Тема:** Боротьба з Втома від сповіщень (Alert Fatigue) (Bayesian Logic).
     * **Зміст:** Референс на [00_the_bayesian_trap.md](../nlp_sre/00_the_bayesian_trap.md). Розрахунок ймовірності реального інциденту в шумному середовищі.
 * **[03_p99_and_tail_latency.md](./03_p99_and_tail_latency.md)**
     * **Тема:** Математика квантилів та довгих хвостів.
@@ -39,7 +39,7 @@
     * **Зміст:** Математика стійкості: S-криві vs Лінійний розпад. Моделювання порушень SLA як стохастичного процесу.
 
 #### Блок 2: Технологічний стек (Implementation)
-Побудова Observability Pipeline на базі Open Source інструментів.
+Побудова Спостережуваність (Observability) Pipeline на базі Open Source інструментів.
 
 * **[05_prometheus_tsdb_internals.md](./05_prometheus_tsdb_internals.md)**
     * **Тема:** TSDB та PromQL під високим навантаженням.
@@ -58,7 +58,7 @@
     * **Тема:** Трансформери в SRE (Contextual Understanding).
     * **Зміст:** Референс на [05_bert_and_transformers.md](../nlp_sre/05_bert_and_transformers.md). Чому BERT бачить зв'язок між збоями, який пропускає статистика.
 * **[09_xai_for_incident_response.md](./09_xai_for_incident_response.md)**
-    * **Тема:** Пояснювальний ШІ та Root Cause Analysis.
+    * **Тема:** Пояснювальний ШІ та Першопричина (Root Cause) Analysis.
     * **Зміст:** Застосування Shapley Values та контрфактуального аналізу для генерації рецептів виправлення (Prescription).
 
 #### Практикум (Workshop)
