@@ -30,7 +30,7 @@
 
 * **[02_noise_reduction_prerequisites.md](./02_noise_reduction_prerequisites.md)**
     * **Тема:** Боротьба з Втома від сповіщень (Alert Fatigue) (Bayesian Logic).
-    * **Зміст:** Референс на [00_the_bayesian_trap.md](../nlp_sre/00_the_bayesian_trap.md). Розрахунок ймовірності реального інциденту в шумному середовищі.
+    * **Зміст:** Референс на [00_the_bayesian_trap.md](../nlp_signal_noise/00_the_bayesian_trap.md). Розрахунок ймовірності реального інциденту в шумному середовищі.
 * **[03_p99_and_tail_latency.md](./03_p99_and_tail_latency.md)**
     * **Тема:** Математика квантилів та довгих хвостів.
     * **Зміст:** Чому Average — це ілюзія. Використання MCC як золотого стандарту для незбалансованих даних.
@@ -53,11 +53,11 @@
 
 * **[07_semantic_log_analysis.md](./07_semantic_log_analysis.md)**
     * **Тема:** Семантичний пошук інцидентів (Embeddings).
-    * **Зміст:** Референс на [04_geometry_of_meaning.md](../nlp_sre/04_geometry_of_meaning.md). Перетворення логів у вектори для пошуку схожих проблем у минулому.
+    * **Зміст:** Референс на [04_geometry_of_meaning.md](../nlp_signal_noise/04_geometry_of_meaning.md). Перетворення логів у вектори для пошуку схожих проблем у минулому.
 * **[08_bert_for_log_anomalies.md](./08_bert_for_log_anomalies.md)**
     * **Тема:** Трансформери в SRE (Contextual Understanding).
-    * **Зміст:** Референс на [05_bert_and_transformers.md](../nlp_sre/05_bert_and_transformers.md). Чому BERT бачить зв'язок між збоями, який пропускає статистика.
-* **[09_xai_for_incident_response.md](./09_xai_for_incident_response.md)**
+    * **Зміст:** Референс на [05_bert_and_transformers.md](../nlp_signal_noise/05_bert_and_transformers.md). Чому BERT бачить зв'язок між збоями, який пропускає статистика.
+* **[09_xai_for_incident_response.md.md](./09_xai_for_incident_response.md.md)**
     * **Тема:** Пояснювальний ШІ та Першопричина (Root Cause) Analysis.
     * **Зміст:** Застосування Shapley Values та контрфактуального аналізу для генерації рецептів виправлення (Prescription).
 
