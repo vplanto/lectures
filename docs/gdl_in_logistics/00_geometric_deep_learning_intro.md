@@ -1,5 +1,7 @@
 # 00_geometric_deep_learning_intro.md: Геометричний Deep Learning в Логістиці
 
+> 🇺🇦 Українська версія | 🇬🇧 [English version](./en/00_geometric_deep_learning_intro.md)
+
 **Курс:** Геометричний Deep Learning в Логістиці
 **Модуль:** 0. Вступ до курсу
 **Рівень:** Advanced / Expert
