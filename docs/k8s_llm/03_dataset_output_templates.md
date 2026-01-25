@@ -39,7 +39,7 @@
 
 ### 1\. Проблеми Запуску (Startup)
 
-#### 🔴 Сценарій: Image Pull Issues 
+####  Сценарій: Image Pull Issues 
 
   * **Output Template:**
 
@@ -51,7 +51,7 @@
 }
 ```
 
-#### 🔴 Сценарій: Config Dependencies
+####  Сценарій: Config Dependencies
 
   * **Output Template:**
 
@@ -63,7 +63,7 @@
 }
 ```
 
-#### 🔴 Сценарій: CrashLoopBackOff
+####  Сценарій: CrashLoopBackOff
 
   * **Output Template:**
 
@@ -77,7 +77,7 @@
 
 ### 2\. Проблеми Планування (Scheduling)
 
-#### 🔴 Сценарій: Resource Shortage (Pending)
+####  Сценарій: Resource Shortage (Pending)
 
   * **Output Template:**
 
@@ -89,7 +89,7 @@
 }
 ```
 
-#### 🔴 Сценарій: Affinity/Taint Conflicts 
+####  Сценарій: Affinity/Taint Conflicts 
 
   * **Output Template:**
 
@@ -103,7 +103,7 @@
 
 ### 3\. Проблеми Виконання (Runtime)
 
-#### 🔴 Сценарій: OOMKilled
+####  Сценарій: OOMKilled
 
   * **Output Template:**
 
@@ -115,7 +115,7 @@
 }
 ```
 
-#### 🔴 Сценарій: Probe Failures 
+####  Сценарій: Probe Failures 
 
   * **Output Template:**
 
@@ -133,7 +133,7 @@
 
 ### 4\. Інфраструктурна Ефективність
 
-#### 🟢 Сценарій: Node Resource Overcommit 
+####  Сценарій: Node Resource Overcommit 
 
   * **Output Template:**
 
@@ -145,7 +145,7 @@
 }
 ```
 
-#### 🟢 Сценарій: Resource Fragmentation (Bin Packing)
+####  Сценарій: Resource Fragmentation (Bin Packing)
 
   * **Output Template:**
 
@@ -157,7 +157,7 @@
 }
 ```
 
-#### 🟢 Сценарій: Infrastructure Mismatch
+####  Сценарій: Infrastructure Mismatch
 
   * **Output Template:**
 
@@ -169,7 +169,7 @@
 }
 ```
 
-#### 🟢 Сценарій: Legacy Storage Class
+####  Сценарій: Legacy Storage Class
 
   * **Output Template:**
 
@@ -183,7 +183,7 @@
 
 ### 5\. Конфігураційна Оптимізація
 
-#### 🟢 Сценарій: Quantitative Right-Sizing
+####  Сценарій: Quantitative Right-Sizing
 
   * **Output Template:**
 
@@ -195,7 +195,7 @@
 }
 ```
 
-#### 🟢 Сценарій: Missing Limits 
+####  Сценарій: Missing Limits 
 
   * **Output Template:**
 
@@ -207,7 +207,7 @@
 }
 ```
 
-#### 🟢 Сценарій: VPA Recommendation
+####  Сценарій: VPA Recommendation
 
   * **Output Template:**
 
@@ -221,7 +221,7 @@
 
 ### 6\. Надійність (Reliability)
 
-#### 🟠 Сценарій: Critical Workload QoS Risk
+####  Сценарій: Critical Workload QoS Risk
 
   * **Output Template:**
 
@@ -233,7 +233,7 @@
 }
 ```
 
-#### 🟠 Сценарій: Single AZ Risk
+####  Сценарій: Single AZ Risk
 
   * **Output Template:**
 
