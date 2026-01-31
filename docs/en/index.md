@@ -19,6 +19,7 @@ Courses currently undergoing active modernization according to new methodologica
 * [**Time Series Analysis and Predictive Monitoring**](predictive_chaos_monitoring/index.md) — Course on chaos, fractals, and "memory" in IT systems.
 * [**Interpretable AI (XAI) and Prescriptive Analysis**](prescriptive_xai_optimization/index.md) — Course on transition from "black box" to automatic system "doctor."
 * [**Observability and Intelligent Diagnostics of Distributed Systems**](observability_distributed_systems/index.md) — Course on transitioning from monitoring "dead" metrics to understanding Unknown Unknowns: combining classical OS stack (Prometheus, Loki) with AI diagnostics and mathematical growth theory for building autonomous SRE agents.
+* [**Urban Evacuation Simulator (UES-Sim)**](urban_evac_sim/index.md) — Technical specification for agent-based simulation of civilian evacuation during military operations. Survival Optimization: modeling critical infrastructure under load, accounting for fuel scarcity, blocked roads, and agent panic behavior.
 
 ---
 
