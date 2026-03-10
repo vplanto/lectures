@@ -10,10 +10,15 @@
 
 Тут знаходяться курси, які зараз проходять активну модернізацію згідно з новими методичними підходами.
 
-* [**Основи Інтернет-технологій (Web Engineering)**](https://vplanto.github.io/java_script/) — Інженерний курс з побудови SPA (Single Page Applications). Від глибокого розуміння DOM/CSS та Event Loop до архітектури високонавантажених симуляцій (проєкт "Hive Mind").
-* [**Побудова та аналіз децентралізованих систем**](https://vplanto.github.io/blockchain/) — Інженерний курс для магістрів: теорія розподілених систем, алгоритми консенсусу (Paxos, Raft, BFT) та архітектура Web3.
-* [**Курс з C++**](https://vplanto.github.io/cpp/) — Практикуми та лекції з мови C++.
-* [**Курс з Java**](https://vplanto.github.io/java/) — Матеріали для вивчення мови Java.
+### Дисциплінарні курси
+
+* [**Основи Інтернет-технологій (Web Engineering)**](https://vplanto.github.io/java_script/) — Інженерний курс з побудови SPA від пікселя до мережевого пакету. **Модуль 1:** HTML як DOM-дерево, CSS Box Model та Layout. **Модуль 2:** JavaScript Runtime, Event Loop, браузер зсередини, Web Workers — практика через воркшопи (Monte Carlo, Memory Game, Pong, Minesweeper). **Модуль 3:** JSON, LocalStorage, серіалізація даних. **Модуль 4:** архітектура Інтернету (OSI, TCP/IP, DNS), HTTP/REST, fetch(), безпека (XSS, CSRF), Web Crypto API. Фінальний проєкт — «Hive Mind»: симуляція з ігровим AI на основі Марковських ланцюгів.
+* [**Побудова та аналіз децентралізованих систем**](https://vplanto.github.io/blockchain/) — Інженерний курс для магістрів прикладної математики на перетині теорії ігор, розподілених алгоритмів та криптографії. **Теорія:** CAP-теорема, консенсус (Paxos, Raft, pBFT, PoW, PoS), архітектура Bitcoin (UTXO, Merkle Tree) та Ethereum (EVM, gas, state trie), смарт-контракти та безпека (reentrancy, The DAO hack), масштабування (L2, ZK-rollups), DeFi (AMM, Flash Loans). **Практика:** Solidity у Remix IDE, NFT (ERC-721), розбір реальних зломів. Курс включає інтерактивні симулятори алгоритмів консенсусу (Paxos, Raft, pBFT, PoW, PoS) з візуалізацією.
+* [**C++ Engineering: Архітектура пам'яті та системне мислення**](https://vplanto.github.io/cpp/) — Двосеместровий курс для студентів 1-го курсу. **Семестр 1:** фундамент системного програмування — типи, масиви, функції, вказівники, посилання, динамічна пам'ять (Stack vs Heap, `new`/`delete`), `std::string`, структури, файловий ввід/вивід. **Семестр 2:** об'єктно-орієнтоване проектування (OOP, RAII, Rule of Three, наслідування, поліморфізм), шаблони (Templates), Modern C++ (move-семантика, smart pointers), алгоритми (сортування, графи, дерева, динамічне програмування) та Performance Engineering.
+* [**Java Engineering: Професійна розробка та дизайн ПЗ**](https://vplanto.github.io/java/) — Двосеместровий інженерний курс для студентів з базою C++. **Семестр 1:** перехід від «написати код» до «спроектувати систему» — Java Collections Framework, обробка винятків, SOLID, Design Patterns, багатопотоковість (Threads/ExecutorService), JDBC, Logging. Фінальний проєкт — консольна гра з архітектурним захистом. **Семестр 2:** повний цикл від вимог до Production — SDLC, Agile/Scrum, NFRs, QA-стратегія, REST API Design, Docker, розподілені системи (CAP-теорема), System Design та Spring Boot з деплоєм у хмару (CI/CD).
+
+### Спеціалізовані та дослідницькі курси
+
 * [**Геометричний Deep Learning в Логістиці**](gdl_in_logistics/index.md) — Курс про ізоморфізм задач маршрутизації та згортання білків (AlphaFold 2).
 * [**NLP у Технічних Доменах: Від Теореми Байєса до AI-SRE**](nlp_signal_noise/index.md) — Курс про пошук сигналу в шумі: від класичної формули Байєса до трансформерів BERT для створення "розумного фільтра" для технічних логів.
 * [**Аналіз Часових Рядів та Предиктивний Моніторинг**](predictive_chaos_monitoring/index.md) — Курс про хаос, фрактали та "пам'ять" у IT-системах.
