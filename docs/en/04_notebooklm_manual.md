@@ -12,7 +12,8 @@
 
 ---
 
-3. **Storage Mode (Deep Reading):** AI will retell them in dialogue format.
+## Part 1. Passive Mode (Podcasts)
+AI will retell your materials in a dialogue format.
 
 ### Key Feature
 As of 2025, NotebookLM supports **Audio Overviews** in Ukrainian.
