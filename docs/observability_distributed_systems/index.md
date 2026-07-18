@@ -57,7 +57,7 @@
 * **[08_bert_for_log_anomalies.md](./08_bert_for_log_anomalies.md)**
     * **Тема:** Трансформери в SRE (Contextual Understanding).
     * **Зміст:** Референс на [05_bert_and_transformers.md](../nlp_signal_noise/05_bert_and_transformers.md). Чому BERT бачить зв'язок між збоями, який пропускає статистика.
-* **[09_xai_for_incident_response.md.md](./09_xai_for_incident_response.md.md)**
+* **[09_xai_for_incident_response.md](./09_xai_for_incident_response.md)**
     * **Тема:** Пояснювальний ШІ та Першопричина (Root Cause) Analysis.
     * **Зміст:** Застосування Shapley Values та контрфактуального аналізу для генерації рецептів виправлення (Prescription).
 
