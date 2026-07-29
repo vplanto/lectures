@@ -5,6 +5,15 @@
 This repository contains complete set of instructions, standards, and tools for creating specialized dataset and training model.
 **Project goal:** Train Large Language Model (LLM) to perform **SRE assistant** role for failure diagnostics and FinOps optimization.
 
+### Teaching Kit (NMK)
+
+| | |
+|---|---|
+| **Methodology** | [Course trajectory](./methodology.md) |
+| **Sources** | [Primary-source register](../sources.md) |
+| **Declaration** | [Academic integrity](../../en/DISCLAIMER.md) |
+
+
 ---
 
 ##  Documentation Structure

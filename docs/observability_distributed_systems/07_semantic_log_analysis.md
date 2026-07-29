@@ -1,8 +1,12 @@
 ---
-title: "Семантичний аналіз інцидентів: Текст як вектор (Embeddings)"
+title: "07 Semantic Log Analysis"
+type: lecture
+module: Module 7
+prerequisites: module 6
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Семантичний аналіз інцидентів: Текст як вектор (Embeddings)
 

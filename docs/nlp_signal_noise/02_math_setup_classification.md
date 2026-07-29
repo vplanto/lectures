@@ -1,8 +1,12 @@
 ---
-title: "Математична Формалізація Задачі Класифікації"
+title: "02 Math Setup Classification"
+type: lecture
+module: Статистика
+prerequisites: module 1
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Математична Формалізація Задачі Класифікації
 

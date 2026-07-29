@@ -1,8 +1,12 @@
 ---
-title: "Боротьба з Alert Fatigue: Байєсівська логіка фільтрації"
+title: "02 Noise Reduction Prerequisites"
+type: lecture
+module: Module 2
+prerequisites: module 1
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Боротьба з Alert Fatigue: Байєсівська логіка фільтрації
 

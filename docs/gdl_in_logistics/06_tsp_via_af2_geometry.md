@@ -1,3 +1,13 @@
+---
+title: "06 Tsp Via Af2 Geometry"
+type: lecture
+module: Синтез
+prerequisites: module 5
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 06_tsp_via_af2_geometry.md: Постановка TSP в умовах архітектури AlphaFold
 
 **Курс:** Геометричний Deep Learning в Логістиці

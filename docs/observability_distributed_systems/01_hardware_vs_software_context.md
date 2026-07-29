@@ -1,8 +1,12 @@
 ---
-title: "Прокляття Кардинальності: IT-системи vs Hardware Fabrics"
+title: "01 Hardware Vs Software Context"
+type: lecture
+module: Module 1
+prerequisites: module 0
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Прокляття Кардинальності: IT-системи vs Hardware Fabrics
 

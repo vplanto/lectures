@@ -1,9 +1,12 @@
 ---
-title: "Логи як події: Архітектура та кореляція Loki"
+title: "06 Event Driven Logging Loki"
+type: lecture
+module: Module 6
+prerequisites: module 5
 layout: default
-author: Віталій Платонов
 ---
 
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 ## 1. Парадігма "Логи як події" (Logs as Events)
 

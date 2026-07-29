@@ -1,3 +1,13 @@
+---
+title: "02 Market"
+type: lecture
+module: Module 2
+prerequisites: module 1
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Лекція 3: Алгоритми пошуку Інваріантів: Теорія, Практика та Межі застосування
 
 **Анотація:**

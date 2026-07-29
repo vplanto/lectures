@@ -1,8 +1,12 @@
 ---
-title: "Побудова Performance Doctor: Інтеграція всіх компонентів"
+title: "05 Building Performance Doctor"
+type: lecture
+module: Module 5
+prerequisites: module 4
 layout: default
-nav_order: 5
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Побудова Performance Doctor: Інтеграція всіх компонентів
 

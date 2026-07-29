@@ -14,6 +14,15 @@
 
 This series of lectures and practical workshops aims to combine classical Operations Research theory with modern Geometric Deep Learning approaches. We examine how AlphaFold 2 architectural solutions, developed for predicting protein 3D structure, can be adapted to solve NP-complete routing problems (VRP, TSP) at scales unattainable by classical exact algorithms.
 
+### Teaching Kit (NMK)
+
+| | |
+|---|---|
+| **Methodology** | [Course trajectory](./methodology.md) |
+| **Sources** | [Primary-source register](../sources.md) |
+| **Declaration** | [Academic integrity](../../en/DISCLAIMER.md) |
+
+
 ---
 
 ### Course Structure (Navigation)

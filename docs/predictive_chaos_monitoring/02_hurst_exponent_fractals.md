@@ -1,9 +1,12 @@
 ---
-title: "R/S Аналіз та Показник Херста"
+title: "02 Hurst Exponent Fractals"
+type: lecture
+module: Module 2
+prerequisites: module 1
 layout: default
-nav_order: 2
-parent: "Блок 1: Статистичний Фундамент та Фрактали"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # R/S Аналіз та Показник Херста
 

@@ -1,3 +1,13 @@
+---
+title: "04 Physics Dynamics"
+type: lecture
+module: Module 4
+prerequisites: module 3
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 04. System Physics & Degradation Mechanics
 
 **Scope:** Environment rules, Resource consumption physics, and Failure propagation.

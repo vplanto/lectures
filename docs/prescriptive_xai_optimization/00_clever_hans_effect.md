@@ -1,8 +1,12 @@
 ---
-title: "Ефект Розумного Ганса: Коли AI обдурює нас"
+title: "00 Clever Hans Effect"
+type: lecture
+module: Module 0
+prerequisites: none
 layout: default
-nav_order: 0
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Ефект Розумного Ганса: Коли AI обдурює нас
 

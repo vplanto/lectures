@@ -1,3 +1,13 @@
+---
+title: "07 Implementation Methodology"
+type: lecture
+module: Синтез
+prerequisites: module 6
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 07_implementation_methodology.md: Методологія імплементації (Deep Dive)
 
 **Курс:** Геометричний Deep Learning в Логістиці

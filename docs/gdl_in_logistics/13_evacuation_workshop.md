@@ -1,3 +1,13 @@
+---
+title: "13 Evacuation Workshop"
+type: lecture
+module: Семінар
+prerequisites: module 12
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 13_evacuation_workshop.md: Практикум: Евакуація зі стадіону — A* vs GDL
 
 **Курс:** Геометричний Deep Learning в Логістиці

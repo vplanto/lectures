@@ -1,8 +1,12 @@
 ---
-title: "LIME: Локальна апроксимація для пояснення AI"
+title: "03 Lime Local Approximation"
+type: lecture
+module: Module 3
+prerequisites: module 2
 layout: default
-nav_order: 3
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # LIME: Локальна апроксимація для пояснення AI
 

@@ -1,3 +1,13 @@
+---
+title: "Lecture Andriy Idea"
+type: lecture
+module: Module 0
+prerequisites: none
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Лекція 3: Семантичне розрізнення сигналів через аналіз траєкторій
 
 ## 1. Повернення до нашого двигуна: Як обійти математичний глухий кут?

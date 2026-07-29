@@ -1,8 +1,12 @@
 ---
-title: "Семінар В: Ефективний NLP: Квантизація та Дистиляція"
+title: "11 Seminar Efficient Nlp Quantization Distillation"
+type: seminar
+module: Семінар
+prerequisites: module 10
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Семінар В: Ефективний NLP: Квантизація та Дистиляція
 

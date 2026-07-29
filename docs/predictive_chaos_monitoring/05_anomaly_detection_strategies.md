@@ -1,9 +1,12 @@
 ---
-title: "Від Forecasting до Anomaly Detection"
+title: "05 Anomaly Detection Strategies"
+type: lecture
+module: Module 5
+prerequisites: module 4
 layout: default
-nav_order: 5
-parent: "Блок 3: Предиктивний Моніторинг (SRE Practice)"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Від Forecasting до Anomaly Detection
 

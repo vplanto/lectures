@@ -1,3 +1,13 @@
+---
+title: "02 Detection And Symptoms"
+type: lecture
+module: Module 2
+prerequisites: module 1
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Довідник: Як виявити проблему (Команди та Симптоми)
 
 Цей документ визначає, які саме технічні дані (Input) потрібно зібрати для кожного типу проблеми.

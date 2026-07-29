@@ -1,3 +1,13 @@
+---
+title: "07 Tech Stack"
+type: lecture
+module: Module 7
+prerequisites: module 6
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 07. Implementation Stack & Optimization
 
 **Scope:** Technology choices, Data structures, and Performance patterns.

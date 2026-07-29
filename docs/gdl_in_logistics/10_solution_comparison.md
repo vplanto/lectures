@@ -1,3 +1,13 @@
+---
+title: "10 Solution Comparison"
+type: lecture
+module: Практикум
+prerequisites: module 9
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 10_solution_comparison.md: Фінальне рішення та валідація
 
 **Курс:** Геометричний Deep Learning в Логістиці

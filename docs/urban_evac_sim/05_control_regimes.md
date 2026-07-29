@@ -1,3 +1,13 @@
+---
+title: "05 Control Regimes"
+type: lecture
+module: Module 5
+prerequisites: module 4
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 05. Control Regimes & Experimental Scenarios
 
 **Scope:** Definition of simulation modes (Baseline vs. Optimized) and intervention logic.

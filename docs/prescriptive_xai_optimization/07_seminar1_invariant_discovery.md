@@ -1,8 +1,12 @@
 ---
-title: "Семінар 1: Математичне моделювання та пошук інваріантів"
+title: "07 Seminar1 Invariant Discovery"
+type: seminar
+module: Module 7
+prerequisites: module 6
 layout: default
-nav_order: 7
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Семінар 1: Математичне моделювання та пошук інваріантів
 

@@ -1,3 +1,13 @@
+---
+title: "05 Model Lifecycle And Metrics"
+type: lecture
+module: Module 5
+prerequisites: module 4
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Методологія: Життєвий Цикл, Метрики та Валідація Моделі
 
 Цей документ описує науковий підхід до тренування та оцінки якості (Evaluation) LLM-асистента.

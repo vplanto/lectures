@@ -1,8 +1,12 @@
 ---
-title: "Шум у Продакшені: Чому grep 'Error' Не Працює"
+title: "01 Noise In Production"
+type: lecture
+module: Інтуїція
+prerequisites: module 0
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Шум у Продакшені: Чому grep 'Error' Не Працює
 

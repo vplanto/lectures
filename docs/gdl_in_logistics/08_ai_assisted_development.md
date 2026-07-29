@@ -1,3 +1,13 @@
+---
+title: "08 Ai Assisted Development"
+type: lecture
+module: Практикум
+prerequisites: module 7
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 08_ai_assisted_development.md: Промпт-інжиніринг для AI-асистентів
 
 **Курс:** Геометричний Deep Learning в Логістиці

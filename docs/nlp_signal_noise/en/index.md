@@ -16,6 +16,15 @@ This course examines the fundamental problem of "finding a needle in a haystack"
 
 We'll journey from classical Bayes' formula (18th century) to BERT transformers (21st century) to create an "intelligent filter" for technical logs.
 
+### Teaching Kit (NMK)
+
+| | |
+|---|---|
+| **Methodology** | [Course trajectory](./methodology.md) |
+| **Sources** | [Primary-source register](../sources.md) |
+| **Declaration** | [Academic integrity](../../en/DISCLAIMER.md) |
+
+
 ---
 
 ### Course Structure (Navigation)

@@ -1,3 +1,13 @@
+---
+title: "00 Concept Brief"
+type: lecture
+module: Module 0
+prerequisites: none
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 00. Концептуальна постановка (Human Readable)
 
 **Суть:** Симулятор евакуації міста "на виживання".

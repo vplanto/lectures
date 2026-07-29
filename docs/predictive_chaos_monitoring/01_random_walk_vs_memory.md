@@ -1,9 +1,12 @@
 ---
-title: "Випадкові блукання та Гіпотеза ефективного ринку (в IT)"
+title: "01 Random Walk Vs Memory"
+type: lecture
+module: Module 1
+prerequisites: module 0
 layout: default
-nav_order: 1
-parent: "Блок 1: Статистичний Фундамент та Фрактали"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Випадкові блукання та Гіпотеза ефективного ринку (в IT)
 

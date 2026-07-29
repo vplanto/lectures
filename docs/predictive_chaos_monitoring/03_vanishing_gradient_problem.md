@@ -1,9 +1,12 @@
 ---
-title: "Чому RNN забувають історію"
+title: "03 Vanishing Gradient Problem"
+type: lecture
+module: Module 3
+prerequisites: module 2
 layout: default
-nav_order: 3
-parent: "Блок 2: Архітектура Пам'яті (Deep Learning)"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Чому RNN забувають історію
 

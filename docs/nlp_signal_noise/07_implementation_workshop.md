@@ -1,8 +1,12 @@
 ---
-title: "Практикум: Побудова Пайплайну Фільтрації"
+title: "07 Implementation Workshop"
+type: lecture
+module: Практикум
+prerequisites: module 6
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Практикум: Побудова Пайплайну Фільтрації
 

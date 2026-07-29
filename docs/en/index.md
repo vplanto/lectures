@@ -4,6 +4,14 @@
 
 Welcome! This site is the central hub for my educational courses and materials.
 
+### Teaching Kit (NMK)
+
+| | |
+|---|---|
+| **Methodology** | [Portal role and articles 00–15 map](./methodology.md) |
+| **Sources** | [Hub primary-source register](./sources.md) |
+| **Declaration** | [Academic integrity & AI (Law No. 4742-IX)](./DISCLAIMER.md) |
+
 ---
 
 ## Updated Courses
@@ -36,6 +44,7 @@ Courses currently undergoing active modernization according to new methodologica
 * **Infrastructure Barrier: When AI is Powerless** — Case Study (LaTeX/Python) on why environment setup (Infrastructure Literacy) becomes more important than writing code. *(File absent)*
 * [**Experience Architecture: From Knowledge Compression to Neurobiology of Expertise**](09_experience_architecture.md) — Analysis of information transformation into intuitive pattern recognition ($O(n) \to O(1)$), role of myelination in forming Seniority, and strategies for cultivating "architects of meaning" in AI era.
 * [**Protocol for Developing High-Volume Technical Lectures**](10_ai_lectures.md) — Standard for iterative educational material development to prevent technical density degradation and volume loss due to LLM limitations.
+* [**Lecture Editing Rules (Anti-LLM)**](16_lecture_editing_rules.md) — Style, volume, and Ukrainian prose when rewriting lectures; complements the AI protocol above.
 
 ##  Active Projects
 *Projects under active development.*

@@ -1,8 +1,13 @@
 ---
 title: "Глосарій курсу: Від математики до DevOps"
+type: lecture
+module: "Глосарій"
+prerequisites: none
 layout: default
 nav_order: -1
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Глосарій курсу: Від математики до DevOps
 

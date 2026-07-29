@@ -1,3 +1,13 @@
+---
+title: "01 Classical Transport Problem"
+type: lecture
+module: Фундамент
+prerequisites: module 0
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 01_classical_transport_problem.md: Від лінійного програмування до NP-повноти
 
 **Курс:** Геометричний Deep Learning в Логістиці
@@ -611,14 +621,8 @@ $$f(n) = g(n) + h(n)$$
 
 ---
 
-## 9. Джерела та Література
+## 9. Джерела
 
-### 7.1. Фундаментальна теорія
-* **Книга:** *Schrijver, A. "Combinatorial Optimization: Polyhedra and Efficiency".* [Springer Description](https://link.springer.com/book/10.1007/978-3-540-44389-6) — Фундаментальна праця з комбінаторної оптимізації.
-* **Стаття:** *Dantzig, G. B., & Ramser, J. H. (1959). "The Truck Dispatching Problem".* [INFORMS Pubs](https://pubsonline.informs.org/doi/abs/10.1287/mnsc.6.1.80) — Перша академічна згадка VRP.
-* **Відео:** [MIT 6.0002 Lecture 2: Optimization Problems](https://www.youtube.com/watch?v=uK5yvoXnkSk) — Лекція Prof. John Guttag. Розбір понять Knapsack Problem, Greedy Algorithms та Brute Force.
+Перводжерела `[1]`–`[3]` — [sources.md](./sources.md).
 
-### 7.2. Алгоритми та Складність
-* **Книга:** *Garey & Johnson. "Computers and Intractability: A Guide to the Theory of NP-Completeness".* [Google Books](https://books.google.com/books/about/Computers_and_Intractability.html?id=fjxGAQAAIAAJ) — Базова термінологія NP-повноти.
-* **Ресурс:** [VRP-REP](http://www.vrp-rep.org/) — Репозиторій канонічних бенчмарків (instances) для тестування VRP-алгоритмів.
-* **Відео:** [Reducible: P vs NP](https://www.youtube.com/watch?v=YX40hbAHx3s) — Якісна візуалізація класів складності P, NP, NP-Complete та NP-Hard.
+**Відео (inline):** [MIT 6.0002: Optimization Problems](https://www.youtube.com/watch?v=uK5yvoXnkSk) · [Reducible: P vs NP](https://www.youtube.com/watch?v=YX40hbAHx3s)

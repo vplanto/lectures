@@ -1,3 +1,5 @@
+> **Academic Integrity.** Materials comply with [Ukrainian Law No. 4742-IX](../../en/DISCLAIMER.md). AI use — [protocol](../../en/10_ai_lectures.md). Grading — [Risk & Reward](../../en/06_grading_experiment.md). Course sources: [sources.md](./sources.md).
+
 # 00_geometric_deep_learning_intro.md: Geometric Deep Learning in Logistics
 
 > 🇺🇦 [Українська версія](../00_geometric_deep_learning_intro.md) | 🇬🇧 English version

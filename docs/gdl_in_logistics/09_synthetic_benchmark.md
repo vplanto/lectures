@@ -1,3 +1,13 @@
+---
+title: "09 Synthetic Benchmark"
+type: lecture
+module: Практикум
+prerequisites: module 8
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 09_synthetic_benchmark.md: Створення синтетичного бенчмарку
 
 **Курс:** Геометричний Deep Learning в Логістиці

@@ -1,10 +1,15 @@
 ---
 title: "Маніфест Спостережуваності: Чому Моніторинг Більше Не Працює"
+type: lecture
+module: "Блок 0"
+prerequisites: none
 origin: ai-synthesized
 status: human-verified
 layout: default
 author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Маніфест Спостережуваності: Чому Моніторинг Більше Не Працює
 

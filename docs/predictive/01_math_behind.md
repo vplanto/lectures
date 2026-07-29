@@ -1,3 +1,13 @@
+---
+title: "01 Math Behind"
+type: lecture
+module: Module 1
+prerequisites: module 0
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Лекція 2: Математичний арсенал AIOps: Від простої статистики до глибокого навчання
 
 **Анотація:**

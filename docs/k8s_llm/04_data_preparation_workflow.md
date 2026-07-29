@@ -1,3 +1,13 @@
+---
+title: "04 Data Preparation Workflow"
+type: lecture
+module: Module 4
+prerequisites: module 3
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Воркфлоу: Пайплайн Підготовки Даних (ETL)
 
 Цей документ описує інженерний процес перетворення "сирих" логів з реальних систем у готовий датасет для навчання моделі.

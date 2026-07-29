@@ -1,8 +1,12 @@
 ---
-title: "Практикум: Генерація керованого хаосу та синтетичних аномалій"
+title: "10 Chaos Engineering Lab"
+type: lecture
+module: Module 10
+prerequisites: module 9
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Практикум: Генерація керованого хаосу та синтетичних аномалій
 

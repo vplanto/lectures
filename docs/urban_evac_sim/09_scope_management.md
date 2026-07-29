@@ -1,3 +1,13 @@
+---
+title: "09 Scope Management"
+type: project
+module: Module 9
+prerequisites: module 8
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 09. Scope Management: Coursework vs Diploma
 
 **Scope:** Project Roadmap & Grading Criteria.

@@ -1,9 +1,12 @@
 ---
-title: "Глосарій термінів: Мост між математикою та IT-системами"
+title: "09 Course Glossary"
+type: lecture
+module: Module 9
+prerequisites: module 8
 layout: default
-nav_order: 0.5
-parent: "Вступ: Рівняння, що змінює погляд на світ"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Глосарій термінів: Мост між математикою та IT-системами
 

@@ -1,8 +1,13 @@
 ---
 title: "Пастка Байєса: Чому 99% Точність = 90% Помилок"
+type: lecture
+module: Інтуїція
+prerequisites: none
 layout: default
 author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Пастка Байєса: Чому 99% Точність = 90% Помилок
 
@@ -421,24 +426,7 @@ $$
 8. **Kim, G., et al.** (2016). "The DevOps Handbook"
    - Розділ про моніторинг та Alert Fatigue. Практичні стратегії зменшення помилкових тривог.
 
-### Академічні Статті
-
-9. **Bar-Hillel, M.** (1980). "The base-rate fallacy in probability judgments"
-   - Acta Psychologica, 44(3), 211-233. Психологічне дослідження помилок при оцінці базової частоти.
-
-10. **Gigerenzer, G., & Hoffrage, U.** (1995). "How to improve Bayesian reasoning without instruction: Frequency formats"
-    - Psychological Review, 102(4), 684-704. Демонструє, що "frequency format" покращує розуміння байєсівських задач.
-
-### Онлайн-Ресурси
-
-11. **Wikipedia. "Base rate fallacy"**
-    - URL: https://en.wikipedia.org/wiki/Base_rate_fallacy
-    - Швидкий довідник з прикладами з різних доменів.
-
-12. **Scikit-learn Documentation. "Classification metrics"**
-    - URL: https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics
-    - Практичний гайд з реалізацією метрик у Python.
 
 ---
 
-**Примітка для студентів:** Почніть з відео Veritasium для інтуїтивного розуміння, потім перейдіть до MacKay для математичної строгості. Для практичної реалізації використовуйте документацію Scikit-learn.
+**Джерела:** повний реєстр `[1]…[N]` — [sources.md](./sources.md).

@@ -1,9 +1,12 @@
 ---
-title: "Робота в частотній області (Фур'є)"
+title: "06 Frequency Domain Fft"
+type: lecture
+module: Module 6
+prerequisites: module 5
 layout: default
-nav_order: 6
-parent: "Блок 3: Предиктивний Моніторинг (SRE Practice)"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Робота в частотній області (Фур'є)
 

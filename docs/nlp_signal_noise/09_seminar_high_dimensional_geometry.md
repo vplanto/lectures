@@ -1,8 +1,12 @@
 ---
-title: "Семінар А: Геометрія Високих Розмірностей та Візуалізація"
+title: "09 Seminar High Dimensional Geometry"
+type: seminar
+module: Семінар
+prerequisites: module 8
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Семінар А: Геометрія Високих Розмірностей та Візуалізація
 

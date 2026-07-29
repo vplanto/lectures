@@ -1,3 +1,13 @@
+---
+title: "02 Topology Etl"
+type: lecture
+module: Module 2
+prerequisites: module 1
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 02. Topology ETL Pipeline
 
 **Scope:** Data ingestion, Graph Engineering, and Static Weight calculation.

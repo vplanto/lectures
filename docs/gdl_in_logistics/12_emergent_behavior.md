@@ -1,3 +1,13 @@
+---
+title: "12 Emergent Behavior"
+type: lecture
+module: Семінар
+prerequisites: module 11
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 12_emergent_behavior.md: Емерджентна поведінка: Від згортання білка до транспортних заторів
 
 **Курс:** Геометричний Deep Learning в Логістиці

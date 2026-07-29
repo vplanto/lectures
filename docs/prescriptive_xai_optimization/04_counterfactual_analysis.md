@@ -1,8 +1,12 @@
 ---
-title: "Контрфактуальний аналіз: Що, якби?"
+title: "04 Counterfactual Analysis"
+type: lecture
+module: Module 4
+prerequisites: module 3
 layout: default
-nav_order: 4
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Контрфактуальний аналіз: Що, якби?
 

@@ -1,8 +1,12 @@
 ---
-title: "Семінар 3: Контрфактуальна терапія та прескриптивний аналіз"
+title: "09 Seminar3 Performance Doctor"
+type: seminar
+module: Module 9
+prerequisites: module 8
 layout: default
-nav_order: 9
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Семінар 3: Контрфактуальна терапія та прескриптивний аналіз
 

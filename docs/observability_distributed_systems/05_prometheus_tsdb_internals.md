@@ -1,8 +1,12 @@
 ---
-title: "TSDB та PromQL: Математика часових рядів під навантаженням"
+title: "05 Prometheus Tsdb Internals"
+type: lecture
+module: Module 5
+prerequisites: module 4
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # TSDB та PromQL: Математика часових рядів під навантаженням
 

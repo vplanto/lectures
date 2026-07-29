@@ -1,3 +1,13 @@
+---
+title: "03 Dataset Output Templates"
+type: lecture
+module: Module 3
+prerequisites: module 2
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Шаблони Еталонних Відповідей (Output)
 
 Цей документ визначає **"Gold Standard"** (Золотий Стандарт) відповідей, яких ми очікуємо від моделі.

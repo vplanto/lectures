@@ -4,6 +4,8 @@
 
 This document defines standard for iterative development of educational materials to prevent technical density degradation and volume loss due to LLM limitations (RLHF-brevity and Attention Drift).
 
+**Style and presentation** when rewriting finished lectures — see [Lecture Editing Rules (16)](../16_lecture_editing_rules.md) (not duplicated here).
+
 ---
 
 ## 0. Limitations Diagnosis (Root Cause)

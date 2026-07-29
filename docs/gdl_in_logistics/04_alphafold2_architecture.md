@@ -1,3 +1,13 @@
+---
+title: "04 Alphafold2 Architecture"
+type: lecture
+module: AlphaFold 2
+prerequisites: module 3
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # 04_alphafold2_architecture.md: Деконструкція AlphaFold 2
 
 **Курс:** Геометричний Deep Learning в Логістиці

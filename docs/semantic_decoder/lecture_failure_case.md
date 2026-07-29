@@ -1,3 +1,13 @@
+---
+title: "Lecture Failure Case"
+type: lecture
+module: Module 0
+prerequisites: none
+layout: default
+---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
+
 # Лекція 2: Коли класичні алгоритми дають збій (Failure Case)
 
 ## 1. Реальність: Що ми бачимо на практиці?

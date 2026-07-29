@@ -1,8 +1,12 @@
 ---
-title: "Наївний Байєс: Чому Він Працює для Спаму, але Провалюється на Логах"
+title: "03 Naive Bayes Deep Dive"
+type: lecture
+module: Статистика
+prerequisites: module 2
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Наївний Байєс: Чому Він Працює для Спаму, але Провалюється на Логах
 

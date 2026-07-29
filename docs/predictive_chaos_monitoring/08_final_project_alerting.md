@@ -1,9 +1,12 @@
 ---
-title: "MVP Предиктивного Моніторингу"
+title: "08 Final Project Alerting"
+type: project
+module: Module 8
+prerequisites: module 7
 layout: default
-nav_order: 8
-parent: "Практикум (Workshop)"
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # MVP Предиктивного Моніторингу
 

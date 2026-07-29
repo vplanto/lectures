@@ -1,8 +1,12 @@
 ---
-title: "Пояснювальний ШІ (XAI): Від детекції до розуміння Першопричина (Root Cause)"
+title: "09 Xai For Incident Response"
+type: lecture
+module: Module 9
+prerequisites: module 8
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Пояснювальний ШІ (XAI): Від детекції до розуміння Першопричина (Root Cause)
 

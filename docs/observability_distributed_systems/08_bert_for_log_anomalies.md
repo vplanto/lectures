@@ -1,8 +1,12 @@
 ---
-title: "Трансформери в SRE: BERT та архітектура виявлення аномалій"
+title: "08 Bert For Log Anomalies"
+type: lecture
+module: Module 8
+prerequisites: module 7
 layout: default
-author: Віталій Платонов
 ---
+
+> **Академічна доброчесність.** Матеріали відповідають вимогам [Закону України № 4742-IX](../DISCLAIMER.md). Використання ШІ — [протокол](../10_ai_lectures.md). Оцінювання — [Risk & Reward](../06_grading_experiment.md). Джерела курсу: [sources.md](./sources.md).
 
 # Трансформери в SRE: BERT та архітектура виявлення аномалій
 
