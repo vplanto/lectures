@@ -7,6 +7,14 @@
 
 ---
 
+## 0. Author Declaration
+
+Portal materials are an **evolution of the author's ideas**, not publication of finished presentations as-is.
+
+The basic content, concept, and architecture of the courses were developed by the author based on their own lectures and presentations. Large language model (LLM) tools were used exclusively as a technical means for format conversion (Slides → Markdown) and expanding textual theses. All final text, architectural diagrams, and code were fully reviewed, verified, and approved by the author.
+
+---
+
 ## 1. Regulatory Framework
 
 Educational and research materials on this portal align with **[Ukrainian Law No. 4742-IX «On Higher Education»](https://zakon.rada.gov.ua/laws/show/4742-IX)** regarding academic integrity, including:
@@ -21,6 +29,8 @@ The hub's full register of regulatory and methodological references is in [`sour
 ---
 
 ## 2. Use of Artificial Intelligence
+
+On author-led content design and LLM role in format conversion — see [Section 0](#0-author-declaration). Below — the iterative development protocol and rules for students.
 
 Course materials may be developed or extended using AI assistants under the **iterative protocol** described in:
 
