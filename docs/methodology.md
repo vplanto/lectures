@@ -33,7 +33,7 @@
 | 07 | [Epsilon-Greedy](./07_mental_overfitting.md) | Боротьба з «ментальним перенавчанням» |
 | 08 | Інфраструктурний бар'єр *(файл у розробці)* | Infrastructure Literacy |
 | 09 | [Архітектура досвіду](./09_experience_architecture.md) | Компресія знань → експертиза |
-| 10 | [**Протокол лекцій з ШІ**](./10_ai_lectures.md) | Atomic Write, QA, технічна щільність |
+| 10 | [**Протокол лекцій з ШІ**](./10_ai_lectures.md) | Atomic Write, QA, аналіз auto-subs з YT (§5) |
 | 11 | [Ландшафт ШІ 2026](./11_ai_landscape_2026.md) | Таксономія моделей і режимів |
 | 12 | [Мапінг акредитації](./12_accreditation_mapping.md) | Стандарт 113 ↔ курси |
 | 13 | [Вища освіта vs ПТУ](./13_higher_education_vs_vocational.md) | Науковий метод у ВНЗ |
@@ -59,7 +59,7 @@
 ## 4. Пов'язані регламенти (не дублювати)
 
 - **Оцінювання:** [06_grading_experiment.md](./06_grading_experiment.md)
-- **Розробка з ШІ:** [10_ai_lectures.md](./10_ai_lectures.md)
+- **Розробка з ШІ:** [10_ai_lectures.md](./10_ai_lectures.md) (написання + аналіз YT auto-subs, §5)
 - **Стиль перепису лекцій:** [16_lecture_editing_rules.md](./16_lecture_editing_rules.md)
 - **Академічна доброчесність:** [DISCLAIMER.md](./DISCLAIMER.md)
 - **Джерела хабу:** [sources.md](./sources.md)

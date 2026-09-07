@@ -89,11 +89,30 @@ For working with documents of this volume, recommended tools with direct file sy
 
 ---
 
+## Stage 5: Post-Lecture QA (subtitles → report)
+
+After a live session — close the loop: analyze **automatic subtitles** from the recording (e.g. YouTube auto-captions) → backlog and quality metrics.
+
+**Input:** transcript via `yt-dlp` `--write-auto-subs` / `--write-subs` (no manual transcription). If no subs available — fallback: `ffmpeg` → cloud STT (Groq + Whisper).
+
+**Report output:**
+- Commitments to students → action items before next session (SLA)
+- Factual errors, outdated stack, broken metaphors
+- Delivery density: trigger — long stretches without feedback pauses
+
+**Pipeline (one command):**
+`yt-dlp` (auto-subs) → LLM (fixed system prompt) → Markdown report.
+
+Manual fallback: [00_method_changes.md](../00_method_changes.md), Level 2.
+
+---
+
 ## Checklist for launching new lecture:
 
 1. [ ] Topic and target audience formed (Senior/Lead).
 2. [ ] Skeleton created with character distribution.
 3. [ ] Technology stack defined.
 4. [ ] "Atomic Write" mode activated (block-by-block generation).
+5. [ ] After session: post-lecture QA (Stage 5).
 
 ```

@@ -178,6 +178,6 @@
 
 | Документ | Призначення |
 |----------|-------------|
-| [10_ai_lectures.md](./10_ai_lectures.md) | Процес генерації великих лекцій (обсяг, Atomic Write) |
+| [10_ai_lectures.md](./10_ai_lectures.md) | Генерація (Atomic Write) і аналіз auto-subs з YT (§5) |
 | [DISCLAIMER.md](./DISCLAIMER.md) | Академічна доброчесність |
 | [methodology.md](./methodology.md) | Карта методичних статей хабу |
