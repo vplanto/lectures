@@ -10,7 +10,7 @@ This document describes the **role of the central hub** `lectures/docs/` and how
 
 The portal unifies:
 
-1. **Disciplinary courses** (external GitHub Pages: Web, Blockchain, C++, Java) — links only in [`index.md`](./index.md).
+1. **Disciplinary courses** (external GitHub Pages: Web, Blockchain, C++, Java, Cloud & Grid, Functional Programming) — links only in [`index.md`](./index.md).
 2. **Local courses and research tracks** — full content in subfolders (`gdl_in_logistics/`, `nlp_signal_noise/`, etc.).
 3. **Methodological work** — articles 00–15 in the `docs/` root.
 4. **Active Projects** — `k8s_llm/`, `urban_evac_sim/`.

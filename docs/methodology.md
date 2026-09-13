@@ -10,7 +10,7 @@
 
 Портал об'єднує:
 
-1. **Дисциплінарні курси** (зовнішні GitHub Pages: Web, Blockchain, C++, Java) — лише посилання в [`index.md`](./index.md).
+1. **Дисциплінарні курси** (зовнішні GitHub Pages: Web, Blockchain, C++, Java, Cloud & Grid, Functional Programming) — лише посилання в [`index.md`](./index.md).
 2. **Локальні курси та дослідницькі траєкторії** — повний контент у підпапках (`gdl_in_logistics/`, `nlp_signal_noise/`, тощо).
 3. **Методичну роботу** — статті 00–15 у корені `docs/`.
 4. **Active Projects** — `k8s_llm/`, `urban_evac_sim/`.
