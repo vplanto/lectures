@@ -1,5 +1,8 @@
 **/venv/
 /tmp/
 
+# Post-lecture subtitle analysis (local only)
+subs/
+
 # IDE / editor local config
 .cursor/
