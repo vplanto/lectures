@@ -35,15 +35,65 @@
       background-color: rgba(0, 0, 0, 0.05);
     }
 
-    /* Центрування сторінки */
+    :root {
+      --content-max: 980px;
+      --content-pad-x: 45px;
+      --content-pad-y: 45px;
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --content-pad-x: 15px;
+        --content-pad-y: 15px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      :root {
+        --content-max: min(1120px, calc(100vw - 3rem));
+      }
+    }
+
+    @media (min-width: 1280px) {
+      :root {
+        --content-max: min(1240px, calc(100vw - 4rem));
+      }
+    }
+
+    @media (min-width: 1600px) {
+      :root {
+        --content-max: min(1380px, calc(100vw - 6rem));
+      }
+    }
+
+    .page-shell {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: var(--content-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--content-pad-x);
+      padding-right: var(--content-pad-x);
+    }
+
     .markdown-body {
       box-sizing: border-box;
       min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
+      max-width: none;
+      width: 100%;
+      margin: 0;
+      padding-top: var(--content-pad-y);
+      padding-bottom: var(--content-pad-y);
+      padding-left: 0;
+      padding-right: 0;
     }
-    @media (max-width: 767px) { .markdown-body { padding: 15px; } }
+
+    .site-footer {
+      font-size: 0.85em;
+      color: #57606a;
+      border-top: 1px solid #d0d7de;
+      padding-bottom: 30px;
+    }
   </style>
 
   <script>
@@ -58,10 +108,10 @@
   <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <article class="markdown-body">
+  <article class="markdown-body page-shell">
     {{ content }}
   </article>
-  <footer style="max-width:980px;margin:0 auto;padding:0 45px 30px;font-size:0.85em;color:#57606a;border-top:1px solid #d0d7de;">
+  <footer class="site-footer page-shell">
   <p>
     <a href="{{ '/DISCLAIMER.html' | relative_url }}">Академічна доброчесність</a>
     · <a href="{{ '/en/DISCLAIMER.html' | relative_url }}">Academic Integrity</a>
