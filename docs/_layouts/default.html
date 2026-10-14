@@ -94,6 +94,60 @@
       border-top: 1px solid #d0d7de;
       padding-bottom: 30px;
     }
+
+    /* Головна (index): вужча міра рядка + картки замість «простині» */
+    .page-hub.page-shell {
+      --content-max: min(56rem, calc(100vw - 2rem));
+    }
+
+    .page-hub h2 {
+      margin-top: 2.25rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #d0d7de;
+    }
+
+    .page-hub h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .page-hub > table {
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .page-hub > ul {
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    .page-hub > ul > li {
+      list-style: none;
+      margin-bottom: 0.65rem;
+      padding: 0.85rem 1.1rem;
+      background: #f6f8fa;
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+    }
+
+    .page-hub > ul > li > ul {
+      margin: 0.65rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    .page-hub > ul > li > ul > li {
+      list-style: disc;
+      margin-bottom: 0.35rem;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+    }
+
+    .page-hub > ul > li > ul > li:last-child {
+      margin-bottom: 0;
+    }
   </style>
 
   <script>
@@ -108,10 +162,10 @@
   <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <article class="markdown-body page-shell">
+  <article class="markdown-body page-shell{% if page.hub %} page-hub{% endif %}">
     {{ content }}
   </article>
-  <footer class="site-footer page-shell">
+  <footer class="site-footer page-shell{% if page.hub %} page-hub{% endif %}">
   <p>
     <a href="{{ '/DISCLAIMER.html' | relative_url }}">Академічна доброчесність</a>
     · <a href="{{ '/en/DISCLAIMER.html' | relative_url }}">Academic Integrity</a>

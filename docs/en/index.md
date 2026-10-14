@@ -1,3 +1,8 @@
+---
+layout: default
+hub: true
+---
+
 # Educational and Methodological Materials
 
 > 🇺🇦 [Українська версія](../index.md) | 🇬🇧 English version

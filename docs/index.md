@@ -1,3 +1,8 @@
+---
+layout: default
+hub: true
+---
+
 # Навчальні та методичні матеріали
 
 > 🇺🇦 Українська версія | 🇬🇧 [English version](./en/index.md)
