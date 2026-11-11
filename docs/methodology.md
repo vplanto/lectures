@@ -12,14 +12,14 @@
 
 1. **Дисциплінарні курси** (зовнішні GitHub Pages: Web, Blockchain, C++, Java, Cloud & Grid, Functional Programming) — лише посилання в [`index.md`](./index.md).
 2. **Локальні курси та дослідницькі траєкторії** — повний контент у підпапках (`gdl_in_logistics/`, `nlp_signal_noise/`, тощо).
-3. **Методичну роботу** — статті 00–19 у корені `docs/`.
-4. **Active Projects** — `k8s_llm/`, `urban_evac_sim/`.
+3. **Методичну роботу** — статті 00–20 у корені `docs/` та тематичній папці `ai_sdlc/`.
+4. **Active Projects** — `k8s_llm/`, `urban_evac_sim/`, `microservices_urban_scaling/`, `ai_sdlc/`.
 
 Кожен локальний курс має власний [`methodology.md`](./gdl_in_logistics/methodology.md) з траєкторією модулів; цей файл описує лише **хаб-рівень**.
 
 ---
 
-## 2. Карта методичних статей (00–19)
+## 2. Карта методичних статей (00–20)
 
 | № | Документ | Фокус |
 |---|----------|-------|
@@ -43,6 +43,7 @@
 | 17 | [**Замкнутий цикл викладання**](./17_lecture_preparation_and_feedback.md) | Підготовка, проведення пари, пост-лекційний аналіз (auto-subs YT) |
 | 18 | [**Управління ШІ-агентами**](./18_ai_agent_control_seminar.md) | Доповідь на семінарі ОКЕК/ПМ: Plant vs Controller, MDP, Беллман, SMT |
 | 19 | [**Інженерія проєктів з ШІ (AI SDLC)**](./19_ai_sdlc_seminar.md) | Наукова доповідь: Context vs Harness Engineering, Dumb Zone, Hexagonal Arch, парадокси керування та проблеми продуктового контексту |
+| 20 | [**Архітектура довіреного контексту в AI SDLC**](./ai_sdlc/index.md) | Окремий розділ (`ai_sdlc/`): [Інженерний бриф + 5 діаграм](./ai_sdlc/01_context_architecture_brief.md) та [План науково-практичної статті](./ai_sdlc/02_context_architecture_plan.md) (10 ролей, 8 розрізів, ієрархія пам'яті та індексів) |
 
 ---
 
